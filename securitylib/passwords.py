@@ -24,6 +24,7 @@ KEYBOARD_SEQUENCES = [
     "abcdefghijklmnopqrstuvwxyz",
     "13579",
     "02468",
+    "a1b2c3d4e5f6g7h8i9j0",
 ]
 
 DICT_WORDS = None
