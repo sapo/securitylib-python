@@ -169,8 +169,20 @@ class PassVariant:
     def __eq__(self, other):
         return self.password == other.password
 
+    def __cmp__(self, other):
+        return cmp(self.entropy, other.entropy)
+
     def __repr__(self):
         return '{0} {1}'.format(self.password, self.entropy)
+
+
+class KeepMinDict(dict):
+    def __init__(self, *args, **kwargs):
+        super(KeepMinDict, self).__init__(*args, **kwargs)
+
+    def __setitem__(self, key, value):
+        if key not in self or value < self[key]:
+            super(KeepMinDict, self).__setitem__(key, value)
 
 
 def load_dict_words():
@@ -284,35 +296,41 @@ def get_entropy_bits(password):
     # Reversed lowercase variant
     rev_pass = reverse_password(lower_pass)
 
-    passwords_variants = set([lower_pass, rev_pass])
+    passwords_variants = KeepMinDict()
+    passwords_variants[lower_pass.password] = lower_pass
+    passwords_variants[rev_pass.password] = rev_pass
 
     # Keyboard shifting password variants
     if lower_pass.password.translate(None, 'aq1sw2de3fr4gt5hy6ju7i8o90') == '':
         keyboardmap_downright = string.maketrans('aq1sw2de3fr4gt5hy6ju7i8o90', 'zaqxswcdevfrbgtnhymjukilop')
         downright_pass = PassVariant(lower_pass.password.translate(keyboardmap_downright), 2)
-        passwords_variants.add(downright_pass)
-        passwords_variants.add(reverse_password(downright_pass))
+        passwords_variants[downright_pass.password] = downright_pass
+        downright_pass_reversed = reverse_password(downright_pass)
+        passwords_variants[downright_pass_reversed.password] = downright_pass_reversed
     if lower_pass.password.translate(None, '2w3se4dr5ft6gy7hu8ji9ko0p') == '':
         keyboardmap_downleft = string.maketrans('2w3se4dr5ft6gy7hu8ji9ko0p', 'qawzsexdrcftvgybhunjimkol')
         downleft_pass = PassVariant(lower_pass.password.translate(keyboardmap_downleft), 2)
-        passwords_variants.add(downleft_pass)
-        passwords_variants.add(reverse_password(downleft_pass))
+        passwords_variants[downleft_pass.password] = downleft_pass
+        downleft_pass_reversed = reverse_password(downleft_pass)
+        passwords_variants[downleft_pass_reversed.password] = downleft_pass_reversed
 
     # Leet-speak substitutions variants
     leetspeakmap = string.maketrans('@!$1234567890', 'aisizeasgtbgo')
     leetspeak_pass = PassVariant(lower_pass.password.translate(leetspeakmap), 1)
-    passwords_variants.add(leetspeak_pass)
-    passwords_variants.add(reverse_password(leetspeak_pass))
+    passwords_variants[leetspeak_pass.password] = leetspeak_pass
+    leetspeak_pass_reversed = reverse_password(leetspeak_pass)
+    passwords_variants[leetspeak_pass_reversed.password] = leetspeak_pass_reversed
 
     leetspeakmap2 = string.maketrans('@!$1234567890', 'aislzeasgtbgo')
     leetspeak_pass2 = PassVariant(lower_pass.password.translate(leetspeakmap2), 1)
-    passwords_variants.add(leetspeak_pass2)
-    passwords_variants.add(reverse_password(leetspeak_pass2))
+    passwords_variants[leetspeak_pass2.password] = leetspeak_pass2
+    leetspeak_pass2_reversed = reverse_password(leetspeak_pass2)
+    passwords_variants[leetspeak_pass2_reversed.password] = leetspeak_pass2_reversed
 
     if find_keyboard_sequences:
         # Tries to find sequences from keyboard
         # in the variants of the password and removes them.
-        for cur_pass in list(passwords_variants):
+        for cur_pass in passwords_variants.values():
             tmp_pass = cur_pass.password
             for keyboard_seq in KEYBOARD_SEQUENCES:
                 tmp_pass = remove_sequence(tmp_pass, keyboard_seq)
@@ -321,12 +339,13 @@ def get_entropy_bits(password):
                 # we add the new shortened password to the password variants.
                 # We don't replace the original (non shortened) variant since it
                 # might contain a dictionary word that was hidden by the shortening.
-                passwords_variants.add(PassVariant(tmp_pass, cur_pass.entropy))
+                shortened_pass = PassVariant(tmp_pass, cur_pass.entropy)
+                passwords_variants[shortened_pass.password] = shortened_pass
 
     if find_dict_words:
         # Looks for dictionary words in the password variants.
         dict_words = load_dict_words()
-        for cur_pass in passwords_variants:
+        for cur_pass in passwords_variants.values():
             clean_pass = ''.join(char for char in cur_pass.password if char != '\x00')
             if len(clean_pass) >= minwordlen:
                 # Creates a set with all the substrings of the password in it.
@@ -340,11 +359,11 @@ def get_entropy_bits(password):
                     # If no word is found in the password give it's entropy a bonus.
                     cur_pass.entropy += 6
 
-    for pwd in passwords_variants:
+    for pwd in passwords_variants.values():
         pwd.entropy += get_NIST_num_bits(pwd.password)
 
     # Find the minimum entropy among all password variants.
-    min_entropy = min(pass_variant.entropy for pass_variant in passwords_variants)
+    min_entropy = min(pass_variant.entropy for pass_variant in passwords_variants.values())
 
     # Also consider the entropy of running the get_NIST_num_bits variant
     # for repeated chars against the original password.
