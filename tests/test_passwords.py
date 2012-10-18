@@ -55,6 +55,8 @@ def test_get_password_strength():
     eq_(get_password_strength('nqgwxv9n93op'), 61)
     eq_(get_password_strength('4u%2U'), 48)
     eq_(get_password_strength('pacfwldj7wlx'), 61)
+    eq_(get_password_strength('asdf'), 11)
+    eq_(get_password_strength('2wsxploxsw2'), 50)
 
     eq_(get_password_strength('sYuj^gkCro*DBRj$'), 93)
     eq_(get_password_strength('aiCJvvjeQAWq!SKD'), 92)

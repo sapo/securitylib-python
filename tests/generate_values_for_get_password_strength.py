@@ -29,7 +29,10 @@ def get_password_strength_values():
     'pZm8uRk0HwBK',
     'nqgwxv9n93op',
     '4u%2U',
-    'pacfwldj7wlx']
+    'pacfwldj7wlx',
+    'asdf',
+    '2wsxploxsw2',
+    ]
 
     passwords_to_test = [
     'sYuj^gkCro*DBRj$',
