@@ -349,11 +349,11 @@ def get_entropy_bits(password):
             clean_pass = ''.join(char for char in cur_pass.password if char != '\x00')
             if len(clean_pass) >= minwordlen:
                 # Creates a set with all the substrings of the password in it.
-                substr_set = get_substrings_set(cur_pass.password, minwordlen)
+                substr_set = get_substrings_set(clean_pass, minwordlen)
                 for dict_word in dict_words:
                     # If a dictionary word is found in the substr_set then
                     # it means that word was part of the original password.
-                    if dict_word in substr_set and dict_word in cur_pass.password:
+                    if dict_word in substr_set and dict_word in clean_pass:
                         break
                 else:
                     # If no word is found in the password give it's entropy a bonus.
