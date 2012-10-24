@@ -250,7 +250,8 @@ def get_entropy_bits(password):
     # Hardcoded parameters
     find_keyboard_sequences = True
     find_dict_words = True
-    minwordlen = 4
+    minwordlen = 3
+    minword_accept_len = 6
 
     # If all the characters in the password are the same return early.
     n_different_characters = len(set(orig_pass))
@@ -347,6 +348,7 @@ def get_entropy_bits(password):
         dict_words = load_dict_words()
         for cur_pass in passwords_variants.values():
             clean_pass = ''.join(char for char in cur_pass.password if char != '\x00')
+            n_alpha_chars = len([char for char in clean_pass if char_is_lower(char)])
             if len(clean_pass) >= minwordlen:
                 # Creates a set with all the substrings of the password in it.
                 substr_set = get_substrings_set(clean_pass, minwordlen)
@@ -354,7 +356,16 @@ def get_entropy_bits(password):
                     # If a dictionary word is found in the substr_set then
                     # it means that word was part of the original password.
                     if dict_word in substr_set and dict_word in clean_pass:
-                        break
+                        if len(dict_word) >= minword_accept_len:
+                            break
+                        if len(dict_word) * 2 <= n_alpha_chars:
+                            continue
+                        start_match = clean_pass.index(dict_word)
+                        if start_match == 0:
+                            break
+                        if not char_is_lower(clean_pass[start_match - 1]):
+                            break
+
                 else:
                     # If no word is found in the password give it's entropy a bonus.
                     cur_pass.entropy += 6
@@ -376,6 +387,10 @@ def get_entropy_bits(password):
         min_entropy = orig_pass_entropy
 
     return min_entropy * keyspace_multiplier
+
+
+def char_is_lower(char):
+    return ord('a') <= ord(char) <= ord('z')
 
 
 def remove_sequence(string, keyboard_seq):
