@@ -29,6 +29,23 @@ KEYBOARD_SEQUENCES = [
 
 LICENCE_PLATE_REGEX = re.compile(r'([0-9]{2}|[a-zA-Z]{2})[.\-_]([0-9]{2}|[a-zA-Z]{2})[.\-_]([0-9]{2}|[a-zA-Z]{2})')
 
+DATE_REGEX = re.compile(r'(?<![0-9])(19|20)\d\d(?![0-9])')
+
+FULL_DATE_REGEXS = [
+    re.compile(r'(?<![0-9])(19|20)?\d\d(?P<sep>[- /._\\])(1[012]|0?[1-9])(?P=sep)([12][0-9]|3[01]|0?[1-9])(?![0-9])'),
+    re.compile(r'(?<![0-9])(19|20)?\d\d(?P<sep>[- /._\\])([12][0-9]|3[01]|0?[1-9])(?P=sep)(1[012]|0?[1-9])(?![0-9])'),
+    re.compile(r'(?<![0-9])(1[012]|0?[1-9])(?P<sep>[- /._\\])([12][0-9]|3[01]|0?[1-9])(?P=sep)(19|20)?\d\d(?![0-9])'),
+    re.compile(r'(?<![0-9])([12][0-9]|3[01]|0?[1-9])(?P<sep>[- /._\\])(1[012]|0?[1-9])(?P=sep)(19|20)?\d\d(?![0-9])'),
+
+    re.compile(r'(?<![0-9])(19|20)?\d\d(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])(?![0-9])'),
+    re.compile(r'(?<![0-9])(19|20)?\d\d(0[1-9]|[12][0-9]|3[01])(0[1-9]|1[012])(?![0-9])'),
+    re.compile(r'(?<![0-9])(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])(19|20)?\d\d(?![0-9])'),
+    re.compile(r'(?<![0-9])(0[1-9]|[12][0-9]|3[01])(0[1-9]|1[012])(19|20)?\d\d(?![0-9])'),
+
+    re.compile(r'(?<![0-9])(0[1-9]|1[012])[- /._\\](0[1-9]|[12][0-9]|3[01])(?![0-9])'),
+    re.compile(r'(?<![0-9])(0[1-9]|[12][0-9]|3[01])[- /._\\](0[1-9]|1[012])(?![0-9])'),
+]
+
 DICT_WORDS = None
 
 
@@ -261,6 +278,7 @@ def get_entropy_bits(password):
         return math.log(len(orig_pass) * 40) / math.log(2)
 
     orig_pass = handle_license_plates(orig_pass)
+    orig_pass = handle_dates(orig_pass)
 
     # Tests which types of character the password has.
     upper = False
@@ -382,9 +400,25 @@ def handle_license_plates(pwd):
         count_letters = sum(1 for c in filtered_license if c.islower())
         if count_letters == 2:
             # is valid license plate
-            start, end = m.span()
-            pwd = pwd[:start] + filtered_license + pwd[end:]
+            pwd = replace_at_span(pwd, filtered_license, m.start(), m.end())
     return pwd
+
+
+def handle_dates(pwd):
+    all_full_date_matches = (regex.search(pwd) for regex in FULL_DATE_REGEXS)
+    all_full_date_matches = filter(None, all_full_date_matches)
+    if all_full_date_matches:
+        maximum_match = max(all_full_date_matches, key=lambda m: m.end() - m.start())
+        pwd = replace_at_span(pwd, '\x00' * 4, maximum_match.start(), maximum_match.end())
+    else:
+        m = DATE_REGEX.search(pwd)
+        if m:
+            pwd = replace_at_span(pwd, '\x00' * 2, m.start(), m.end())
+    return pwd
+
+
+def replace_at_span(orig_str, replacer, start, end):
+    return orig_str[:start] + replacer + orig_str[end:]
 
 
 def char_is_lower(char):
