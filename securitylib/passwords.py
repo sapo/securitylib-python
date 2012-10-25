@@ -306,20 +306,6 @@ def get_entropy_bits(password):
     passwords_variants[lower_pass.password] = lower_pass
     passwords_variants[rev_pass.password] = rev_pass
 
-    # Keyboard shifting password variants
-    if lower_pass.password.translate(None, 'aq1sw2de3fr4gt5hy6ju7i8o90') == '':
-        keyboardmap_downright = string.maketrans('aq1sw2de3fr4gt5hy6ju7i8o90', 'zaqxswcdevfrbgtnhymjukilop')
-        downright_pass = PassVariant(lower_pass.password.translate(keyboardmap_downright), 2)
-        passwords_variants[downright_pass.password] = downright_pass
-        downright_pass_reversed = reverse_password(downright_pass)
-        passwords_variants[downright_pass_reversed.password] = downright_pass_reversed
-    if lower_pass.password.translate(None, '2w3se4dr5ft6gy7hu8ji9ko0p') == '':
-        keyboardmap_downleft = string.maketrans('2w3se4dr5ft6gy7hu8ji9ko0p', 'qawzsexdrcftvgybhunjimkol')
-        downleft_pass = PassVariant(lower_pass.password.translate(keyboardmap_downleft), 2)
-        passwords_variants[downleft_pass.password] = downleft_pass
-        downleft_pass_reversed = reverse_password(downleft_pass)
-        passwords_variants[downleft_pass_reversed.password] = downleft_pass_reversed
-
     # Leet-speak substitutions variants
     leetspeakmap = string.maketrans('@!$1234567890', 'aisizeasgtbgo')
     leetspeak_pass = PassVariant(lower_pass.password.translate(leetspeakmap), 1)
