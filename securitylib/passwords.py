@@ -258,7 +258,7 @@ def get_entropy_bits(password):
     # If all the characters in the password are the same return early.
     n_different_characters = len(set(orig_pass))
     if n_different_characters == 1:
-        return 6
+        return math.log(len(orig_pass) * 40) / math.log(2)
 
     orig_pass = handle_license_plates(orig_pass)
 
