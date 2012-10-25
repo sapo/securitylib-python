@@ -9,6 +9,7 @@ from securitylib.utils import randomize, get_random_element
 import string
 import math
 import os
+import re
 
 __all__ = ['generate_password', 'validate_password', 'get_password_strength', 'get_entropy_bits']
 
@@ -26,6 +27,8 @@ KEYBOARD_SEQUENCES = [
     "02468",
     "a1b2c3d4e5f6g7h8i9j0",
 ]
+
+LICENCE_PLATE_REGEX = re.compile(r'([0-9]{2}|[a-zA-Z]{2})[.\-_]([0-9]{2}|[a-zA-Z]{2})[.\-_]([0-9]{2}|[a-zA-Z]{2})')
 
 DICT_WORDS = None
 
@@ -258,6 +261,8 @@ def get_entropy_bits(password):
     if n_different_characters == 1:
         return 6
 
+    orig_pass = handle_license_plates(orig_pass)
+
     # Tests which types of character the password has.
     upper = False
     lower = False
@@ -387,6 +392,18 @@ def get_entropy_bits(password):
         min_entropy = orig_pass_entropy
 
     return min_entropy * keyspace_multiplier
+
+
+def handle_license_plates(pwd):
+    m = LICENCE_PLATE_REGEX.search(pwd)
+    if m:
+        filtered_license = ''.join(filter(None, m.groups()))
+        count_letters = sum(1 for c in filtered_license if c.islower())
+        if count_letters == 2:
+            # is valid license plate
+            start, end = m.span()
+            pwd = pwd[:start] + filtered_license + pwd[end:]
+    return pwd
 
 
 def char_is_lower(char):
