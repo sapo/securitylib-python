@@ -310,14 +310,10 @@ def get_entropy_bits(password):
     leetspeakmap = string.maketrans('@!$1234567890', 'aisizeasgtbgo')
     leetspeak_pass = PassVariant(lower_pass.password.translate(leetspeakmap), 1)
     passwords_variants[leetspeak_pass.password] = leetspeak_pass
-    leetspeak_pass_reversed = reverse_password(leetspeak_pass)
-    passwords_variants[leetspeak_pass_reversed.password] = leetspeak_pass_reversed
 
     leetspeakmap2 = string.maketrans('@!$1234567890', 'aislzeasgtbgo')
     leetspeak_pass2 = PassVariant(lower_pass.password.translate(leetspeakmap2), 1)
     passwords_variants[leetspeak_pass2.password] = leetspeak_pass2
-    leetspeak_pass2_reversed = reverse_password(leetspeak_pass2)
-    passwords_variants[leetspeak_pass2_reversed.password] = leetspeak_pass2_reversed
 
     if find_keyboard_sequences:
         # Tries to find sequences from keyboard
