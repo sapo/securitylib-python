@@ -25,6 +25,7 @@ KEYBOARD_SEQUENCES = [
     "13579",
     "02468",
     "a1b2c3d4e5f6g7h8i9j0",
+    "1q2w3e4r5t6y7u8i9o0p",
 ]
 
 LICENCE_PLATE_REGEX = re.compile(r'([0-9]{2}|[a-zA-Z]{2})[.\-_]([0-9]{2}|[a-zA-Z]{2})[.\-_]([0-9]{2}|[a-zA-Z]{2})')
