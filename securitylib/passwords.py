@@ -285,6 +285,7 @@ def get_entropy_bits(password):
     upper = False
     lower = False
     digits = False
+    common_separators = False
     other = False
     for char in orig_pass:
         ord_chr = ord(char)
@@ -294,6 +295,8 @@ def get_entropy_bits(password):
             lower = True
         elif ord('0') <= ord_chr <= ord('9'):
             digits = True
+        elif char in ' ._-':
+            common_separators = True
         else:
             other = True
 
@@ -306,8 +309,10 @@ def get_entropy_bits(password):
         keyspace_multiplier += 26
     if digits:
         keyspace_multiplier += 10
+    if common_separators:
+        keyspace_multiplier += 4
     if other:
-        keyspace_multiplier += 32
+        keyspace_multiplier += 28
     # Converts the keyspace_multiplier to multiply bits of entropy
     # and uses 26 (lowercase keyspace size) as the baseline,
     # i.e. if the password keyspace size is 26, the multiplier will be
