@@ -278,9 +278,6 @@ def get_entropy_bits(password):
     if n_different_characters == 1:
         return math.log(len(orig_pass) * 40) / math.log(2)
 
-    orig_pass = handle_license_plates(orig_pass)
-    orig_pass = handle_dates(orig_pass)
-
     # Tests which types of character the password has.
     upper = False
     lower = False
@@ -318,6 +315,9 @@ def get_entropy_bits(password):
     # i.e. if the password keyspace size is 26, the multiplier will be
     # equal to 1.
     keyspace_multiplier = math.log(keyspace_multiplier) / math.log(26)
+
+    orig_pass = handle_license_plates(orig_pass)
+    orig_pass = handle_dates(orig_pass)
 
     ### Creates many variants of the origial password ###
     # Lowercase variant
