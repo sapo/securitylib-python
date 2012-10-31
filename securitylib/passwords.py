@@ -368,7 +368,7 @@ def get_entropy_bits(password):
                     if dict_word in substr_set and dict_word in clean_pass:
                         if len(dict_word) >= minword_accept_len:
                             break
-                        if len(dict_word) * 2 <= n_alpha_chars:
+                        if len(dict_word) * 2 < n_alpha_chars:
                             continue
                         start_match = clean_pass.index(dict_word)
                         if start_match == 0:
