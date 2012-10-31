@@ -17,6 +17,7 @@ afp
 age
 agi
 ago
+aha
 aia
 aid
 ail
@@ -69,6 +70,7 @@ aso
 ass
 ata
 ate
+atm
 ato
 ava
 ave
@@ -76,6 +78,7 @@ avo
 awe
 aye
 azo
+baa
 bad
 bag
 ban
@@ -84,6 +87,7 @@ bar
 bat
 bay
 bbc
+bbq
 bce
 bci
 bcm
@@ -145,6 +149,7 @@ cds
 cdu
 cei
 cem
+ceo
 ces
 ceu
 cgd
@@ -215,6 +220,7 @@ dig
 dim
 din
 dip
+dis
 diu
 diz
 dna
@@ -247,6 +253,7 @@ edi
 edo
 edp
 eel
+efl
 egg
 ego
 eis
@@ -268,6 +275,8 @@ era
 erg
 err
 esa
+esl
+esp
 eta
 etc
 eua
@@ -281,6 +290,7 @@ eye
 fac
 fad
 fae
+fag
 fan
 fap
 far
@@ -326,12 +336,14 @@ fsf
 fui
 fun
 fur
+fyi
 gab
 gag
 gal
 gap
 gas
 gay
+ged
 gee
 gel
 gem
@@ -352,6 +364,7 @@ god
 goo
 gop
 got
+gpa
 gpl
 gps
 gui
@@ -361,6 +374,7 @@ gus
 gut
 guy
 gym
+gyp
 had
 hae
 hag
@@ -385,6 +399,8 @@ him
 hip
 his
 hit
+hiv
+hmo
 hoa
 hoe
 hog
@@ -511,6 +527,7 @@ lha
 lhe
 lho
 lia
+lib
 lid
 lie
 lii
@@ -551,6 +568,7 @@ mat
 mau
 max
 may
+med
 mee
 meg
 mei
@@ -595,10 +613,13 @@ nau
 nay
 nba
 ned
+nee
 nem
 net
 new
+nfl
 nga
+nhl
 nia
 nil
 nip
@@ -621,6 +642,7 @@ nut
 oaf
 oak
 oar
+oat
 oca
 oco
 oda
@@ -673,6 +695,7 @@ pcp
 pdf
 pdm
 pea
+pee
 peg
 pei
 pen
@@ -694,11 +717,13 @@ pit
 pln
 ply
 pme
+pms
 pod
 pok
 pop
 por
 pot
+pow
 pra
 prd
 pro
@@ -731,7 +756,9 @@ rda
 rdp
 rea
 red
+ref
 rei
+rep
 rev
 rex
 rey
@@ -782,6 +809,7 @@ sap
 sat
 sau
 saw
+sax
 say
 scp
 sea
@@ -869,6 +897,7 @@ thi
 thu
 thy
 tia
+tic
 tie
 til
 tim
@@ -877,6 +906,7 @@ tio
 tip
 tis
 tit
+tlc
 tlp
 tnt
 toa
@@ -899,6 +929,7 @@ tub
 tug
 tui
 tum
+tux
 tvi
 tvs
 two
@@ -1005,6 +1036,7 @@ yao
 yap
 yee
 yen
+yep
 yer
 yes
 yet
@@ -1012,8 +1044,11 @@ yew
 yon
 you
 yuk
+yum
 yun
+zap
 zip
+zit
 zoa
 zoe
 zoo
@@ -1035,6 +1070,7 @@ aces
 acha
 ache
 acho
+achy
 acid
 acne
 acre
@@ -1149,6 +1185,7 @@ amen
 ames
 amid
 amie
+ammo
 amok
 amor
 amos
@@ -1198,6 +1235,7 @@ apta
 apto
 apus
 aqui
+arab
 arai
 aram
 arar
@@ -1239,6 +1277,7 @@ arte
 arts
 asai
 asam
+asap
 asar
 asas
 asco
@@ -1293,6 +1332,7 @@ avow
 away
 awed
 awes
+awol
 awry
 axed
 axel
@@ -1338,6 +1378,7 @@ bans
 barb
 bard
 bare
+barf
 bari
 bark
 barn
@@ -1371,6 +1412,7 @@ beco
 beds
 beef
 been
+beep
 beer
 bees
 beet
@@ -1414,6 +1456,7 @@ biso
 bite
 bits
 blab
+blah
 bled
 blew
 blip
@@ -1454,6 +1497,7 @@ bone
 bong
 bons
 bony
+boob
 book
 boom
 boon
@@ -1474,6 +1518,7 @@ bows
 boxe
 boyd
 boys
+bozo
 bpsm
 brad
 brag
@@ -1537,6 +1582,7 @@ cace
 caco
 cada
 caem
+cafe
 caga
 cage
 cago
@@ -1636,6 +1682,7 @@ chie
 chin
 chio
 chip
+chit
 chop
 chow
 chug
@@ -1691,6 +1738,7 @@ code
 codi
 cods
 cody
+coed
 coei
 coem
 coes
@@ -1767,6 +1815,7 @@ cris
 crop
 crow
 crua
+crud
 crus
 crux
 cruz
@@ -1793,6 +1842,7 @@ cure
 curl
 curo
 curt
+cuss
 cute
 cuts
 cyst
@@ -1944,6 +1994,8 @@ doou
 dope
 dora
 dori
+dork
+dorm
 dosa
 dose
 doso
@@ -1998,6 +2050,7 @@ duty
 dyan
 dyed
 dyes
+dyke
 each
 earl
 earn
@@ -2127,8 +2180,10 @@ evil
 evon
 ewes
 exam
+exec
 exie
 exit
+expo
 eyed
 eyes
 ezra
@@ -2161,6 +2216,7 @@ fara
 fare
 farm
 faro
+fart
 fase
 fast
 fate
@@ -2196,6 +2252,8 @@ fera
 fere
 feri
 fern
+fest
+fete
 feto
 feud
 fgps
@@ -2203,6 +2261,7 @@ fiai
 fiam
 fiar
 fias
+fiat
 fibs
 fica
 fico
@@ -2243,6 +2302,7 @@ fixa
 fixe
 fixo
 fizz
+flab
 flag
 flak
 flap
@@ -2261,6 +2321,7 @@ flor
 flow
 floy
 flua
+flub
 flue
 flui
 fluo
@@ -2268,6 +2329,7 @@ flux
 foal
 foam
 foca
+foci
 foco
 foes
 fofa
@@ -2299,6 +2361,7 @@ four
 fowl
 foxy
 fran
+frat
 fray
 fred
 free
@@ -2311,6 +2374,7 @@ from
 frua
 frui
 fruo
+fuck
 fuel
 fuga
 fugi
@@ -2323,6 +2387,7 @@ fuma
 fume
 fumo
 fund
+funk
 fura
 fure
 furl
@@ -2384,6 +2449,7 @@ geai
 gear
 geed
 geei
+geek
 gees
 geia
 geie
@@ -2431,10 +2497,12 @@ glad
 glee
 glen
 glib
+glob
 glow
 glue
 glum
 glut
+gmat
 gnat
 gnaw
 gnus
@@ -2473,6 +2541,7 @@ goza
 goze
 gozo
 grab
+grad
 gram
 grau
 gray
@@ -2489,6 +2558,7 @@ grou
 grow
 grua
 grub
+guff
 guia
 guie
 guio
@@ -2498,6 +2568,7 @@ gull
 gulp
 gume
 gums
+gunk
 guns
 guru
 gush
@@ -2546,6 +2617,7 @@ heap
 hear
 heat
 hebe
+heck
 heda
 hedy
 heed
@@ -2567,6 +2639,7 @@ here
 hero
 hers
 hess
+hewn
 hews
 hick
 hide
@@ -2643,6 +2716,7 @@ husk
 huts
 hymn
 hyon
+hype
 hyun
 iago
 iana
@@ -2653,6 +2727,7 @@ icei
 icem
 icep
 ices
+icky
 icon
 idas
 idea
@@ -2664,6 +2739,7 @@ idol
 idos
 iefp
 iene
+iffy
 igor
 ilca
 ilda
@@ -2763,7 +2839,9 @@ jazi
 jazo
 jazz
 jean
+jeep
 jeer
+jeez
 jeff
 jell
 jena
@@ -2783,10 +2861,12 @@ jilt
 jina
 jinx
 jipe
+jive
 joan
 joao
 joas
 jobs
+jock
 jodi
 jody
 joel
@@ -3045,6 +3125,7 @@ liso
 lisp
 list
 lita
+lite
 lito
 live
 lixa
@@ -3213,6 +3294,7 @@ maul
 maus
 maya
 maye
+mayo
 mays
 maze
 mdjd
@@ -3230,6 +3312,7 @@ meet
 meia
 meio
 mela
+meld
 mele
 melo
 melt
@@ -3290,6 +3373,7 @@ mind
 mine
 ming
 minh
+mini
 mink
 mino
 mint
@@ -3349,6 +3433,7 @@ mova
 move
 movi
 movo
+mown
 mows
 mpla
 mrpp
@@ -3406,6 +3491,7 @@ naod
 nape
 naps
 nara
+narc
 nasa
 nata
 nato
@@ -3430,6 +3516,7 @@ nely
 nemo
 nena
 neon
+nerd
 nero
 nery
 nest
@@ -3477,6 +3564,7 @@ none
 nono
 nook
 noon
+nope
 nora
 norm
 nose
@@ -3491,6 +3579,7 @@ novo
 nuas
 nuca
 nude
+nuke
 nula
 null
 nulo
@@ -3505,6 +3594,7 @@ oafs
 oaks
 oars
 oath
+oats
 obey
 oboe
 obra
@@ -3531,6 +3621,7 @@ ohio
 ohms
 oils
 oily
+oink
 oiro
 oito
 okay
@@ -3555,6 +3646,7 @@ only
 onto
 onus
 onze
+oops
 ooze
 opal
 open
@@ -3717,6 +3809,7 @@ peps
 pera
 perk
 perl
+perm
 pert
 peru
 pesa
@@ -3747,6 +3840,7 @@ pila
 pile
 pill
 pilo
+pimp
 pina
 pine
 ping
@@ -3766,6 +3860,7 @@ piro
 pisa
 pise
 piso
+piss
 pito
 pits
 pity
@@ -3773,6 +3868,7 @@ piza
 plan
 play
 plea
+pled
 plod
 plop
 plot
@@ -3809,10 +3905,12 @@ pope
 pops
 pore
 pork
+porn
 poro
 port
 posa
 pose
+posh
 poso
 post
 posy
@@ -3823,6 +3921,7 @@ pout
 povo
 pram
 pray
+prep
 prey
 prim
 proa
@@ -3870,6 +3969,7 @@ puxa
 puxe
 puxo
 pyre
+quad
 qual
 quar
 quay
@@ -3934,6 +4034,7 @@ ravi
 raye
 rays
 raze
+razz
 rdtl
 read
 real
@@ -4076,6 +4177,7 @@ rose
 ross
 rosy
 rota
+rotc
 rote
 roto
 rots
@@ -4084,6 +4186,7 @@ rows
 roxa
 roxo
 roxy
+rsvp
 ruam
 ruas
 rubi
@@ -4169,12 +4272,16 @@ sara
 sare
 sari
 saro
+sase
 sash
+sass
 saul
 save
+sawn
 saws
 says
 scab
+scam
 scan
 scar
 scot
@@ -4236,6 +4343,7 @@ shed
 shes
 shin
 ship
+shit
 shod
 shoe
 shon
@@ -4255,6 +4363,7 @@ siga
 sigh
 sign
 sigo
+sikh
 silk
 sill
 silo
@@ -4313,6 +4422,7 @@ smut
 snag
 snap
 snip
+snit
 snob
 snot
 snow
@@ -4386,6 +4496,7 @@ stab
 stag
 stan
 star
+stat
 stay
 stcp
 stem
@@ -4446,6 +4557,7 @@ sway
 swig
 swim
 swum
+sync
 tabs
 tabu
 tack
@@ -4476,6 +4588,7 @@ tara
 tare
 tari
 taro
+tarp
 tars
 tart
 task
@@ -4507,6 +4620,7 @@ tema
 teme
 temi
 temo
+temp
 tena
 tend
 tens
@@ -4599,8 +4713,10 @@ toed
 toei
 toem
 toes
+tofu
 toga
 togo
+togs
 toil
 tola
 told
@@ -4631,6 +4747,7 @@ tore
 tori
 torn
 toro
+tort
 tory
 toss
 tote
@@ -4681,15 +4798,20 @@ tugs
 tula
 tuna
 tune
+turd
 turf
 turn
+tush
 tusk
 tutu
 twee
 twig
 twin
+twit
 twos
+tyke
 type
+typo
 tyra
 uefa
 ufos
@@ -4875,6 +4997,7 @@ wand
 wane
 want
 ward
+ware
 warm
 warn
 warp
@@ -4907,6 +5030,7 @@ wept
 were
 west
 wets
+wham
 what
 when
 whet
@@ -4926,10 +5050,12 @@ wild
 will
 wilt
 wily
+wimp
 wind
 wine
 wing
 wink
+wino
 wins
 wipe
 wire
@@ -4995,6 +5121,7 @@ yara
 yard
 yarn
 yawn
+yeah
 year
 yeda
 yell
@@ -5420,6 +5547,7 @@ almir
 aloca
 aloco
 aloft
+aloha
 alois
 aloja
 aloje
@@ -5563,6 +5691,7 @@ anger
 angie
 angla
 angle
+anglo
 angra
 angry
 angst
@@ -5717,6 +5846,7 @@ arguo
 arias
 arica
 ariel
+aries
 arine
 arise
 arlen
@@ -5761,6 +5891,7 @@ arruo
 arson
 artes
 artie
+artsy
 artur
 aruna
 arvoa
@@ -5904,6 +6035,7 @@ await
 awake
 award
 aware
+awash
 awful
 awing
 awoke
@@ -6050,6 +6182,7 @@ basto
 batam
 batas
 batch
+bated
 batei
 batel
 batem
@@ -6085,6 +6218,7 @@ beber
 bebes
 bebeu
 bebia
+bebop
 becki
 becky
 becos
@@ -6171,13 +6305,16 @@ bigle
 bigot
 bijal
 biked
+biker
 bikes
 bilha
 billi
 bills
 billy
 bimba
+bimbo
 binds
+binge
 bingo
 biped
 bique
@@ -6212,6 +6349,7 @@ blame
 bland
 blank
 blare
+blase
 blast
 blaze
 bleak
@@ -6304,6 +6442,7 @@ bonde
 bonds
 boned
 bones
+bongo
 bonny
 bonus
 booby
@@ -6543,11 +6682,13 @@ butte
 butts
 buxom
 buyer
+bylaw
 byron
 bytes
 byway
 cabal
 cabaz
+cabby
 cabei
 cabem
 caber
@@ -6570,6 +6711,7 @@ cacos
 cacti
 cacto
 cadet
+cadre
 cagai
 cagam
 cagar
@@ -6747,6 +6889,7 @@ cathi
 cathy
 catia
 catou
+catty
 cauda
 caule
 caulk
@@ -6946,6 +7089,7 @@ chris
 chuck
 chugs
 chulo
+chump
 chums
 chung
 chunk
@@ -7094,6 +7238,7 @@ clued
 clues
 clump
 clung
+clunk
 clvii
 clxii
 clxiv
@@ -7196,11 +7341,13 @@ comer
 comes
 comet
 comeu
+comfy
 comia
 comic
 comma
 comum
 conde
+condo
 cones
 congo
 conta
@@ -7320,6 +7467,7 @@ cramp
 crams
 crane
 crank
+craps
 crase
 crash
 crass
@@ -7354,6 +7502,7 @@ criam
 criar
 crias
 cribs
+crick
 crida
 crido
 cried
@@ -7361,6 +7510,7 @@ criei
 criem
 cries
 crime
+crimp
 criou
 crise
 crisp
@@ -7450,6 +7600,7 @@ curto
 curva
 curve
 curvo
+curvy
 cuspa
 cuspe
 cuspi
@@ -7567,12 +7718,15 @@ debra
 debts
 debug
 debut
+decaf
 decai
+decal
 decay
 decia
 decil
 decio
 decks
+decor
 decoy
 decry
 dedal
@@ -7627,6 +7781,7 @@ depth
 depus
 deram
 deras
+derby
 derek
 derem
 deres
@@ -7642,6 +7797,7 @@ desse
 desta
 deste
 deter
+detox
 detra
 deusa
 devam
@@ -7667,6 +7823,7 @@ diary
 dicas
 diced
 dices
+dicey
 didia
 diego
 dieta
@@ -7806,6 +7963,7 @@ dores
 doria
 dorie
 doris
+dorky
 dorla
 dorme
 dormi
@@ -7982,6 +8140,7 @@ edged
 edger
 edges
 edict
+edify
 edina
 edine
 edipo
@@ -8030,6 +8189,7 @@ eleni
 eleva
 eleve
 elevo
+elfin
 elgar
 elias
 elida
@@ -8075,6 +8235,7 @@ emano
 emaus
 embed
 ember
+emcee
 emely
 emery
 emiko
@@ -8575,6 +8736,7 @@ fixos
 fixou
 fizer
 fizzy
+fjord
 flags
 flail
 flair
@@ -8778,6 +8940,7 @@ frita
 frite
 frito
 fritz
+frizz
 frock
 frogs
 frond
@@ -8830,6 +8993,7 @@ fungi
 fungo
 funil
 funis
+funky
 funny
 furai
 furam
@@ -8858,6 +9022,7 @@ gabai
 gabam
 gabar
 gabas
+gabby
 gabei
 gabem
 gabes
@@ -8866,6 +9031,7 @@ gabou
 gados
 gaela
 gaele
+gaffe
 gagas
 gagos
 gaily
@@ -8933,6 +9099,7 @@ garry
 garth
 gases
 gasps
+gassy
 gasta
 gaste
 gasto
@@ -8963,6 +9130,7 @@ geara
 gears
 geava
 geeis
+geeky
 geese
 geiam
 geias
@@ -9026,6 +9194,7 @@ gesse
 gesso
 gesta
 gesto
+getup
 ghost
 ghoul
 giani
@@ -9067,6 +9236,7 @@ gizas
 gizei
 gizem
 gizes
+gizmo
 gizou
 glade
 glads
@@ -9083,6 +9253,7 @@ glens
 glide
 glifo
 glint
+glitz
 gloat
 globe
 globo
@@ -9114,6 +9285,7 @@ goela
 goele
 goelo
 goesa
+gofer
 going
 golas
 golda
@@ -9123,6 +9295,7 @@ golfa
 golfe
 golfo
 golfs
+golly
 golos
 golpe
 gomes
@@ -9159,6 +9332,7 @@ gosta
 goste
 gosto
 gotas
+gotta
 gouge
 gourd
 gowns
@@ -9304,14 +9478,19 @@ gulfs
 gulls
 gully
 gulps
+gumbo
 gumes
 gummy
 guppy
 gurus
+gushy
+gusto
 gusts
 gusty
+gutsy
 guyed
 gwenn
+gypsy
 habit
 hacks
 haide
@@ -9392,6 +9571,7 @@ heidi
 heidy
 heike
 heirs
+heist
 helda
 heldo
 helen
@@ -9439,6 +9619,7 @@ hindu
 hinge
 hinos
 hints
+hippo
 hippy
 hiram
 hired
@@ -9454,6 +9635,7 @@ hobby
 hobos
 hocks
 hoist
+hokey
 holds
 holed
 holes
@@ -9500,6 +9682,7 @@ house
 houve
 hovel
 hover
+howdy
 howls
 huffs
 huffy
@@ -9528,6 +9711,7 @@ hutch
 hyena
 hyman
 hymns
+hyper
 iambo
 ianis
 iates
@@ -9584,6 +9768,7 @@ imago
 imame
 imane
 imbua
+imbue
 imbui
 imbuo
 imita
@@ -9649,6 +9834,7 @@ inter
 intua
 intui
 intuo
+inuit
 iodai
 iodam
 iodar
@@ -9775,6 +9961,7 @@ jazer
 jazes
 jazeu
 jazia
+jazzy
 jeana
 jeane
 jeans
@@ -9853,6 +10040,7 @@ josue
 joule
 jovan
 jovem
+jowls
 joyce
 joyed
 juana
@@ -9910,6 +10098,7 @@ kaley
 kalyn
 kandi
 kandy
+kaput
 karan
 karat
 karen
@@ -9969,6 +10158,7 @@ khaki
 kiana
 kiara
 kicks
+kiddo
 kiera
 kieth
 kiley
@@ -9991,6 +10181,7 @@ kiwis
 kizzy
 klara
 klein
+klutz
 knack
 knead
 kneed
@@ -10151,6 +10342,7 @@ leana
 leann
 leans
 leaps
+leapt
 learn
 lease
 leash
@@ -10174,6 +10366,8 @@ legal
 legam
 legar
 legas
+leggy
+legit
 legou
 legue
 leiam
@@ -10409,6 +10603,7 @@ lolls
 lomba
 lombo
 londa
+loner
 longa
 longe
 longo
@@ -10577,6 +10772,7 @@ madge
 madie
 madly
 madre
+mafia
 mafra
 magan
 magas
@@ -10673,6 +10869,7 @@ mansa
 manso
 manta
 manto
+maori
 mapas
 maple
 marca
@@ -10751,6 +10948,7 @@ mayor
 mayra
 mazes
 mazie
+mccoy
 meada
 meado
 meals
@@ -10759,6 +10957,8 @@ means
 meant
 meato
 meats
+meaty
+mecca
 mecha
 mecia
 medal
@@ -10786,6 +10986,7 @@ melas
 melba
 melco
 melda
+melee
 melei
 melem
 meles
@@ -10935,6 +11136,7 @@ minsk
 minta
 minto
 mints
+minty
 minus
 miolo
 mirai
@@ -11021,6 +11223,8 @@ molhe
 molho
 molly
 molts
+momma
+mommy
 monas
 monco
 monda
@@ -11039,6 +11243,7 @@ month
 monto
 monty
 monza
+mooch
 moods
 moody
 mooed
@@ -11194,6 +11399,7 @@ mutts
 mutua
 mutue
 mutuo
+muzak
 myles
 myong
 myrle
@@ -11242,6 +11448,7 @@ nando
 nanei
 nanem
 nanes
+nanny
 nanou
 naoma
 naomi
@@ -11301,6 +11508,7 @@ nelsa
 neoma
 neomi
 nepal
+nerdy
 nereu
 nerve
 nervo
@@ -11515,6 +11723,7 @@ okras
 olavo
 olden
 older
+oldie
 oleai
 olear
 oleei
@@ -11853,6 +12062,7 @@ pavor
 pawed
 pawns
 payed
+payee
 payer
 pazes
 peace
@@ -11940,6 +12150,7 @@ pente
 peons
 peony
 pepio
+peppy
 peque
 peral
 perca
@@ -12006,6 +12217,7 @@ pieis
 piela
 piers
 piety
+piggy
 piked
 pikes
 pilai
@@ -12039,6 +12251,7 @@ pinta
 pinte
 pinto
 pints
+pinup
 piora
 piore
 pioro
@@ -12114,7 +12327,9 @@ plumb
 plume
 plump
 plums
+plunk
 plush
+pluto
 pneus
 poach
 pobre
@@ -12183,6 +12398,7 @@ ponho
 ponta
 ponte
 ponto
+pooch
 pools
 poops
 poppy
@@ -12219,6 +12435,7 @@ posts
 potes
 potra
 potro
+potty
 pouca
 pouch
 pouco
@@ -12289,6 +12506,7 @@ probe
 prods
 profs
 prole
+promo
 proms
 prone
 prong
@@ -12316,6 +12534,7 @@ psalm
 psico
 pskov
 psych
+pubic
 pucks
 puder
 pudgy
@@ -12397,7 +12616,10 @@ puxem
 puxes
 puxos
 puxou
+pygmy
+pylon
 pyres
+pyrex
 qiana
 quack
 quail
@@ -12455,6 +12677,7 @@ radia
 radie
 radii
 radio
+radon
 rafai
 rafam
 rafar
@@ -12556,6 +12779,7 @@ raspa
 raspe
 raspo
 rasps
+raspy
 rasto
 ratai
 ratam
@@ -12650,6 +12874,7 @@ regra
 regre
 regro
 regue
+rehab
 reiam
 reias
 reign
@@ -12720,6 +12945,7 @@ repta
 repte
 repto
 repus
+rerun
 reset
 resin
 resma
@@ -12841,6 +13067,7 @@ ritma
 ritme
 ritmo
 ritos
+ritzy
 rival
 rivca
 river
@@ -13191,6 +13418,7 @@ saula
 saulo
 sauna
 sauro
+saute
 saved
 saver
 saves
@@ -13199,6 +13427,7 @@ savor
 savvy
 sawed
 scabs
+scads
 scala
 scald
 scale
@@ -13322,6 +13551,7 @@ serze
 serzi
 sesta
 setas
+setup
 seven
 sever
 sewed
@@ -13362,6 +13592,7 @@ sheen
 sheep
 sheer
 sheet
+sheik
 shela
 shelf
 shell
@@ -13392,6 +13623,7 @@ shoos
 shoot
 shops
 shore
+shorn
 short
 shots
 shout
@@ -13406,9 +13638,11 @@ shrug
 shuck
 shuns
 shunt
+shush
 shuts
 shyer
 shyla
+shyly
 sibyl
 sicks
 sidas
@@ -13432,6 +13666,7 @@ signs
 sigui
 silas
 silks
+silky
 sills
 silly
 silos
@@ -13497,6 +13732,7 @@ skein
 skews
 skids
 skied
+skier
 skies
 skill
 skimp
@@ -13551,9 +13787,11 @@ slump
 slums
 slung
 slunk
+slurp
 slurs
 slush
 sluts
+slyly
 smack
 small
 smart
@@ -13571,6 +13809,7 @@ smoky
 smote
 smuts
 snack
+snafu
 snags
 snail
 snake
@@ -13593,6 +13832,7 @@ snout
 snows
 snowy
 snubs
+snuck
 snuff
 snugs
 soada
@@ -13625,6 +13865,7 @@ sofra
 sofre
 sofri
 sofro
+softy
 soggy
 sogra
 sogro
@@ -13730,6 +13971,7 @@ spear
 speck
 speed
 spell
+spelt
 spend
 spent
 sperm
@@ -13737,6 +13979,7 @@ spews
 spice
 spicy
 spied
+spiel
 spies
 spike
 spill
@@ -13746,6 +13989,7 @@ spire
 spite
 spits
 splat
+splay
 split
 spoil
 spoke
@@ -13790,6 +14034,7 @@ stark
 starr
 stars
 start
+stash
 state
 stave
 stays
@@ -13808,11 +14053,13 @@ stews
 stick
 stiff
 still
+stilt
 sting
 stink
 stint
 stirs
 stock
+stoic
 stoke
 stole
 stomp
@@ -13939,6 +14186,7 @@ suzan
 suzie
 swabs
 swamp
+swank
 swans
 swaps
 swarm
@@ -13959,6 +14207,7 @@ swing
 swipe
 swirl
 swish
+swiss
 swoon
 swoop
 sword
@@ -13967,6 +14216,7 @@ sworn
 swung
 sybil
 syble
+synod
 syrup
 szabo
 tabby
@@ -13983,6 +14233,7 @@ tacky
 tacos
 tacto
 tadeu
+taffy
 tails
 taina
 taint
@@ -14028,6 +14279,7 @@ tange
 tangi
 tango
 tangs
+tangy
 tania
 tanja
 tanjo
@@ -14063,6 +14315,7 @@ tares
 tarja
 tarje
 tarjo
+tarot
 tarou
 tarra
 tarry
@@ -14189,6 +14442,7 @@ testa
 teste
 testo
 tests
+testy
 tetas
 texas
 texto
@@ -14295,6 +14549,7 @@ tisha
 title
 titus
 tiver
+tizzy
 toada
 toado
 toads
@@ -14312,6 +14567,7 @@ tocou
 todas
 today
 todos
+toefl
 toeis
 togai
 togam
@@ -14505,6 +14761,7 @@ trick
 tried
 tries
 trigo
+trike
 trill
 trims
 trina
@@ -14528,6 +14785,7 @@ troem
 troes
 trofa
 troll
+tromp
 trono
 troop
 troou
@@ -14559,6 +14817,7 @@ trust
 truta
 truth
 tubas
+tubby
 tubed
 tubes
 tubos
@@ -14612,6 +14871,7 @@ twang
 tweak
 tweed
 tweet
+twerp
 twice
 twigs
 twila
@@ -14686,6 +14946,7 @@ untes
 untie
 until
 untou
+unzip
 upend
 upped
 upper
@@ -14852,6 +15113,7 @@ vedem
 vedes
 vedou
 veers
+vegan
 veias
 veiga
 veils
@@ -14947,6 +15209,7 @@ viaje
 viajo
 vials
 viana
+vibes
 vibra
 vibre
 vibro
@@ -15103,6 +15366,7 @@ vulgo
 vulto
 vulva
 vying
+wacky
 waded
 wades
 wafer
@@ -15131,6 +15395,7 @@ wanes
 wanna
 wants
 wards
+wares
 warms
 warns
 warps
@@ -15161,6 +15426,7 @@ weigh
 weird
 welds
 wells
+welsh
 welts
 wendi
 wendy
@@ -15196,12 +15462,14 @@ wield
 wilda
 wilde
 wilds
+wiles
 wiley
 willa
 wills
 willy
 wilma
 wilts
+wimpy
 wince
 winch
 winds
@@ -15232,6 +15500,8 @@ woods
 woody
 wooed
 woofs
+wooly
+woozy
 words
 wordy
 works
@@ -15259,6 +15529,7 @@ wrong
 wrote
 wrung
 wryer
+wryly
 wyatt
 xaile
 xales
@@ -15269,6 +15540,7 @@ xenio
 xenon
 xeque
 xerez
+xerox
 xhtml
 xiita
 xinga
@@ -15304,6 +15576,8 @@ young
 yours
 youth
 yowls
+yucky
+yummy
 yvone
 zahra
 zaida
@@ -15862,6 +16136,7 @@ acidei
 acidem
 acides
 acidez
+acidic
 acidou
 acilio
 acinom
@@ -16480,6 +16755,7 @@ aiming
 aina01
 airbus
 airier
+airily
 airing
 airiza
 airosa
@@ -16856,6 +17132,8 @@ aluisa
 alumia
 alumie
 alumio
+alumna
+alumni
 alunai
 alunam
 alunar
@@ -16980,6 +17258,7 @@ amesma
 amiais
 amiami
 amidos
+amidst
 amiga1
 amigai
 amigam
@@ -17645,6 +17924,7 @@ aquira
 aquosa
 aquoso
 ar1234
+arabic
 arable
 aradai
 aradam
@@ -17700,6 +17980,7 @@ arches
 archie
 arcing
 arcoso
+arctic
 arcuda
 ardais
 ardath
@@ -17789,6 +18070,7 @@ armani
 armara
 armava
 armeis
+armful
 armida
 armies
 arming
@@ -18368,6 +18650,7 @@ aviara
 aviava
 avidas
 avidez
+avidly
 avidos
 avieis
 aviera
@@ -18662,6 +18945,7 @@ banded
 bandit
 bandos
 banged
+bangle
 banhai
 banham
 banhar
@@ -18863,6 +19147,7 @@ bedbug
 bedded
 bedder
 bedlam
+bedpan
 beefed
 beeper
 beetle
@@ -18958,6 +19243,7 @@ benzeu
 benzia
 benzol
 beras1
+berate
 bereft
 bereta
 berets
@@ -19047,6 +19333,7 @@ bicado
 bicais
 bicara
 bicava
+biceps
 bichai
 bicham
 bichar
@@ -19062,6 +19349,7 @@ bicker
 bicuda
 bicudo
 bidden
+bidder
 biding
 bieber
 biebie
@@ -19073,11 +19361,13 @@ bigben
 bigbig
 bigboy
 bigger
+biggie
 bigmac
 bigoda
 bigode
 bigone
 bigots
+bigwig
 bijoux
 bijuca
 biking
@@ -19105,6 +19395,7 @@ biocas
 biogeo
 biombo
 bionda
+biopsy
 biotec
 bipbip
 bipeds
@@ -19143,6 +19434,7 @@ bispal
 bispos
 bisque
 bissau
+bitchy
 biting
 bitmap
 bitola
@@ -19206,10 +19498,13 @@ bloody
 blooms
 blotch
 blouse
+blowup
 bluest
 bluffs
 bluing
+bluish
 blunts
+blurry
 blurts
 blythe
 bm2000
@@ -19366,11 +19661,13 @@ boogie
 booing
 booked
 booker
+bookie
 boomed
 boosts
 booted
 bootee
 booths
+boozer
 borala
 bordai
 bordam
@@ -19437,6 +19734,7 @@ bouces
 boughs
 bought
 bounce
+bouncy
 bounds
 bounty
 bovina
@@ -19551,6 +19849,7 @@ brenna
 breque
 breves
 brewed
+brewer
 brian1
 briana
 bribed
@@ -19607,6 +19906,7 @@ brocha
 broche
 brocho
 brocou
+brogue
 broils
 brokas
 broken
@@ -19714,6 +20014,7 @@ bucked
 bucket
 buckle
 budded
+buddha
 budged
 budges
 budget
@@ -19818,6 +20119,7 @@ burrow
 bursar
 bursts
 burton
+busboy
 buscai
 buscam
 buscar
@@ -19844,6 +20146,7 @@ buttes
 button
 buyers
 buying
+buyout
 buzano
 buzina
 buzine
@@ -19903,6 +20206,7 @@ cacela
 cacete
 cached
 caches
+cachet
 cachos
 cacica
 cacico
@@ -20230,6 +20534,7 @@ cardou
 careca
 carece
 careci
+careen
 career
 carela
 carena
@@ -20616,6 +20921,7 @@ certem
 certes
 certos
 certou
+cervix
 cervos
 cerzia
 cerzir
@@ -20795,6 +21101,7 @@ chinco
 chines
 chinha
 chinks
+chinos
 chintz
 chioma
 chipie
@@ -20809,6 +21116,7 @@ chispe
 chispo
 chitas
 chivas
+chives
 chkdsk
 chocai
 chocam
@@ -21073,6 +21381,7 @@ clicai
 clicam
 clicar
 clicas
+cliche
 clicia
 clicks
 clicou
@@ -21475,6 +21784,7 @@ copiou
 copito
 copped
 copper
+copter
 copula
 copule
 copulo
@@ -21575,6 +21885,7 @@ costa1
 costa2
 costaa
 costal
+costar
 costas
 costed
 costly
@@ -21661,6 +21972,8 @@ cranes
 cranio
 cranks
 cranky
+cranny
+crappy
 craque
 crasso
 crasto
@@ -21671,6 +21984,7 @@ cravai
 cravam
 cravar
 cravas
+cravat
 craved
 cravei
 cravem
@@ -21710,6 +22024,7 @@ cremou
 crendo
 crente
 creola
+creole
 crepes
 creram
 creras
@@ -21804,6 +22119,7 @@ crouch
 crowds
 crowed
 crowns
+cruddy
 cruder
 crueza
 cruise
@@ -21912,6 +22228,7 @@ curial
 curing
 curios
 curled
+curler
 curral
 cursai
 cursam
@@ -21966,8 +22283,10 @@ custou
 cutchi
 cutela
 cutelo
+cutely
 cutest
 cutlet
+cutoff
 cutter
 cvb123
 cverde
@@ -22055,6 +22374,7 @@ danila
 danilo
 danira
 danisa
+danish
 danita
 danker
 dannie
@@ -22146,6 +22466,7 @@ deaden
 deader
 deadly
 deadra
+deafen
 deafer
 dealba
 dealbe
@@ -22275,6 +22596,7 @@ deftly
 defuma
 defume
 defumo
+defuse
 degela
 degele
 degelo
@@ -22417,6 +22739,7 @@ depila
 depile
 depilo
 depina
+deploy
 depois
 deport
 depose
@@ -22812,6 +23135,7 @@ docile
 docito
 docked
 docker
+docket
 doctor
 docura
 dodged
@@ -22849,6 +23173,7 @@ doling
 dollar
 dolled
 dollie
+dollop
 dolmen
 dolosa
 doloso
@@ -22873,6 +23198,7 @@ donkey
 donnie
 donors
 donuts
+doodad
 doodle
 doomed
 dopier
@@ -22902,6 +23228,7 @@ dortha
 dorthy
 dosada
 dosado
+dosage
 dosais
 dosara
 dosava
@@ -22944,6 +23271,7 @@ doutos
 doutra
 doutro
 downed
+downer
 dozens
 dozing
 dpedro
@@ -22968,6 +23296,7 @@ drawls
 dreads
 dreama
 dreams
+dreamt
 dreamy
 dreary
 dredge
@@ -23096,16 +23425,19 @@ earner
 eartha
 earths
 earthy
+earwax
 easels
 easier
 easily
 easing
 easter
+eatery
 eating
 ebbing
 ebonie
 echoed
 echoes
+eclair
 eclode
 eclodi
 ecluda
@@ -23169,6 +23501,7 @@ edygar
 edythe
 eeeeee
 eerier
+eerily
 efe123
 efeito
 effect
@@ -23210,6 +23543,7 @@ elaina
 elaine
 elanor
 elapse
+elated
 elayne
 elbert
 elbows
@@ -23637,6 +23971,7 @@ entram
 entrap
 entrar
 entras
+entree
 entrei
 entrem
 entres
@@ -23760,6 +24095,7 @@ escapo
 escava
 escave
 escavo
+eschew
 escoai
 escoam
 escoar
@@ -23947,6 +24283,7 @@ eugena
 eugene
 eulogy
 eunice
+eunuch
 eunuco
 eureca
 eureka
@@ -24436,6 +24773,7 @@ feirei
 feirem
 feires
 feirou
+feisty
 feitas
 feitio
 feitor
@@ -24556,6 +24894,7 @@ fiador
 fiados
 fialho
 fiamos
+fiance
 fiando
 fiaram
 fiaras
@@ -24678,6 +25017,7 @@ findar
 findas
 findei
 findem
+finder
 findes
 findos
 findou
@@ -24823,6 +25163,7 @@ flocks
 flocos
 floods
 floors
+floozy
 flopes
 floppy
 flor12
@@ -25122,6 +25463,7 @@ fretou
 freud1
 friars
 friday
+fridge
 frieda
 friend
 frieza
@@ -25182,6 +25524,7 @@ frufru
 frugal
 fruits
 fruity
+frumpy
 frutas
 frutos
 frying
@@ -25242,6 +25585,7 @@ fundos
 fundou
 funfun
 fungai
+fungal
 fungam
 fungar
 fungas
@@ -25310,6 +25654,7 @@ gaelle
 gafete
 gagaga
 gagged
+gaggle
 gaguez
 gaiata
 gaiato
@@ -25494,6 +25839,7 @@ gatune
 gatuno
 gatuxa
 gatuzo
+gauche
 gaucho
 gauged
 gauges
@@ -25508,6 +25854,7 @@ gayest
 gaygay
 gazeai
 gazear
+gazebo
 gazeei
 gazeia
 gazeie
@@ -25537,8 +25884,10 @@ gedeao
 geeing
 geemos
 geento
+geezer
 geheim
 geiger
+geisha
 gelada
 gelado
 gelais
@@ -25617,6 +25966,7 @@ gersao
 gerson
 gertha
 gertie
+gerund
 gessai
 gessam
 gessar
@@ -25737,6 +26087,8 @@ glides
 glifos
 glinda
 glints
+glitch
+glitzy
 gloats
 global
 globes
@@ -25753,10 +26105,12 @@ glowed
 glower
 gluglu
 gluing
+glumly
 glynda
 glynis
 gmpgmp
 gnarls
+gnarly
 gnawed
 gnomas
 gnomes
@@ -25933,6 +26287,7 @@ grafou
 grafts
 graham
 grains
+grainy
 gralha
 gralhe
 gralho
@@ -25943,6 +26298,7 @@ gramas
 gramei
 gramem
 grames
+grammy
 gramou
 grampo
 granai
@@ -26111,6 +26467,7 @@ grudou
 grugru
 grumpy
 grunge
+grungy
 grunha
 grunhe
 grunhi
@@ -26270,6 +26627,7 @@ hangar
 hanged
 hanger
 hanker
+hankie
 hannah
 hansol
 hapntc
@@ -26441,6 +26799,7 @@ hi5hi5
 hi5img
 hiatus
 hiccup
+hickey
 hidden
 hiding
 hienas
@@ -26513,6 +26872,7 @@ homero
 homeys
 homier
 homing
+honcho
 honda1
 hondas
 honest
@@ -26531,6 +26891,8 @@ honrou
 hooded
 hoofed
 hooked
+hooker
+hookey
 hooped
 hooray
 hooted
@@ -26576,6 +26938,7 @@ howled
 huambo
 hubble
 hubbub
+hubcap
 hubert
 huddle
 hudson
@@ -26617,6 +26980,7 @@ humped
 hunday
 hunger
 hungry
+hunker
 hunted
 hunter
 huntik
@@ -26644,6 +27008,7 @@ iberos
 ibiza1
 icaica
 icarus
+icebox
 iceice
 iceman
 icemos
@@ -26734,6 +27099,7 @@ imaged
 imagem
 images
 imames
+imbibe
 imbica
 imbico
 imbuam
@@ -27396,6 +27762,7 @@ jgomes
 jibing
 jiboia
 jigged
+jigger
 jiggle
 jigoro
 jigsaw
@@ -27906,6 +28273,7 @@ khatri
 kianda
 kicked
 kidded
+kiddie
 kidman
 kidnap
 kidney
@@ -27991,6 +28359,7 @@ kkkkkk
 kleene
 klm111
 klmklm
+klutzy
 kmerda
 knacks
 kneads
@@ -27999,6 +28368,7 @@ knifed
 knifes
 knight
 knives
+knobby
 knocks
 knolls
 knotty
@@ -28014,6 +28384,7 @@ konica
 kooala
 kookie
 korans
+korean
 kosher
 koskov
 kosmos
@@ -28224,6 +28595,7 @@ lapped
 lapsed
 lapses
 lapsos
+laptop
 lara00
 lara07
 lara08
@@ -28354,11 +28726,13 @@ layers
 laying
 layman
 laymen
+layoff
 layout
 lazaro
 lazied
 lazier
 lazies
+lazily
 lazuli
 lcmlcm
 lcosta
@@ -28450,6 +28824,7 @@ lemuel
 lena12
 lenard
 lendas
+lender
 length
 lenhai
 lenhal
@@ -28567,6 +28942,7 @@ lezlie
 lf1234
 lg2003
 liable
+liaise
 lialia
 liamba
 lianas
@@ -28678,8 +29054,10 @@ lindos
 lindsy
 linear
 lineia
+linens
 liners
 linete
+lineup
 linger
 lingua
 lingus
@@ -28807,6 +29185,7 @@ logged
 logger
 logica
 logico
+logjam
 logos1
 lograi
 logram
@@ -28866,6 +29245,7 @@ loosen
 looser
 looses
 looted
+looter
 lopes1
 lopes2
 lopess
@@ -29430,6 +29810,7 @@ mantel
 manter
 mantle
 mantos
+mantra
 manu12
 manual
 manuel
@@ -29582,6 +29963,7 @@ marked
 marker
 markes
 market
+markup
 markus
 marlen
 marleo
@@ -29751,6 +30133,7 @@ maxmen
 mayara
 maybes
 maycon
+mayday
 mayela
 mayerr
 mayhem
@@ -30021,6 +30404,7 @@ mickie
 micoli
 micose
 micros
+midair
 midday
 middle
 midget
@@ -30029,6 +30413,7 @@ midway
 miemos
 mierda
 miesha
+miffed
 mig123
 migada
 migado
@@ -30086,6 +30471,7 @@ milhal
 milhar
 milhas
 milhos
+milieu
 milita
 milite
 milito
@@ -30470,6 +30856,7 @@ moriah
 morian
 morita
 morito
+mormon
 mormor
 mornas
 mornos
@@ -30994,6 +31381,7 @@ nieces
 niesha
 nieves
 niggas
+nigger
 nightm
 nights
 nightw
@@ -31126,6 +31514,7 @@ nomeio
 nomeou
 noname
 nonato
+nonfat
 nonoaa
 nonono
 noodle
@@ -31191,6 +31580,7 @@ nudest
 nudeza
 nudged
 nudges
+nudist
 nudity
 nugget
 nukita
@@ -31247,6 +31637,7 @@ nuzzle
 nv2323
 nvidia
 nwaka1
+nylons
 nymphs
 oaring
 obaoba
@@ -31294,6 +31685,7 @@ obtusa
 obtuse
 obtuso
 obuses
+occult
 occupy
 occurs
 oceana
@@ -31310,6 +31702,7 @@ octana
 octano
 octave
 octeto
+octopi
 ocular
 oculos
 oculta
@@ -31576,6 +31969,7 @@ orador
 orados
 oralee
 oralia
+orally
 oramos
 orando
 orange
@@ -31624,6 +32018,7 @@ origem
 origin
 orimar
 oriola
+oriole
 orions
 orlada
 orlado
@@ -31704,6 +32099,8 @@ ousava
 ouseis
 ousted
 ouster
+outage
+outbid
 outcry
 outdid
 outfit
@@ -32189,6 +32586,7 @@ pawing
 pawned
 paxaxa
 paxeco
+payday
 payers
 paying
 payoff
@@ -32462,9 +32860,11 @@ phenix
 philip
 phlegm
 phobia
+phobic
 phoebe
 phoned
 phones
+phooey
 phorta
 photon
 photos
@@ -32503,6 +32903,7 @@ picaxu
 pichas
 pickax
 picked
+picker
 picket
 pickle
 pickup
@@ -32515,6 +32916,7 @@ picoto
 piddac
 piddle
 pidgey
+pidgin
 pieced
 pieces
 piedad
@@ -32529,6 +32931,7 @@ pigged
 piglet
 pigmeu
 pigpen
+pigsty
 pijama
 pikaxu
 pikena
@@ -32543,6 +32946,7 @@ pilass
 pilava
 pileca
 pileis
+pileup
 pilfer
 pilhai
 pilham
@@ -32692,6 +33096,7 @@ pisgue
 pisoes
 pisque
 pissas
+pissed
 pistas
 pistol
 piston
@@ -32837,7 +33242,9 @@ poesia
 poetas
 poetic
 poetry
+pogrom
 points
+pointy
 poipoi
 poirot
 poisai
@@ -33137,6 +33544,7 @@ prense
 prenso
 prepay
 prepor
+preppy
 prepus
 presai
 presam
@@ -33161,6 +33569,7 @@ prever
 previa
 previr
 previu
+prewar
 preyed
 prezai
 prezam
@@ -33172,6 +33581,7 @@ prezes
 prezou
 priced
 prices
+pricey
 pricks
 prided
 prides
@@ -33201,6 +33611,7 @@ prisca
 prisma
 prisms
 prison
+prissy
 privai
 privam
 privar
@@ -33397,12 +33808,15 @@ purgou
 purgue
 purify
 purina
+purist
 purity
 purple
 purred
 pursed
+purser
 purses
 pursue
+purvey
 puscas
 pusera
 pushed
@@ -33687,6 +34101,7 @@ ragama
 ragged
 raging
 ragnar
+ragtag
 raguel
 raiada
 raiado
@@ -34368,6 +34783,7 @@ renovo
 renown
 rental
 rented
+renter
 rentes
 reopen
 repaga
@@ -34457,6 +34873,7 @@ resumi
 resumo
 retail
 retain
+retake
 retard
 retens
 retesa
@@ -34480,6 +34897,7 @@ retoco
 retoma
 retome
 retomo
+retook
 retort
 retrai
 retroa
@@ -34560,6 +34978,7 @@ rhymes
 rhythm
 riacho
 riamos
+ribald
 ribbed
 ribbon
 ribela
@@ -34957,6 +35376,7 @@ rouses
 routed
 router
 routes
+roving
 rowena
 rowing
 roxana
@@ -35460,6 +35880,7 @@ sashes
 sassia
 sasuke
 satine
+satiny
 satira
 satire
 satiro
@@ -35509,7 +35930,9 @@ scenic
 scents
 schatz
 scheme
+schism
 schizo
+schlep
 school
 schule
 schumi
@@ -35548,6 +35971,7 @@ screws
 screwy
 scribe
 scribi
+scrimp
 script
 scroll
 scrubs
@@ -35888,9 +36312,11 @@ shifty
 shiloh
 shined
 shines
+shinny
 shirks
 shirly
 shirts
+shitty
 shiver
 shizue
 shoals
@@ -36015,6 +36441,7 @@ simnao
 simoes
 simona
 simone
+simper
 simple
 simply
 simsim
@@ -36067,6 +36494,7 @@ sistem
 sister
 sisuda
 sisudo
+sitcom
 sitiai
 sitiam
 sitiar
@@ -36114,6 +36542,7 @@ skynet
 slacks
 slaked
 slakes
+slalom
 slants
 slated
 slater
@@ -36131,6 +36560,7 @@ sleepy
 sleets
 sleeve
 sleigh
+sleuth
 slewed
 sliced
 slices
@@ -36154,6 +36584,7 @@ slowly
 sludge
 sluice
 slumps
+slushy
 slyvia
 smacks
 smalls
@@ -36175,16 +36606,19 @@ smites
 smiths
 smocks
 smodge
+smoggy
 smoked
 smoker
 smokes
 smokey
+smooch
 smooth
 smsbrs
 smsmsm
 smudge
 smugly
 smurfs
+smutty
 snacks
 snails
 snaita
@@ -36195,6 +36629,7 @@ snared
 snares
 snarls
 snatch
+snazzy
 sneaks
 sneaky
 sneers
@@ -36206,6 +36641,7 @@ sniper
 snipes
 snitch
 snnopy
+snobby
 snoopi
 snoops
 snoopy
@@ -36215,6 +36651,7 @@ snoppy
 snored
 snores
 snorts
+snotty
 snouts
 snow89
 snowed
@@ -36453,6 +36890,7 @@ soquem
 soques
 soraia
 soraya
+sorbet
 sordid
 sorely
 sorest
@@ -36501,6 +36939,7 @@ souped
 source
 soured
 sourer
+sourly
 sousa1
 sousas
 sousel
@@ -36513,12 +36952,14 @@ sovais
 sovara
 sovava
 soveis
+soviet
 sovina
 sovine
 sovino
 sowing
 spaced
 spaces
+spacey
 spaded
 spades
 spanks
@@ -36550,6 +36991,7 @@ sphinx
 spiced
 spices
 spider
+spiffy
 spigot
 spike1
 spiked
@@ -36583,6 +37025,7 @@ spores
 sport1
 sporte
 sports
+sporty
 spotty
 spouse
 spouts
@@ -36601,6 +37044,7 @@ sprite
 sprout
 spruce
 sprung
+spunky
 spurns
 spurts
 spyder
@@ -36635,6 +37079,7 @@ stacey
 stacia
 stacie
 stacks
+stadia
 staffs
 staged
 stages
@@ -36698,6 +37143,7 @@ stiffs
 stifle
 stigma
 stills
+stilts
 stimpy
 stings
 stingy
@@ -36722,6 +37168,7 @@ stools
 stoops
 stored
 stores
+storey
 storks
 storms
 stormy
@@ -36771,6 +37218,7 @@ sturdy
 styled
 styles
 stylus
+stymie
 su1977
 suadas
 suador
@@ -37105,6 +37553,7 @@ talked
 talker
 taller
 tallow
+talmud
 talofa
 talons
 taluda
@@ -37137,6 +37586,7 @@ tampei
 tampem
 tamper
 tampes
+tampon
 tampos
 tampou
 tanaka
@@ -37243,6 +37693,7 @@ tarjei
 tarjem
 tarjes
 tarjou
+tarmac
 tarola
 tarred
 tarsha
@@ -37260,6 +37711,7 @@ tasked
 tassel
 tastas
 tasted
+taster
 tastes
 tatata
 tateti
@@ -37285,6 +37737,7 @@ tauros
 taurus
 tautau
 tauter
+tautly
 tavern
 tavira
 tavora
@@ -37330,6 +37783,7 @@ teeing
 teemed
 teeter
 teethe
+teflon
 teimai
 teimam
 teimar
@@ -37534,6 +37988,7 @@ throat
 throbs
 throne
 throng
+throve
 thrown
 throws
 thrust
@@ -37719,6 +38174,7 @@ toaria
 toasse
 toaste
 toasts
+toasty
 toavam
 toavas
 tobias
@@ -37982,6 +38438,7 @@ traced
 tracee
 tracei
 tracem
+tracer
 traces
 tracey
 tracie
@@ -38170,6 +38627,7 @@ troops
 tropas
 tropel
 trophy
+tropic
 troque
 trotai
 trotam
@@ -38395,6 +38853,7 @@ uncles
 undoes
 undone
 unduly
+unease
 uneasy
 unesco
 uneven
@@ -38413,6 +38872,7 @@ unhais
 unhara
 unhava
 unheis
+unholy
 unhook
 unicef
 unicer
@@ -38429,6 +38889,7 @@ unirei
 unirem
 unires
 uniria
+unisex
 unisia
 unison
 unisse
@@ -38447,9 +38908,11 @@ unmask
 unpack
 unpaid
 unpick
+unplug
 unread
 unreal
 unrest
+unroll
 unruly
 unsafe
 unsaid
@@ -38487,6 +38950,7 @@ uplift
 upload
 uppers
 upping
+uppity
 uproar
 uproot
 upsets
@@ -38498,6 +38962,7 @@ uptown
 upturn
 upward
 urania
+uranus
 urbana
 urbane
 urbano
@@ -38613,6 +39078,7 @@ vaiara
 vaiava
 vaieis
 vainer
+vainly
 vairao
 vaivai
 vaivem
@@ -38771,6 +39237,7 @@ veered
 vegeta
 vegete
 vegeto
+veggie
 veigas
 veiled
 veined
@@ -38781,6 +39248,7 @@ velado
 velais
 velara
 velava
+velcro
 veleis
 veleja
 veleje
@@ -39229,6 +39697,7 @@ voting
 vowels
 vowing
 voyage
+voyeur
 vscvsc
 vsilva
 vulcao
@@ -39282,6 +39751,7 @@ warble
 warded
 warden
 warier
+warily
 warmed
 warmer
 warmly
@@ -39361,6 +39831,7 @@ whiled
 whiles
 whilst
 whined
+whiner
 whines
 whinny
 whirls
@@ -39372,6 +39843,7 @@ whites
 wholes
 wholly
 whoops
+whoosh
 whores
 wicked
 wicker
@@ -39383,6 +39855,7 @@ widget
 widows
 widths
 wields
+wiener
 wigged
 wiggle
 wigwam
@@ -39611,6 +40084,7 @@ yeshua
 yesiam
 yessed
 yields
+yippee
 yodels
 yogurt
 yohann
@@ -39627,6 +40101,7 @@ yuette
 yugioh
 yukiko
 yuonne
+yuppie
 yuriko
 yvette
 yvonne
@@ -40021,6 +40496,7 @@ acentua
 acentue
 acentuo
 acepipe
+acerbic
 acesnof
 acetais
 acetato
@@ -40075,7 +40551,6 @@ acursio
 acusada
 acusado
 acusava
-acutely
 acutila
 acutile
 acutilo
@@ -40095,6 +40570,7 @@ adeline
 adelino
 adenoma
 adentra
+adeptly
 adequei
 aderico
 aderida
@@ -40178,6 +40654,7 @@ adviria
 advirta
 advirto
 advogue
+aerobic
 aerosol
 aezakmi
 afagada
@@ -40193,7 +40670,6 @@ affixed
 affixes
 afflict
 affront
-afiance
 afivele
 afivelo
 afleume
@@ -40272,7 +40748,9 @@ ailment
 aimar10
 aimaria
 aimless
+airfare
 airiest
+airless
 airline
 airmail
 airport
@@ -40424,6 +40902,7 @@ alpista
 alpiste
 alqueva
 already
+alright
 altares
 alterna
 alterne
@@ -40449,6 +40928,7 @@ alugava
 aluindo
 aluirei
 aluiria
+alumnus
 alunada
 alunado
 alunava
@@ -40545,6 +41025,7 @@ amolece
 amoleci
 amoleco
 amolgue
+amongst
 amorene
 amorfia
 amorina
@@ -40771,6 +41252,7 @@ ansiado
 ansiava
 ansiosa
 ansioso
+antacid
 antanho
 antares
 antedai
@@ -40811,6 +41293,8 @@ anuncio
 anxiety
 anxious
 anybody
+anymore
+anytime
 apadroa
 apadroe
 apadroo
@@ -40878,6 +41362,7 @@ applaud
 applied
 applies
 appoint
+apprise
 approve
 aprazia
 aprecia
@@ -40900,6 +41385,7 @@ apupava
 apurada
 apurado
 apurava
+aquaria
 aquario
 aquatic
 aquenta
@@ -41019,11 +41505,13 @@ armario
 armasse
 armaste
 armazem
+armband
 armeiro
 armelim
 armemos
 armenia
 armenio
+armhole
 armilar
 arminda
 armindo
@@ -41039,6 +41527,7 @@ aroeira
 aromada
 aromado
 aromava
+arousal
 arowana
 arpamos
 arpando
@@ -41441,6 +41930,8 @@ babuska
 babyboy
 babying
 babyish
+babysat
+babysit
 bacardi
 bachica
 bachico
@@ -41482,6 +41973,7 @@ bailada
 bailado
 bailava
 bailete
+bailiff
 baiting
 baixada
 baixado
@@ -41506,6 +41998,7 @@ balding
 baleada
 baleado
 baleava
+baleful
 baleote
 balking
 ballack
@@ -41560,6 +42053,7 @@ banzada
 banzado
 banzava
 baptism
+baptist
 baptiza
 baptize
 baptizo
@@ -41580,6 +42074,7 @@ barbeai
 barbear
 barbeei
 barbela
+barbell
 barbeou
 barbica
 barbing
@@ -41608,6 +42103,7 @@ barriga
 barring
 barroca
 barroco
+barroom
 barulha
 barulhe
 barulho
@@ -41690,6 +42186,7 @@ beeches
 beefier
 beefing
 beehive
+beeline
 beeswax
 begonha
 begonia
@@ -41708,7 +42205,6 @@ bekinha
 bekitas
 bela123
 belabor
-belated
 belched
 belches
 beldade
@@ -41733,6 +42229,7 @@ belomar
 beloura
 beloved
 belting
+beltway
 belucha
 belying
 belzebu
@@ -41821,6 +42318,7 @@ bettina
 betting
 betucha
 between
+beveled
 beverly
 bewitch
 bexigue
@@ -41948,6 +42446,7 @@ black95
 blacken
 blacker
 blackie
+blandly
 blanked
 blanker
 blanket
@@ -41957,6 +42456,7 @@ blaster
 blatant
 blazing
 bleaker
+bleakly
 bleated
 blemish
 blended
@@ -41965,9 +42465,11 @@ blindly
 blister
 blitzed
 blitzes
+bloated
 blog123
 blondie
 blooded
+blooper
 blossom
 blotted
 blotter
@@ -42079,6 +42581,7 @@ bomboca
 bomboka
 bombons
 bonanca
+bonanza
 bond007
 bondade
 bondage
@@ -42089,6 +42592,7 @@ boniest
 boninha
 bonjour
 bonjovi
+bonkers
 bonomia
 bonovox
 bookend
@@ -42126,6 +42630,7 @@ borrife
 borrifo
 boss123
 bossier
+bossily
 bossing
 bosta13
 bostada
@@ -42192,6 +42697,7 @@ brazuca
 breaded
 breadth
 breaker
+breakup
 breamos
 brearei
 brearem
@@ -42207,7 +42713,6 @@ breveta
 brevete
 breveto
 brevity
-brewery
 brewing
 breyner
 brianna
@@ -42258,6 +42763,7 @@ bromava
 brometo
 bronwyn
 brooded
+brothel
 brother
 brought
 browned
@@ -42318,6 +42824,7 @@ bugiado
 bugiava
 bugling
 builder
+buildup
 bujarda
 bulamos
 bulando
@@ -42350,6 +42857,7 @@ bullied
 bullies
 bulling
 bullion
+bullish
 bummest
 bumming
 bumpier
@@ -42443,6 +42951,7 @@ cacilda
 cacique
 cacuaco
 cadaval
+cadaver
 cadeado
 cadeira
 cadence
@@ -42467,6 +42976,7 @@ cagaria
 cagasse
 cagatas
 cagiest
+cahoots
 caiamos
 caiando
 caiaque
@@ -42628,6 +43138,7 @@ capicua
 capilar
 capitel
 capitoa
+capitol
 capping
 caprice
 caprina
@@ -42833,6 +43344,7 @@ cavares
 cavasse
 cavaste
 caveira
+caveman
 cavemos
 cavilha
 cavilhe
@@ -42993,6 +43505,7 @@ chaplin
 chapped
 chapter
 charada
+charade
 charbel
 chariot
 charita
@@ -43012,6 +43525,7 @@ chasity
 chassis
 chateai
 chatear
+chateau
 chateei
 chateia
 chateie
@@ -43028,6 +43542,7 @@ cheaply
 checked
 checker
 checkup
+cheddar
 cheeked
 cheeped
 cheered
@@ -43069,6 +43584,7 @@ chidori
 chiefer
 chiefly
 chiemos
+chiffon
 chikita
 chilena
 chileno
@@ -43215,6 +43731,7 @@ citroen
 ciumada
 ciumado
 ciumava
+civilly
 civismo
 civitas
 claimed
@@ -43252,6 +43769,7 @@ claurum
 clawing
 clayton
 cleanly
+cleanup
 cleared
 clearer
 clearly
@@ -43272,6 +43790,7 @@ clivado
 clivava
 clivoso
 cloaked
+clobber
 clonada
 clonado
 clonava
@@ -43355,6 +43874,7 @@ cofiava
 cofidis
 cogency
 cognome
+cohabit
 coibais
 coibida
 coibido
@@ -43416,6 +43936,7 @@ colmate
 colmato
 colmava
 colmeal
+cologne
 colombo
 colonel
 colones
@@ -43569,6 +44090,7 @@ conjure
 conjuro
 connect
 conning
+connive
 connote
 conquer
 consent
@@ -43622,12 +44144,14 @@ convivo
 convoca
 convoco
 cooking
+cookout
 coolest
 cooling
 coolman
 cooping
 copeira
 copeiro
+copilot
 copiosa
 copioso
 copista
@@ -43858,12 +44382,14 @@ criemos
 crimeia
 crimson
 crinkle
+crinkly
 crioilo
 crioula
 crioulo
 crispim
 crisply
 cristen
+critter
 crivada
 crivado
 crivava
@@ -43878,6 +44404,7 @@ cronica
 cronico
 cronies
 crooned
+crooner
 cropped
 croquet
 crossed
@@ -43945,6 +44472,7 @@ cumeada
 cumming
 cunha23
 cunning
+cupcake
 cupidez
 curable
 curamos
@@ -44078,6 +44606,7 @@ daytime
 daytona
 deadest
 deadman
+deadpan
 deafest
 dealema
 dealing
@@ -44241,6 +44770,7 @@ demisso
 demolha
 demolhe
 demolho
+demonic
 demonio
 demount
 denegri
@@ -44494,6 +45024,7 @@ detende
 detendo
 detenha
 detenho
+detente
 deterei
 deterem
 deteres
@@ -44567,6 +45098,7 @@ didicas
 didinha
 didinho
 didocas
+diehard
 dierdre
 dietary
 dieting
@@ -44749,6 +45281,7 @@ doentio
 doerdes
 doermos
 dogging
+doggone
 dogwood
 doidice
 doidona
@@ -44788,6 +45321,7 @@ donovan
 donzela
 dooming
 doorman
+doormat
 doormen
 doorway
 dopiest
@@ -44810,7 +45344,6 @@ dorsais
 dorsell
 dorthea
 dorthey
-dosagem
 dosamos
 dosando
 dosarei
@@ -44866,6 +45399,7 @@ dressed
 dresser
 dresses
 dribble
+drifter
 drilled
 drinker
 driving
@@ -44928,6 +45462,7 @@ dusty11
 dutiful
 duxinha
 dwarfed
+dwarves
 dweller
 dwindle
 dynamic
@@ -44936,9 +45471,11 @@ eagerer
 eagerly
 earache
 eardrum
+earlobe
 earmark
 earnest
 earning
+earplug
 earring
 earshot
 earthed
@@ -44979,6 +45516,7 @@ efemine
 efemino
 efusiva
 efusivo
+egghead
 egotism
 egotist
 ejacula
@@ -45064,6 +45602,7 @@ embrace
 embraia
 embraie
 embraio
+embroil
 embruma
 embrume
 embrumo
@@ -45074,6 +45613,7 @@ embuste
 emeline
 emerald
 eminent
+emirate
 emissor
 emitais
 emitida
@@ -45362,6 +45902,7 @@ entered
 enterra
 enterre
 enterro
+enthuse
 entitle
 entoada
 entoado
@@ -45440,9 +45981,11 @@ enxurre
 enxurro
 epaulet
 epicuro
+epigram
 epiloga
 epilogo
 episode
+epistle
 epitaph
 epithet
 epitome
@@ -45676,7 +46219,6 @@ esquivo
 essayed
 essence
 essilor
-estadia
 estadio
 estagia
 estagie
@@ -45760,6 +46302,7 @@ estrofe
 estruma
 estrume
 estrumo
+estuary
 estupra
 estupre
 estupro
@@ -46152,6 +46695,7 @@ fedendo
 fedesse
 fedeste
 fedores
+feedbag
 feeding
 feeling
 feher29
@@ -46227,6 +46771,7 @@ fibroma
 fibrosa
 fibrose
 fibroso
+fibrous
 ficabem
 ficalho
 ficamos
@@ -46280,6 +46825,7 @@ filmava
 filmier
 filming
 filoteu
+finagle
 finally
 finamos
 finance
@@ -46330,6 +46876,7 @@ fisgado
 fisgava
 fishier
 fishing
+fishnet
 fission
 fissura
 fissure
@@ -46365,6 +46912,7 @@ fizeres
 fizesse
 fizeste
 fizzing
+flaccid
 flagela
 flagele
 flagelo
@@ -46504,6 +47052,7 @@ fooling
 foolish
 footage
 footing
+footsie
 forayed
 forbade
 forbear
@@ -46588,6 +47137,7 @@ founder
 foundry
 fowling
 fox6969
+foxhole
 foxiest
 foxtrot
 fractal
@@ -46618,6 +47168,7 @@ frechas
 freckle
 freddie
 fredric
+freebie
 freedom
 freeing
 freeman
@@ -46646,6 +47197,7 @@ frigate
 frincha
 frisado
 frisava
+frisbee
 fritada
 fritado
 fritava
@@ -46954,6 +47506,7 @@ gengiva
 geniais
 geninha
 geninho
+genteel
 genuine
 geology
 geovana
@@ -47000,6 +47553,7 @@ getulio
 ghastly
 ghostly
 giacomo
+giblets
 giddier
 gifting
 gigante
@@ -47064,6 +47618,7 @@ glassex
 glaucia
 glazing
 gleamed
+gleeful
 glennis
 glibber
 glicose
@@ -47087,6 +47642,7 @@ gnashes
 gnawing
 goading
 gobbing
+goddamn
 goddess
 godinha
 godinho
@@ -47211,6 +47767,8 @@ granada
 granado
 granava
 grandly
+grandma
+grandpa
 granite
 granito
 graniza
@@ -47245,6 +47803,7 @@ gravoso
 gravura
 grayest
 graying
+grayish
 grazina
 grazyna
 greater
@@ -47284,6 +47843,7 @@ grosses
 grossly
 grouped
 grouper
+groupie
 growled
 grudada
 grudado
@@ -47346,6 +47906,7 @@ gulping
 gumdrop
 gummier
 gumming
+gunboat
 gunfire
 gunning
 gunshot
@@ -47369,6 +47930,7 @@ haddock
 haggard
 hahalol
 haircut
+hairnet
 hal9000
 halcyon
 halfway
@@ -47384,6 +47946,7 @@ hamming
 hammock
 handbag
 handful
+handgun
 handier
 handing
 handout
@@ -47396,8 +47959,8 @@ happily
 haraldo
 hardest
 hardier
+harelip
 harking
-harmful
 harmony
 harness
 harpeja
@@ -47411,6 +47974,7 @@ harsher
 harshly
 harvard
 harvest
+hashish
 hasmahs
 hasteai
 hastear
@@ -47459,6 +48023,7 @@ heeding
 heeling
 heftier
 heinous
+heiress
 helinho
 hell666
 hellboy
@@ -47466,6 +48031,7 @@ hellish
 hellome
 helpful
 helping
+hemline
 hemlock
 hemming
 hendrix
@@ -47496,6 +48062,7 @@ hiberno
 hickory
 hidalgo
 hideous
+hideout
 hidrata
 hidrate
 hidrato
@@ -47508,6 +48075,7 @@ hilbert
 hildred
 hillary
 hillier
+hilltop
 himenal
 himself
 hinging
@@ -47578,11 +48146,14 @@ hosiery
 hospeda
 hospede
 hospedo
+hospice
 hostage
 hosting
+hotcake
 hotcard
 hothead
 hotmail
+hotshot
 hottest
 houdini
 hounded
@@ -47730,6 +48301,7 @@ implica
 implico
 implied
 implies
+implode
 implora
 implore
 imploro
@@ -47833,6 +48405,7 @@ incumbe
 incumbi
 incumbo
 indague
+indices
 indicia
 indicie
 indicio
@@ -47923,6 +48496,7 @@ inquire
 inquiri
 inquiro
 inquiry
+inroads
 insidia
 insidie
 insidio
@@ -48094,6 +48668,7 @@ jacking
 jacklyn
 jackpot
 jackson
+jacuzzi
 jadwiga
 jafoste
 jahmali
@@ -48177,6 +48752,7 @@ jennine
 jericho
 jerilyn
 jerkier
+jerkily
 jerking
 jerrell
 jerrica
@@ -48225,6 +48801,7 @@ joaovaz
 joaquim
 joaquin
 jobbing
+jobless
 jocasta
 jocelyn
 jociano
@@ -48293,6 +48870,7 @@ jotting
 journal
 journey
 joviais
+joyride
 juanita
 juanito
 juca123
@@ -48313,6 +48891,7 @@ juicier
 juicing
 jujitsu
 juju123
+jukebox
 jukinha
 julgada
 julgado
@@ -48449,6 +49028,7 @@ kindest
 kindred
 kinfolk
 kingdom
+kingpin
 kinship
 kirasue
 kirsten
@@ -48752,7 +49332,9 @@ lawless
 lawsuit
 laxante
 laxismo
+layaway
 layered
+layover
 lazanha
 lazarus
 lazeres
@@ -48845,6 +49427,7 @@ leotard
 leprose
 leproso
 leprosy
+leprous
 leremos
 lesamos
 lesando
@@ -48934,6 +49517,7 @@ lidorio
 liduina
 liedson
 lifting
+liftoff
 ligamos
 ligando
 ligante
@@ -49080,6 +49664,7 @@ locutor
 lodging
 loftier
 lofting
+logbook
 logging
 lograda
 logrado
@@ -49167,10 +49752,12 @@ lovella
 loverui
 lovetta
 loveyou
+lowbrow
 lowdown
 lowered
 lowlier
 loyaler
+loyally
 loyalty
 lozenge
 luanita
@@ -49191,6 +49778,7 @@ lucia82
 luciana
 luciano
 lucidez
+lucidly
 lucifer
 lucilia
 lucilio
@@ -49257,6 +49845,7 @@ lupinha
 lurched
 lurches
 lurdite
+luridly
 lurking
 lurlene
 lurline
@@ -49393,12 +49982,14 @@ majesty
 majored
 majoria
 majorie
+majorly
 makumba
 malabar
 malaica
 malaico
 malaika
 malaiko
+malaise
 malamen
 malange
 malanje
@@ -49630,6 +50221,7 @@ martela
 martele
 martelo
 martial
+martian
 martita
 martuxa
 marusca
@@ -49655,6 +50247,7 @@ massajo
 massama
 massano
 massena
+masseur
 massimo
 massing
 massive
@@ -49693,6 +50286,7 @@ maurita
 mavilde
 mavilia
 mavioso
+mawkish
 max1104
 max2010
 maximum
@@ -49790,6 +50384,7 @@ meninez
 meninge
 meninha
 menisco
+menorah
 menores
 mensais
 mensura
@@ -49828,6 +50423,7 @@ mesinha
 meskita
 message
 messi10
+messiah
 messias
 messier
 messina
@@ -49844,6 +50440,7 @@ meterem
 meteres
 metesse
 meteste
+methane
 metical
 meuamor
 meuanjo
@@ -49862,6 +50459,7 @@ mexeres
 mexeria
 mexesse
 mexeste
+mexican
 mezinha
 mezinhe
 mezinho
@@ -49880,6 +50478,9 @@ miclina
 micolli
 microbe
 midriff
+midterm
+midweek
+midwest
 midwife
 mifares
 migalha
@@ -49985,6 +50586,7 @@ minimal
 minimum
 mininha
 minisha
+minivan
 minneli
 minolta
 minorca
@@ -50029,6 +50631,7 @@ missiva
 missive
 missivo
 missoes
+misstep
 missyou
 mistake
 mistela
@@ -50129,6 +50732,7 @@ mondava
 mondego
 mondieu
 mongrel
+moniker
 monique
 monismo
 monista
@@ -50139,6 +50743,7 @@ monstra
 monstro
 montada
 montado
+montage
 montana
 montano
 montava
@@ -50150,12 +50755,12 @@ montoya
 moodier
 moodily
 mooning
+moonlit
 mooring
 mooting
 mopping
 moradia
 moradio
-morally
 moranga
 morango
 morcega
@@ -50196,6 +50801,7 @@ motlier
 moto123
 motored
 motores
+mottled
 mottoes
 motumba
 mounded
@@ -50254,6 +50860,7 @@ mugiria
 mugisse
 mugiste
 mujamos
+mulatto
 mulched
 mulches
 mulling
@@ -50294,6 +50901,7 @@ mustafa
 mustang
 mustard
 mustier
+mutable
 mutamba
 mutismo
 muttley
@@ -50328,6 +50936,7 @@ naifada
 naipada
 naively
 naivest
+naivete
 naivety
 nakesha
 nakisha
@@ -50359,6 +50968,7 @@ narrada
 narrado
 narrate
 narrava
+nasally
 nascida
 nascido
 nastier
@@ -50481,6 +51091,7 @@ newborn
 newlife
 newlook
 newmoon
+newness
 newpass
 newsier
 newwave
@@ -50508,6 +51119,7 @@ nicolle
 niculae
 niftier
 nigeria
+nightie
 nightly
 nikeair
 nikinha
@@ -50640,7 +51252,6 @@ nuclear
 nucleus
 nudging
 nudismo
-nudista
 nukinha
 nullify
 numbest
@@ -50736,6 +51347,7 @@ octopus
 ocupada
 ocupado
 ocupava
+oddness
 odeiote
 odemira
 oderfla
@@ -50756,6 +51368,7 @@ odorico
 odoroso
 odracir
 odraude
+odyssey
 ofegada
 ofegado
 ofegava
@@ -50825,6 +51438,7 @@ olivedo
 olivier
 olmeiro
 olympia
+olympic
 olympus
 ombreai
 ombrear
@@ -50851,6 +51465,7 @@ onerava
 onerosa
 oneroso
 oneself
+onetime
 ongoing
 onileda
 onileva
@@ -50993,6 +51608,7 @@ ourives
 ourtime
 ousadia
 ousting
+outback
 outcast
 outcome
 outdoes
@@ -51160,6 +51776,7 @@ palrava
 palrice
 pamella
 panacea
+panache
 panamos
 panando
 panarei
@@ -51272,6 +51889,7 @@ parties
 parting
 partner
 partook
+partway
 pascais
 pascual
 paselli
@@ -51596,7 +52214,10 @@ peugada
 peugeot
 pezinho
 pezorro
+phallic
+phallus
 phantom
+pharaoh
 phasing
 phillip
 phillis
@@ -51670,6 +52291,7 @@ pimpona
 pimpone
 pimpono
 pinante
+pincers
 pincesa
 pindelo
 pingada
@@ -51697,10 +52319,12 @@ pioneer
 piorada
 piorado
 piorava
+piously
 pipicas
 pipinha
 pipinho
 pipoque
+piquant
 piquing
 piranha
 pirelli
@@ -51742,6 +52366,7 @@ pitusca
 pitying
 pivotal
 pivoted
+pizzazz
 pkteamo
 placard
 placate
@@ -51773,6 +52398,7 @@ playful
 playpen
 pleated
 plebeia
+plenary
 pleomax
 plextor
 plicada
@@ -51883,6 +52509,7 @@ polpudo
 poluais
 polvora
 polygon
+polymer
 pomares
 pompeai
 pompear
@@ -51904,6 +52531,7 @@ ponteie
 ponteio
 ponteou
 pontiac
+pontiff
 pontoon
 pontudo
 pooling
@@ -51961,6 +52589,7 @@ postado
 postage
 postava
 postbox
+postdoc
 postiga
 postigo
 posting
@@ -51972,9 +52601,11 @@ postule
 postulo
 postura
 posture
+postwar
 potassa
 potency
 pothole
+potluck
 potting
 pouched
 pouches
@@ -52019,10 +52650,12 @@ precavi
 preceda
 precedi
 precedo
+precept
 precisa
 precise
 preciso
 precoce
+predate
 predial
 predica
 predico
@@ -52046,6 +52679,7 @@ premuni
 premuno
 presada
 presado
+presage
 presava
 pressed
 presses
@@ -52065,6 +52699,7 @@ preying
 pricked
 prickle
 prickly
+primacy
 primate
 priming
 primmer
@@ -52175,11 +52810,11 @@ provide
 provido
 provier
 proview
-proving
 proviso
 provoca
 provoco
 provoke
+provost
 prowess
 prowled
 prowler
@@ -52235,6 +52870,7 @@ pulemos
 pulgoso
 pulhice
 pulling
+pullout
 pulping
 pulsada
 pulsado
@@ -52258,7 +52894,7 @@ purgada
 purgado
 purgava
 purismo
-purista
+puritan
 purport
 purpose
 purpura
@@ -52349,6 +52985,7 @@ quiasma
 quibble
 quicken
 quicker
+quickie
 quickly
 quietly
 quilata
@@ -52549,6 +53186,7 @@ ratinho
 ratting
 raucous
 raul123
+raunchy
 raveled
 ravened
 rayford
@@ -52591,6 +53229,7 @@ realizo
 realoja
 realoje
 realojo
+realtor
 reaming
 reanima
 reanime
@@ -52734,11 +53373,14 @@ recurve
 recurvo
 recycle
 reddest
+reddish
 redeyes
 redhead
 redinha
 reditus
 redline
+redneck
+redness
 redobra
 redobre
 redobro
@@ -52754,6 +53396,7 @@ redouro
 redoute
 redraft
 redress
+redskin
 redtube
 redunda
 redunde
@@ -52762,6 +53405,7 @@ reduzem
 reduzes
 redwine
 redwolf
+redwood
 reedita
 reedite
 reedito
@@ -52775,6 +53419,7 @@ reelegi
 reeleja
 reelejo
 reeling
+reenact
 reencha
 reenche
 reenchi
@@ -52782,6 +53427,7 @@ reencho
 reentra
 reentre
 reentro
+reentry
 reenvia
 reenvie
 reenvio
@@ -52893,6 +53539,7 @@ reinado
 reinava
 reining
 reis123
+reissue
 reitera
 reitere
 reitero
@@ -52938,6 +53585,7 @@ remarei
 remarem
 remares
 remaria
+remarry
 remasca
 remasco
 remasse
@@ -53049,6 +53697,7 @@ reprime
 reprimi
 reprimo
 reprint
+reprise
 reprova
 reprove
 reprovo
@@ -53136,6 +53785,7 @@ retinja
 retinjo
 retinta
 retinto
+retinue
 retoque
 retorce
 retorci
@@ -53154,12 +53804,14 @@ retrato
 retrava
 retrave
 retravo
+retread
 retreat
 retrema
 retreme
 retremi
 retremo
 retrete
+retrial
 retries
 retumba
 retumbe
@@ -53170,6 +53822,7 @@ reunido
 reunion
 reunite
 reusing
+revalue
 revedor
 revelry
 revemos
@@ -53202,6 +53855,7 @@ reviste
 revisto
 revogue
 revving
+rewound
 rewrite
 rewrote
 rexinho
@@ -53315,6 +53969,7 @@ rixasse
 rixaste
 rixemos
 roaches
+roadway
 roaming
 roanita
 roasted
@@ -53411,7 +54066,9 @@ rondado
 rondava
 ronhoso
 roofing
+rooftop
 rooking
+roomful
 roomier
 rooming
 rooroo1
@@ -53485,6 +54142,7 @@ roughly
 rouging
 rounded
 rounder
+roundup
 rousing
 route66
 routine
@@ -53509,6 +54167,8 @@ ruanita
 ruanova
 rubbing
 rubbish
+rubdown
+rubella
 ruben08
 ruben20
 ruben21
@@ -53804,6 +54464,7 @@ saundra
 saunter
 saurimo
 sausage
+sauteed
 savanna
 savimbi
 saviola
@@ -53819,6 +54480,7 @@ scaling
 scallop
 scalped
 scalpel
+scalper
 scanner
 scanted
 scarfed
@@ -53829,6 +54491,8 @@ scatter
 scenery
 scented
 scepter
+schlock
+schmuck
 scholar
 schwarz
 schweiz
@@ -53850,6 +54514,7 @@ scp1906
 scratch
 scrawny
 screech
+scrooge
 scruple
 scuffle
 scummed
@@ -53942,6 +54607,7 @@ selesia
 selesio
 selfish
 selling
+sellout
 selvoso
 semeada
 semeado
@@ -53972,6 +54638,7 @@ seomara
 sepulta
 sepulte
 sepulto
+sequoia
 serafim
 seravat
 seremos
@@ -54039,7 +54706,9 @@ shackle
 shadier
 shading
 shafted
+shakeup
 shakier
+shakily
 shaking
 shakira
 shakita
@@ -54129,6 +54798,7 @@ shortly
 shotgun
 shouted
 shoving
+showbiz
 showier
 showing
 showman
@@ -54138,9 +54808,11 @@ shucked
 shudder
 shuffle
 shunned
+shuteye
 shutter
 shuttle
 shyness
+shyster
 siamesa
 sibling
 sickest
@@ -54162,6 +54834,7 @@ sigilar
 sigmund
 signify
 signing
+sikhism
 silagem
 silence
 silepse
@@ -54284,7 +54957,6 @@ sleeked
 sleeker
 sleeper
 sleeted
-slender
 slewing
 slicing
 slicker
@@ -54336,6 +55008,7 @@ snorkel
 snorted
 snowier
 snowing
+snowman
 snubbed
 snuffed
 snuffer
@@ -54447,6 +55120,7 @@ somenos
 somente
 someone
 somerda
+someway
 sominha
 sommeil
 sonante
@@ -54513,8 +55187,10 @@ soterre
 soterro
 sotinco
 soturno
+souffle
 soufixe
 soulfly
+soulful
 sounded
 sounder
 soundly
@@ -54524,18 +55200,20 @@ souring
 sousa01
 soutelo
 soutien
-soviete
+soybean
 sozinha
 sozinho
 spacial
 spading
 spangle
 spaniel
+spanish
 spanked
 spanner
 sparkle
 sparrow
 spartan
+spastic
 spatial
 spatula
 speaker
@@ -54575,6 +55253,7 @@ stabilo
 stacruz
 stadium
 staffed
+staffer
 stagger
 staging
 staider
@@ -54607,6 +55286,7 @@ steeled
 steeped
 steeper
 steeple
+steeply
 steered
 stelina
 stemmed
@@ -54614,9 +55294,11 @@ stencil
 stephan
 stephen
 stepped
+stepson
 sterile
 sterner
 sternly
+steroid
 steve90
 steward
 stewart
@@ -54628,6 +55310,7 @@ stiffly
 stiller
 stimuli
 stinger
+stipend
 stirred
 stirrup
 stocked
@@ -54873,6 +55556,7 @@ sweetly
 sweller
 swifter
 swiftly
+swimmer
 swindle
 swinger
 swirled
@@ -54880,6 +55564,7 @@ swisher
 swollen
 swooned
 swooped
+syllabi
 symptom
 synapse
 synonym
@@ -54919,6 +55604,7 @@ tainted
 tajique
 tajuana
 takeoff
+takeout
 takisha
 talcoso
 talhado
@@ -55040,6 +55726,7 @@ teaches
 teadoro
 teaming
 tearful
+teargas
 tearing
 teatral
 tebaldo
@@ -55196,6 +55883,7 @@ thereon
 theresa
 therese
 thermal
+thermos
 therock
 thesims
 theused
@@ -55265,6 +55953,7 @@ timothy
 timotio
 tina123
 tinamos
+tinfoil
 tingida
 tingido
 tinging
@@ -55323,6 +56012,7 @@ todavia
 todinha
 todinho
 todobom
+toehold
 toenail
 togamos
 togando
@@ -55414,6 +56104,7 @@ tontice
 tontura
 tony123
 tonyboy
+toolbar
 tooling
 toolkit
 tooting
@@ -55432,6 +56123,7 @@ topeira
 topemos
 topgear
 topical
+topless
 topping
 toranja
 torcato
@@ -55501,6 +56193,7 @@ toureio
 toureou
 touriga
 touring
+tourism
 tourist
 toutosa
 towanda
@@ -55557,6 +56250,7 @@ trazido
 treacle
 treated
 treeing
+treetop
 trekked
 trellis
 tremble
@@ -55584,6 +56278,7 @@ tribuno
 tributa
 tribute
 tributo
+triceps
 tricked
 trickle
 tricota
@@ -55638,7 +56333,6 @@ troncal
 trooped
 trooper
 tropece
-tropico
 troteai
 trotear
 troteei
@@ -55656,8 +56350,10 @@ trucida
 trucide
 trucido
 trucked
+trucker
 trumped
 trumpet
+trundle
 trunque
 trustee
 trustme
@@ -55686,6 +56382,7 @@ tufinha
 tufting
 tuga123
 tugas21
+tugboat
 tugging
 tugimos
 tugindo
@@ -55738,6 +56435,7 @@ twirled
 twisted
 twister
 twitter
+tylenol
 tyler31
 tynisha
 typeset
@@ -55773,6 +56471,7 @@ um2tres
 umbanda
 umberto
 umpteen
+unaided
 unarmed
 unaware
 unblock
@@ -55841,13 +56540,21 @@ untaria
 untasse
 untaste
 untemos
+untried
 untuoso
 untying
 unusual
 unwound
+upchuck
+upfront
 upgrade
 upright
+upscale
+upstage
 upstart
+upstate
+upsurge
+upswing
 uptight
 uranium
 urbiria
@@ -56254,6 +56961,7 @@ visasse
 visaste
 viscosa
 viscoso
+viscous
 viseira
 visemos
 visible
@@ -56369,6 +57077,7 @@ waltzed
 waltzes
 wanessa
 wanetta
+wannabe
 wannest
 wanrltw
 wanting
@@ -56378,6 +57087,7 @@ warhead
 wariest
 warlike
 warlock
+warlord
 warmest
 warning
 warpath
@@ -56386,6 +57096,7 @@ warrant
 warring
 warrior
 warrock
+warship
 wartime
 washout
 wastage
@@ -56426,6 +57137,7 @@ welling
 welting
 wendell
 western
+wetback
 wettest
 wetting
 wharves
@@ -56476,8 +57188,10 @@ winford
 winfred
 wingers
 winging
+wingtip
 winsome
 winston
+wiretap
 wiriest
 wishful
 wishing
@@ -56848,6 +57562,7 @@ acovardo
 acriance
 acridest
 acrimony
+activism
 activist
 activity
 actuando
@@ -56898,6 +57613,7 @@ adocique
 adolesce
 adolesci
 adoptiva
+adoptive
 adoptivo
 adorable
 adormece
@@ -56925,9 +57641,9 @@ adultery
 aduzimos
 aduzindo
 advisory
+advocacy
 advocate
 aeonflux
-aerobica
 aeroduto
 aeronave
 aerossol
@@ -57001,8 +57717,10 @@ airfield
 airforce
 airluxor
 airplane
+airspace
 airstrip
 airtight
+airwaves
 ajaulado
 ajudando
 ajudante
@@ -57054,6 +57772,7 @@ alcoitao
 alcoutim
 aldemira
 aldenora
+alderman
 alecrins
 alegante
 alegoria
@@ -57331,6 +58050,7 @@ angeiras
 angelbar
 angering
 anginoso
+anglican
 angrense
 angriest
 angulado
@@ -57369,6 +58089,7 @@ anojando
 anomalia
 anonanon
 anorexia
+anorexic
 ansiamos
 ansiando
 ansiasse
@@ -57451,6 +58172,7 @@ apelante
 apequene
 aperalte
 aperalto
+aperitif
 aperture
 aperuado
 apetente
@@ -57466,6 +58188,7 @@ apoiando
 apoiante
 apologia
 apolonio
+apoplexy
 aposenta
 aposente
 aposento
@@ -57602,6 +58325,7 @@ arruinar
 arruinei
 arruinou
 arsenais
+arsonist
 artearte
 arterial
 arteries
@@ -57671,7 +58395,6 @@ assuncao
 assuring
 asterisc
 asterisk
-asteroid
 astonish
 astragtc
 astromil
@@ -57747,6 +58470,7 @@ auspicie
 auspicio
 austrais
 autarcia
+autistic
 auto2006
 autocrat
 autodies
@@ -57824,6 +58548,7 @@ bacilize
 bacilizo
 bacinete
 backbone
+backdrop
 backfire
 backflip
 backhand
@@ -57831,12 +58556,15 @@ backlash
 backpack
 backside
 backward
+backyard
 bacobaco
 bacteria
 baculino
 bada1234
 badameco
 badjoras
+badlands
+badmouth
 bafarmos
 baffling
 bafiento
@@ -57846,6 +58574,7 @@ bagarmos
 bagatela
 bagatell
 baggiest
+bagpipes
 bailando
 bailante
 baioneta
@@ -57875,6 +58604,7 @@ baleaste
 baleemos
 baleizao
 balentim
+ballpark
 ballroom
 balmiest
 balofice
@@ -57882,6 +58612,7 @@ baltazar
 baluarte
 bambolim
 bambuzal
+banality
 banaliza
 banalize
 banalizo
@@ -57910,8 +58641,6 @@ banknote
 bankrupt
 banqueir
 banzando
-baptista
-baptiste
 baqueada
 baqueado
 baqueava
@@ -57940,6 +58669,7 @@ baroniza
 baronize
 baronizo
 barrabas
+barracks
 barracud
 barrando
 barrinha
@@ -57969,6 +58699,7 @@ batatuda
 batching
 batedela
 bategada
+bathrobe
 bathroom
 batotice
 battling
@@ -58112,6 +58843,7 @@ bigamiza
 bigamize
 bigamizo
 bigamous
+bigmouth
 bigteste
 bijuteri
 bikebike
@@ -58138,6 +58870,7 @@ bionicle
 biosfera
 birching
 birdcage
+birdseed
 birrando
 birrento
 birthday
@@ -58170,8 +58903,10 @@ blanking
 blasfema
 blasfeme
 blasfemo
+blastoff
 bleakest
 blearier
+blearily
 bleeding
 blessing
 blinding
@@ -58234,6 +58969,7 @@ bochecho
 bodyboar
 bodywork
 bofetada
+bogeyman
 boggling
 boiardes
 boiarmos
@@ -58363,7 +59099,6 @@ britian1
 britteny
 brittney
 broadest
-broadway
 brocando
 brocante
 broccoli
@@ -58375,6 +59110,7 @@ brooding
 brooklyn
 browbeat
 brownest
+brownish
 browsing
 brucelee
 brucewil
@@ -58397,6 +59133,8 @@ bubbling
 bucefalo
 buckling
 budapest
+buddhism
+buddhist
 bufarmos
 bugabuga
 bugiando
@@ -58416,6 +59154,7 @@ bulldoze
 bullfrog
 bullshit
 bullying
+bumbling
 bumpiest
 bunching
 bundinha
@@ -58438,8 +59177,10 @@ bushiest
 business
 bustling
 busybody
+busywork
 buterfly
 buttress
+buzzword
 bxbx7css
 byakugan
 cabanela
@@ -58575,6 +59316,7 @@ campista
 campolid
 campones
 camprock
+campsite
 canaliza
 canalize
 canalizo
@@ -58628,7 +59370,6 @@ caparide
 caparmos
 capering
 capetown
-capitoli
 capoeiro
 capricha
 capriche
@@ -58698,6 +59439,7 @@ carrinha
 carrinho
 carrusca
 carrying
+carryout
 carteira
 carteiro
 cartismo
@@ -58722,6 +59464,7 @@ cascalhe
 cascalho
 cascando
 cascavel
+casework
 cashmere
 casillas
 casimira
@@ -58747,6 +59490,7 @@ catadupa
 catalisa
 catalise
 cataliso
+catalyst
 catapult
 catarral
 catarsia
@@ -58840,6 +59584,7 @@ cerzindo
 cesarito
 cessando
 cessante
+cesspool
 cetineta
 cetinoso
 ceyycbpi
@@ -58942,6 +59687,7 @@ chinyere
 chipcard
 chipmunk
 chirping
+chitchat
 chivalry
 chocalha
 chocalhe
@@ -58978,8 +59724,10 @@ chummier
 chunkier
 chupando
 chupista
+churlish
 churning
 chutando
+chutzpah
 chuveiro
 chuvinhe
 chuvinho
@@ -59081,11 +59829,13 @@ clerking
 clicando
 click123
 clifford
+climatic
 climatol
 climbing
 climenia
 clinging
 clioclio
+clippers
 clipping
 clitoris
 clivagem
@@ -59095,6 +59845,7 @@ cloister
 clonagem
 clonando
 cloragem
+closeout
 clothing
 clotilde
 clotting
@@ -59133,6 +59884,7 @@ coelhito
 coercing
 coercion
 coerciva
+coercive
 coercivo
 coerente
 coerimos
@@ -59140,6 +59892,7 @@ coerindo
 cogumela
 cogumelo
 coherent
+cohesion
 coibamos
 coibimos
 coibindo
@@ -59160,6 +59913,7 @@ colchete
 coldness
 coldplay
 colegial
+coleslaw
 colhendo
 colinoso
 collapse
@@ -59169,6 +59923,7 @@ coloidal
 colombia
 colonato
 colonies
+colonist
 coloniza
 colonize
 colonizo
@@ -59179,7 +59934,9 @@ coltrane
 columbia
 columbus
 comadrio
+comatose
 comeback
+comedown
 comelier
 comercie
 comercio
@@ -59332,6 +60089,7 @@ consigui
 consinta
 consinto
 consogra
+consomme
 conspira
 conspire
 conspiro
@@ -59401,6 +60159,7 @@ convulse
 convulso
 conxinha
 cookbook
+coolness
 corajosa
 corajoso
 coralina
@@ -59449,7 +60208,6 @@ cosedura
 cosidela
 cosmetic
 costapin
-costaric
 costeada
 costeado
 costeava
@@ -59523,6 +60281,7 @@ creativa
 creative
 creature
 credence
+credibly
 creepier
 creeping
 creixomi
@@ -59625,12 +60384,14 @@ custodia
 custodie
 custodio
 custoias
+cuteness
 cutilada
 cyber200
 cyberkit
 cybernet
 cylinder
 cynicism
+cyrillic
 czarismo
 czarista
 dabbling
@@ -59671,6 +60432,7 @@ darkange
 darkboy2
 darkmous
 darkness
+darkroom
 darkside
 darksoul
 dartacao
@@ -59720,7 +60482,6 @@ dedutivo
 deepblue
 defaming
 deferred
-defiance
 deflagra
 deflagre
 deflagro
@@ -59771,6 +60532,7 @@ denomino
 denounce
 dentando
 dentinho
+dentures
 deon1234
 deonilde
 deprecia
@@ -60162,6 +60924,7 @@ dionisio
 dioptria
 diospiro
 diplopia
+dipstick
 direccao
 dirtjump
 dirtying
@@ -60205,6 +60968,7 @@ disjoint
 disjunta
 disjunte
 disjunto
+diskette
 dislexia
 dislodge
 disloyal
@@ -60316,6 +61080,9 @@ donzelia
 donzilia
 donzilio
 doodling
+doomsday
+doorbell
+doorknob
 doorstep
 dopado69
 doraemon
@@ -60347,10 +61114,15 @@ downfall
 downhill
 downiest
 download
+downplay
 downpour
+downsize
+downtime
 downtown
 downtuga
+downturn
 downward
+downwind
 drabbest
 draftier
 dragagem
@@ -60380,6 +61152,7 @@ dropdead
 dropknee
 dropping
 drowsier
+drowsily
 drowsing
 drowssap
 drucilla
@@ -60419,9 +61192,12 @@ dustiest
 duzentas
 duzentos
 dwarfing
+dynamism
 dynamite
 dyslexia
+dyslexic
 eagerest
+earmuffs
 earthier
 earthing
 eastward
@@ -60452,6 +61228,7 @@ effigies
 effusive
 efigenia
 eggplant
+eggshell
 egitania
 eighteen
 eighties
@@ -60505,6 +61282,7 @@ embelezo
 embevece
 embeveci
 embezzle
+emblazon
 embodego
 embodied
 emborque
@@ -60515,6 +61293,7 @@ embriago
 embrulha
 embrulhe
 embrulho
+emeritus
 eminence
 emitente
 emitimos
@@ -60597,6 +61376,7 @@ endiabro
 endowing
 enegrece
 enegreci
+energize
 enfastia
 enfastie
 enfatiza
@@ -60653,6 +61433,7 @@ enraizei
 enraizou
 enrudece
 enrudeci
+ensconce
 ensemble
 ensombre
 ensombro
@@ -60679,6 +61460,7 @@ entregue
 entreter
 entronca
 entropia
+entryway
 envenena
 envenene
 enverede
@@ -60702,9 +61484,9 @@ epiglote
 epigrafa
 epigrafe
 epigrafo
-epigrama
 epilepsy
 epilogue
+episodic
 epopeico
 eprmncpa
 equaling
@@ -60749,6 +61531,7 @@ escanhoe
 escanhoo
 escaping
 escapism
+escapist
 escapula
 escapule
 escapuli
@@ -60821,6 +61604,7 @@ espoleta
 espreita
 espreite
 espreito
+espresso
 espsanto
 esquenta
 esquento
@@ -60848,6 +61632,7 @@ estetica
 estetiza
 estetize
 estetizo
+esthetic
 estiagem
 estilete
 estiliza
@@ -60872,6 +61657,7 @@ estreito
 estrelin
 estrelit
 estrella
+estrogen
 estroina
 estroine
 estroino
@@ -60903,6 +61689,8 @@ eukanuba
 eularina
 eulogies
 eulogize
+euphoria
+euphoric
 euridice
 euritmia
 euro2004
@@ -60943,6 +61731,7 @@ excavate
 excelent
 excelled
 excising
+excision
 excusing
 execont5
 executiv
@@ -60959,6 +61748,8 @@ exilando
 exoforia
 exorbite
 exorbito
+exorcism
+exorcist
 exorciza
 exorcize
 exorcizo
@@ -60985,6 +61776,7 @@ extravio
 exulando
 exulting
 exumando
+eyeliner
 eyesight
 ez10xuqm
 ezequiel
@@ -61030,6 +61822,7 @@ falsetto
 faltando
 famalica
 families
+famished
 fanardes
 fanarmos
 fanatiza
@@ -61046,10 +61839,12 @@ fantomas
 fanzeres
 faqueiro
 faralhao
+farcical
 fardando
 farewell
 farmacia
 farmland
+farmyard
 farofias
 faroleir
 farolins
@@ -61065,6 +61860,7 @@ farsista
 fartando
 farthest
 faseando
+fatalism
 fatality
 fatumata
 faulheis
@@ -61170,6 +61966,7 @@ filhento
 filhinha
 filhinho
 filiando
+filigree
 filisteu
 filmagem
 filmando
@@ -61207,7 +62004,9 @@ firmando
 firmness
 firmware
 fisgando
+fishbowl
 fishiest
+fishtail
 fitacola
 fitarmos
 fiveleta
@@ -61252,6 +62051,7 @@ flexibly
 flexiona
 flexione
 flexiono
+flextime
 flimsier
 flinging
 flippant
@@ -61261,6 +62061,7 @@ flirting
 flitting
 floating
 flooding
+floodlit
 flooring
 floppier
 floppies
@@ -61292,10 +62093,12 @@ flouring
 flourish
 fluffier
 fluffing
+fluidity
 fluirmos
 flunkies
 flunking
 fluoreto
+fluoride
 fluorite
 flurried
 flurries
@@ -61310,6 +62113,7 @@ focusing
 fodilhao
 fofo2008
 fofofofo
+fogbound
 foggiest
 fogofogo
 fogueada
@@ -61330,6 +62134,7 @@ foliando
 foliento
 folklore
 folksier
+follicle
 fondling
 fondness
 fonteboa
@@ -61357,6 +62162,7 @@ fordgt40
 fordpuma
 forebode
 forecast
+forehand
 forehead
 forensic
 foreskin
@@ -61367,6 +62173,7 @@ forewent
 foreword
 forgoing
 forjando
+forklift
 formacao
 formanda
 formando
@@ -61428,6 +62235,7 @@ fredfred
 free4all
 freefree
 freehand
+freeload
 freeport
 freeride
 freesurf
@@ -61437,6 +62245,7 @@ freirice
 freixial
 freixiel
 frenando
+frenetic
 frenzied
 frenzies
 frequent
@@ -61448,6 +62257,7 @@ freshmen
 fretando
 fretilin
 fretting
+freudian
 friburgo
 friction
 frillier
@@ -61558,6 +62368,7 @@ galicize
 galicizo
 galileia
 gallardo
+galoshes
 galveias
 gamaliel
 gambelas
@@ -61565,6 +62376,7 @@ gameover
 games123
 ganancia
 ganancio
+gangland
 gangrena
 gangrene
 gangreno
@@ -61603,6 +62415,7 @@ gaspeado
 gaspeava
 gastando
 gastrite
+gasworks
 gatafofa
 gatagata
 gatamimi
@@ -61615,7 +62428,6 @@ gatopret
 gatorato
 gatos123
 gatunice
-gaucheis
 gaudiest
 gauleses
 gauloise
@@ -61661,6 +62473,7 @@ geografa
 geografi
 geografo
 geologia
+geologic
 geometry
 georgann
 geosfera
@@ -61680,6 +62493,7 @@ gesconta
 gessando
 gestuais
 ghost666
+ghoulish
 giddiest
 gigabyte
 gigantic
@@ -61705,6 +62519,7 @@ girdling
 girleide
 girlhood
 giuseppe
+giveaway
 gizardes
 gizarmos
 gjict57k
@@ -61719,17 +62534,20 @@ glicerol
 glinting
 gloating
 gloomier
+gloomily
 glorinha
 glorying
 glossary
 glossier
 glossies
 glossing
+glowworm
 glummest
 glutting
 glycerin
 gnarling
 gnitrops
+goalpost
 goatzied
 gobbling
 godbless
@@ -61801,6 +62619,7 @@ graffiti
 graffito
 grafismo
 granando
+granddad
 grandola
 grandote
 grangeon
@@ -61830,6 +62649,7 @@ greedily
 greenday
 greenest
 greening
+greenish
 greeting
 gregoria
 gregorio
@@ -61842,6 +62662,7 @@ gretchen
 greywolf
 gricelda
 gridiron
+gridlock
 grieving
 grievous
 grilheta
@@ -61885,6 +62706,7 @@ gsxr1000
 gsxr1100
 guadalup
 guadiana
+guaranty
 guard666
 guardian
 guardiao
@@ -61932,10 +62754,12 @@ gulosice
 gumiraes
 gummiest
 gumption
+gunpoint
 gurgling
 gustiest
 gustinho
 gutentag
+guttural
 guzzling
 habbo123
 habbok09
@@ -61946,6 +62770,7 @@ haggling
 haitiana
 haitiano
 halflife
+halftime
 hallmark
 halogena
 halogene
@@ -61959,14 +62784,17 @@ handling
 handmade
 handrail
 handsome
+handyman
 hangover
 hannibal
+hanukkah
 hapiness
 happiest
 happines
 happyday
 harangue
 hardback
+hardball
 hardcore
 hardiest
 hardkore
@@ -61988,13 +62816,17 @@ hasteava
 hastiest
 hatching
 hattrick
+haunches
 haunting
 havaiana
 havaiano
 hayabusa
 haystack
+hazelnut
 headache
+headband
 headbang
+headgear
 headiest
 headland
 headline
@@ -62002,6 +62834,7 @@ headlong
 headrest
 headroom
 headshot
+headwind
 heartier
 hearties
 heartily
@@ -62010,6 +62843,8 @@ hebraico
 heckling
 hedgehog
 hediondo
+hedonism
+hedonist
 heedless
 heftiest
 heineken
@@ -62035,6 +62870,7 @@ heredity
 heresies
 herewith
 heritage
+hermetic
 herminio
 hermione
 hernioso
@@ -62048,10 +62884,12 @@ hifenize
 hifenizo
 highbrow
 highland
+highness
 hilarity
 hilfiger
 hilliest
 hillside
+hinduism
 hipoteca
 hipoteco
 hiroshim
@@ -62066,7 +62904,9 @@ hobbling
 hogwarts
 hoisting
 holahola
+holdover
 holiness
+holistic
 holofote
 holywood
 homeland
@@ -62076,6 +62916,7 @@ homemade
 homepage
 homesick
 homespun
+hometown
 homeward
 homework
 homicida
@@ -62183,6 +63024,7 @@ iberocar
 icecream
 ichliebe
 idalecio
+idealism
 idealist
 idealiza
 idealize
@@ -62193,9 +63035,11 @@ idiocies
 idiotiza
 idiotize
 idiotizo
+idleness
 idolatra
 idolatre
 idolatro
+idolatry
 ifigenia
 igniting
 ignition
@@ -62271,6 +63115,7 @@ indebted
 indecisa
 indeciso
 indexing
+indigent
 indolent
 inducing
 industri
@@ -62320,6 +63165,7 @@ inibindo
 initiate
 injuring
 innocent
+innovate
 innuendo
 inocenta
 inocente
@@ -62385,6 +63231,7 @@ intuindo
 inuyasha
 invasion
 invasiva
+invasive
 invasivo
 invetera
 invetere
@@ -62446,6 +63293,7 @@ jansenio
 jantando
 januaria
 januario
+japanese
 japoniza
 japonize
 japonizo
@@ -62592,10 +63440,12 @@ julieann
 jumajuma
 jumbling
 jumpiest
+jumpsuit
 juncando
 junceira
 junction
 juncture
+junkyard
 junta123
 jurardes
 jurarmos
@@ -62646,6 +63496,7 @@ kaution1
 kawasaki
 kayaking
 kayleigh
+keenness
 keepsake
 kelly123
 kemberly
@@ -62794,6 +63645,7 @@ lanceava
 lancelot
 landeira
 landeiro
+landfill
 landinha
 landlady
 landlord
@@ -63097,6 +63949,7 @@ lonesome
 lonewolf
 longhand
 longines
+longtime
 loophole
 lopsided
 lordemao
@@ -63143,6 +63996,7 @@ lovelies
 lovelife
 lovelove
 loverboy
+lovesick
 lovety10
 lowering
 lowliest
@@ -63154,6 +64008,7 @@ luademel
 luarento
 luarluar
 lubrique
+lucidity
 lucilina
 luckiest
 lucrando
@@ -63210,6 +64065,7 @@ luna2009
 luna2010
 lunacies
 lunaluna
+lunchbox
 luncheon
 lunching
 lunebleu
@@ -63237,6 +64093,7 @@ luzverde
 lynching
 lynnette
 lyon2002
+lyricist
 m60a3tts
 macaense
 macarico
@@ -63461,6 +64318,7 @@ maritimo
 marizita
 marjorie
 mark2006
+markdown
 markinho
 marksman
 marksmen
@@ -63506,6 +64364,7 @@ massacre
 massacro
 massango
 masseira
+masseuse
 massinha
 mastigue
 mastodon
@@ -63525,6 +64384,7 @@ matagoso
 matahari
 matahary
 matamata
+matchbox
 matching
 mathilda
 mathilde
@@ -63566,9 +64426,12 @@ mckenzie
 mckinley
 mdusqltr
 mealiest
+mealtime
 meandyou
 meantime
 measlier
+meatball
+meatloaf
 mecanica
 mecaniza
 mecanize
@@ -63577,6 +64440,7 @@ mecenato
 mechanic
 mechelle
 mechifla
+medalist
 meddling
 medeiros
 mediacao
@@ -63619,6 +64483,7 @@ mellissa
 meloeiro
 melomelo
 melrinho
+meltdown
 melzinha
 membrado
 membrana
@@ -63710,8 +64575,6 @@ mexerdes
 mexerica
 mexerico
 mexermos
-mexicana
-mexicano
 mgctrans
 mgmg1234
 miarossi
@@ -63744,6 +64607,7 @@ milagaia
 milamila
 milan007
 milanesa
+mildness
 milenium
 milfonte
 milhafre
@@ -63816,11 +64680,15 @@ misha123
 misjudge
 mismatch
 misnomer
+misogyny
 misplace
 misquote
 missando
 missanga
 misspell
+misspent
+mistreat
+mistrial
 mistrian
 mistrust
 misusing
@@ -63900,14 +64768,15 @@ monforte
 mongoose
 monogamy
 monogram
+monolith
 monologa
 monologo
 monopoly
 monorail
+monotone
 monotony
 monsanto
 monsaraz
-montagem
 montalto
 montalvo
 montando
@@ -64024,10 +64893,12 @@ mudar123
 muddling
 muddying
 mudhoney
+mudslide
 muffling
 muggiest
 mugirdes
 mugirmos
+muhammad
 muiemuie
 muitobom
 mulching
@@ -64039,6 +64910,7 @@ mumbling
 mumifica
 mumifico
 mumulika
+munchies
 munching
 mundiais
 mundinho
@@ -64072,6 +64944,7 @@ mwtbdltr
 mxyzptlk
 mymja658
 mysterio
+mystique
 mythical
 nacarado
 nacional
@@ -64187,6 +65060,7 @@ nevoente
 nevoento
 newcomer
 newhotel
+newlywed
 newscast
 newsiest
 newworld
@@ -64205,6 +65079,7 @@ nicotino
 nidifica
 nidifico
 niftiest
+niggling
 niilismo
 niilista
 nikiniki
@@ -64254,7 +65129,10 @@ nomencla
 nomencle
 nomenclo
 nominate
+nondairy
+nonevent
 nonsense
+nonstick
 noodling
 nordeste
 norocel1
@@ -64269,6 +65147,7 @@ northern
 nortista
 norvinda
 nos4ever
+nosedive
 nosferat
 nostromo
 notarmos
@@ -64392,6 +65271,7 @@ offshoot
 offshore
 offstage
 oftenest
+oilfield
 ointment
 oito2008
 okachopi
@@ -64451,6 +65331,7 @@ opelastr
 opelcors
 openmind
 openness
+operable
 operacao
 operatic
 operator
@@ -64471,6 +65352,7 @@ optimist
 optimiza
 optimize
 optimizo
+opulence
 orabolas
 oracular
 orcament
@@ -64526,6 +65408,7 @@ outlying
 outmoded
 outorgue
 outravez
+outreach
 outright
 outshine
 outshone
@@ -64673,6 +65556,7 @@ pandemia
 pandinha
 paneleir
 paneling
+panelist
 panfleto
 panhonha
 panifica
@@ -64695,6 +65579,7 @@ paparico
 paparmos
 paparoca
 papeleta
+paperboy
 papercut
 papering
 papijuli
@@ -64849,6 +65734,7 @@ pavoneou
 pavorosa
 pavoroso
 paxjulia
+paycheck
 pazeamor
 pbpbpbpb
 pctpmrpp
@@ -64888,6 +65774,8 @@ pedrista
 pedroine
 pedroisa
 pedrokas
+peekaboo
+peephole
 peerless
 pegadura
 pegajosa
@@ -65109,6 +65997,7 @@ pinkpink
 pinnacle
 pinoquio
 pinpoint
+pinprick
 pintalga
 pintalgo
 pintando
@@ -65129,6 +66018,7 @@ piparoto
 pipeline
 pipokinh
 pipopipo
+piquancy
 piramide
 piridina
 pirikita
@@ -65172,11 +66062,14 @@ planking
 plankton
 planning
 planting
+plateful
 platform
 platinum
+platonic
 playable
 playback
 playmate
+playroom
 playstat
 pleasant
 pleasure
@@ -65201,6 +66094,7 @@ pockmark
 podadura
 poderosa
 poderoso
+podiatry
 podologi
 poedeira
 poedoiro
@@ -65273,8 +66167,10 @@ pontilhe
 pontilho
 pontinha
 pontinho
+ponytail
 popocaca
 popozuda
+popsicle
 populace
 populate
 populosa
@@ -65341,8 +66237,10 @@ possivel
 postando
 postcard
 postcode
+postdate
 postmark
 postpone
+potbelly
 potencia
 potencie
 potencio
@@ -65399,6 +66297,7 @@ pregagem
 pregnant
 preguica
 preguice
+prejudge
 prelazia
 preludie
 preludio
@@ -65414,6 +66313,7 @@ pretinho
 prettied
 prettier
 pretties
+prettily
 previous
 pricilla
 pricking
@@ -65433,6 +66333,7 @@ prioriza
 priorize
 priorizo
 priscila
+pristine
 priteche
 privando
 probable
@@ -65512,6 +66413,7 @@ provinha
 provoque
 proximal
 prudence
+prurient
 prurimos
 prurindo
 ps2games
@@ -65557,9 +66459,7 @@ purifica
 purifico
 purified
 purifies
-puritano
 pursuing
-purveyor
 pushiest
 pushover
 pussycat
@@ -65644,7 +66544,9 @@ quitando
 quiteria
 quiterio
 quitting
+quixotic
 quizzing
+quotable
 quotient
 quovadis
 qw12er34
@@ -65929,6 +66831,7 @@ resmunga
 resmungo
 resolute
 resonant
+resonate
 respeita
 respeite
 respeito
@@ -66018,6 +66921,7 @@ rikimaro
 rikkardo
 rimardes
 rimarmos
+ringside
 ringworm
 riocaldo
 riodades
@@ -66058,13 +66962,16 @@ rivaling
 rivaliza
 rivalize
 rivalizo
+riverbed
 riveting
 rixardes
 rixarmos
+roadkill
 roadside
 roadster
 roasting
 roboredo
+robotics
 robotiza
 robotize
 robotizo
@@ -66111,6 +67018,7 @@ ronquido
 roomiest
 roommate
 roosting
+rootless
 roquette
 rosa1960
 rosa1970
@@ -66265,6 +67173,7 @@ safronov
 sagrando
 saguin68
 sailboat
+salaried
 salaries
 salavisa
 saldando
@@ -66326,6 +67235,7 @@ saneaste
 saneemos
 sanhoane
 sanidade
+sanitize
 sanjuana
 sanpedro
 sanserif
@@ -66401,6 +67311,7 @@ sarasofi
 saratoga
 sardenha
 sardinha
+sardonic
 sargenta
 sargento
 sarjando
@@ -66413,6 +67324,7 @@ sarronca
 sashinha
 sassiest
 satan666
+satanism
 sataniza
 satanize
 satanizo
@@ -66463,6 +67375,8 @@ scenting
 schedule
 scheming
 schengen
+schmaltz
+schmooze
 schnecke
 schooner
 schumann
@@ -66473,9 +67387,11 @@ scornful
 scorpian
 scorpius
 scotland
+scottish
 scouring
 scowling
 scp4ever
+scraggly
 screwier
 scribble
 scrounge
@@ -66484,6 +67400,7 @@ scubapro
 scuderia
 sculptor
 scything
+seamless
 seanpaul
 seashell
 seatibiz
@@ -66493,12 +67410,14 @@ seccione
 secciono
 securita
 security
+sedation
 sedative
 sediando
 sediment
 sednanre
 seducing
 seediest
+seedless
 seedling
 seething
 segregue
@@ -66509,6 +67428,7 @@ seinfeld
 seladura
 selardes
 selarmos
+selfless
 selvagem
 selznick
 semaforo
@@ -66567,6 +67487,7 @@ serragem
 serralha
 serralva
 serrania
+serrated
 serrazes
 serrenho
 serrinha
@@ -66637,13 +67558,18 @@ shiftier
 shifting
 shinchan
 shiniest
+shipload
 shipment
+shipyard
 shirlene
 shirting
 shoaling
 shoddier
+shoddily
 shoelace
+shoplift
 shortage
+shortcut
 shortest
 shorting
 shoshana
@@ -66652,6 +67578,7 @@ shotokan
 showcase
 showdown
 showiest
+showroom
 showtime
 shrapnel
 shredded
@@ -66666,6 +67593,7 @@ siansian
 sibelius
 sicklier
 sickness
+sidekick
 sideline
 sidelong
 sideshow
@@ -66706,6 +67634,7 @@ singapur
 singeing
 singelez
 singling
+singsong
 singstar
 singular
 siniense
@@ -66744,12 +67673,14 @@ skimboar
 skimming
 skimpier
 skimping
+skinhead
 skinnier
 skipping
 skirmish
 skirting
 skittish
 skulking
+skullcap
 skunking
 skylight
 skyscape
@@ -66757,6 +67688,7 @@ slabbing
 slackest
 slamming
 slanting
+slapdash
 slavitor
 slb4ever
 sleazier
@@ -66764,6 +67696,7 @@ sledding
 sleekest
 sleeking
 sleepier
+sleepily
 sleeping
 sleeting
 slickest
@@ -66776,11 +67709,13 @@ slipping
 slipshod
 slitting
 sloppier
+sloppily
 sloshing
 slothful
 slotting
 slovenly
 slowness
+slowpoke
 sluggish
 sluicing
 slumming
@@ -66798,6 +67733,7 @@ smokiest
 smsa15k4
 smudging
 smuggest
+smugness
 snacking
 snappier
 snapshot
@@ -66870,6 +67806,7 @@ soltroia
 solucoes
 solution
 solutivo
+solvable
 solvendo
 somardes
 somarmos
@@ -66894,6 +67831,7 @@ sopasopa
 soprando
 soproinf
 sorcerer
+soreness
 sorority
 sorriest
 sorrimos
@@ -66916,6 +67854,7 @@ soulindo
 soundest
 sounding
 sourcing
+sourness
 sousaxxx
 sousense
 sousinha
@@ -66933,9 +67872,11 @@ spearing
 specific
 specimen
 specious
+speckled
 spectrum
 speed123
 speedier
+speedily
 speeding
 speedway
 spelling
@@ -66953,7 +67894,6 @@ spoonful
 spooning
 sporadic
 sportrax
-sportyng
 spotless
 spottier
 spreeing
@@ -66985,6 +67925,7 @@ standard
 standcar
 standing
 standoff
+standout
 stanford
 stapling
 stardoll
@@ -67024,6 +67965,7 @@ stockade
 stockier
 stocking
 stodgier
+stoicism
 stomping
 stoniest
 stooping
@@ -67089,6 +68031,7 @@ subnutra
 subnutre
 subnutri
 subnutro
+subpoena
 subpolar
 subpomos
 subponde
@@ -67157,6 +68100,7 @@ supplier
 supplies
 suppress
 suprindo
+surefire
 surfgirl
 surfista
 surgical
@@ -67212,10 +68156,12 @@ sweetest
 swerving
 swiftest
 swimming
+swimsuit
 swirling
 swissbit
 swooning
 swooping
+sycamore
 syllable
 syllabus
 symmetry
@@ -67240,6 +68186,7 @@ tagarela
 tagarele
 tagarelo
 tailgate
+tailpipe
 tailspin
 tainting
 tajmahal
@@ -67263,6 +68210,7 @@ tapardes
 taparmos
 tapering
 tapestry
+tapeworm
 taqueiro
 taras123
 tarcisio
@@ -67278,6 +68226,7 @@ tasmania
 tassebem
 tasteful
 tastiest
+tattered
 tattling
 tatuagem
 tatuando
@@ -67333,6 +68282,7 @@ teleguio
 telemove
 telepata
 telepiza
+telethon
 teletype
 televisa
 televise
@@ -67417,6 +68367,7 @@ thedoors
 theforce
 thelight
 thelword
+thematic
 theodora
 theodore
 theology
@@ -67514,11 +68465,13 @@ together
 toireada
 toireado
 toireava
+tokenism
 tokio483
 tokitoki
 toldando
 tolentin
 tolhendo
+tollgate
 tomahawk
 tomardes
 tomarmos
@@ -67605,6 +68558,8 @@ tousling
 toutates
 toweling
 towering
+township
+toxicity
 toxicose
 toxidade
 toystory
@@ -67733,7 +68688,6 @@ troncuda
 troncudo
 trooping
 trophies
-tropical
 tropismo
 troteada
 troteado
@@ -67775,6 +68729,7 @@ tunisino
 turcifal
 turfeira
 turminha
+turncoat
 turnover
 turnpike
 turquesa
@@ -67791,11 +68746,13 @@ twirling
 twisting
 twnedqfz
 txutxuca
+typecast
 typeface
 typified
 typifies
 u2u2u2u2
 uaddeebg
+ubiquity
 ugandesa
 ugliness
 uivardes
@@ -67806,6 +68763,7 @@ ultra123
 umbrella
 umdolita
 umpiring
+underage
 undercut
 underdog
 undergro
@@ -68202,6 +69160,8 @@ volvos80
 volvov40
 vomiting
 vomitivo
+voracity
+vortices
 votarmos
 vouching
 voyaging
@@ -68217,7 +69177,6 @@ waltzing
 warbling
 warcraft
 wardrobe
-warlords
 washable
 washburn
 washroom
@@ -68229,12 +69188,14 @@ watchful
 watching
 watchman
 watchmen
+waterbed
 waterier
 watering
 waterloo
 waterway
 waveform
 wavering
+waxiness
 weakling
 weakness
 wearying
@@ -68262,10 +69223,12 @@ whetting
 whiffing
 whinnied
 whinnies
+whiplash
 whirling
 whirring
 whisking
 whizzing
+whodunit
 wicazita
 widening
 widowing
@@ -68282,6 +69245,7 @@ windmill
 windpipe
 windsurf
 winersat
+wingspan
 winifred
 wintrier
 winxclub
@@ -68311,6 +69275,7 @@ wordlife
 wordpass
 workable
 workbook
+workfare
 workload
 workshop
 wormhole
@@ -68326,6 +69291,7 @@ wrestlin
 writable
 writhing
 wrongest
+wrongful
 wronging
 wttg6735
 wweworld
@@ -68356,7 +69322,9 @@ xzsawq21
 y7y7y7y7
 yachting
 yamakazi
+yarmulke
 ybchenlc
+yearbook
 yearling
 yessenia
 yeswecan
@@ -68368,6 +69336,7 @@ youlanda
 youngest
 yourself
 youthful
+yuletide
 zacefron
 zairense
 zambezia
@@ -68443,6 +69412,7 @@ abolition
 abolitivo
 abrimento
 abrolhoso
+abstinent
 aburguese
 aburgueso
 academies
@@ -68460,7 +69430,6 @@ aconselhe
 acquiesce
 acquiring
 acrobacia
-activismo
 acusativo
 adalsindo
 adamastor
@@ -68495,7 +69464,6 @@ aeromotor
 aeronauta
 aeroplano
 aerospace
-aesthetic
 afectuosa
 afectuoso
 affidavit
@@ -68660,13 +69628,12 @@ andadeiro
 andamento
 andarilha
 andarilho
+anecdotal
 anedotiza
 anedotize
 anedotizo
 aneladura
 aneurisma
-anglicana
-anglicano
 angliciza
 anglicize
 anglicizo
@@ -68730,6 +69697,7 @@ antipathy
 antipatia
 antiquing
 antiquity
+antitrust
 antiviril
 antivirus
 antologia
@@ -68877,6 +69845,7 @@ assurance
 astrology
 astronaut
 astronomy
+astroturf
 asturiano
 atabalhoa
 atabalhoe
@@ -68983,6 +69952,7 @@ baldeemos
 baldomero
 baldroque
 ballerina
+ballistic
 balsamiza
 balsamize
 balsamizo
@@ -69055,6 +70025,7 @@ beijadela
 belicismo
 belicista
 believing
+benchmark
 beneficia
 beneficie
 beneficio
@@ -69087,6 +70058,7 @@ biography
 biologist
 biometria
 birthmark
+birthrate
 bismutado
 bizantina
 bizantino
@@ -69096,12 +70068,16 @@ blackhead
 blackjack
 blacklist
 blackmail
+blackness
+blankness
 blaspheme
 blasphemy
+bleakness
 bleariest
 blindfold
 blindness
 blockhead
+bloodbath
 bloqueada
 bloqueado
 bloqueava
@@ -69113,6 +70089,7 @@ blueprint
 bluetooth
 bluntness
 boanerges
+boardroom
 boardwalk
 bodeguice
 bodyguard
@@ -69127,11 +70104,14 @@ bombeando
 bombeasse
 bombeaste
 bombeemos
+bombshell
 bonecinha
 bonifique
+bookmaker
 bookshelf
 bookstore
 boomerang
+boondocks
 bootstrap
 borboreja
 borboreje
@@ -69142,6 +70122,7 @@ bordoeira
 borguista
 borradela
 borradura
+bossiness
 botanical
 boulevard
 boundless
@@ -69169,7 +70150,6 @@ breakdown
 breakfast
 breakneck
 breeziest
-breweries
 briefcase
 brilliant
 brimstone
@@ -69263,6 +70243,7 @@ camarilha
 cambojana
 cambojano
 cambriano
+camcorder
 cameleiro
 camiliano
 camilista
@@ -69301,6 +70282,8 @@ carcinoma
 cardboard
 careteiro
 cargueiro
+caribbean
+carjacker
 carmesins
 carnadura
 carnifica
@@ -69355,6 +70338,7 @@ cathedral
 catrafila
 catrafile
 catrafilo
+caucasian
 caulifica
 caulifico
 caulinite
@@ -69372,6 +70356,7 @@ celebriza
 celebrize
 celebrizo
 celestial
+celluloid
 cellulose
 celtibero
 centipede
@@ -69423,14 +70408,22 @@ charizard
 charneira
 chauffeur
 cheapness
+checkbook
+checklist
+checkmate
+cheekbone
 chegadela
 cheirinha
 cheirinho
 chevalier
 chiadeira
+chickadee
 chieftain
+childcare
 childhood
+childless
 childlike
+chinatown
 chinfrina
 chinfrine
 chinfrino
@@ -69456,10 +70449,13 @@ cineastra
 cineclube
 cinefilia
 cinquenta
+cirrhosis
 citarista
 citologia
 civilista
 clammiest
+clampdown
+clapboard
 claquista
 clareamos
 clareasse
@@ -69482,6 +70478,7 @@ cleotilde
 cleveland
 climactic
 clipboard
+cloakroom
 clockwise
 clockwork
 clodomiro
@@ -69489,12 +70486,14 @@ clonagens
 clorofila
 closeness
 cloudiest
+cloudless
 clubhouse
 clumsiest
 coadjutor
 coastline
 cobardice
 cobertura
+cockiness
 cockroach
 codiceira
 codifique
@@ -69517,7 +70516,6 @@ collision
 collusion
 colmeeiro
 coloidais
-colonista
 coloquial
 colorless
 colossais
@@ -69563,6 +70561,7 @@ concateno
 concelhia
 concelhio
 concessor
+concierge
 concubina
 concubine
 concubino
@@ -69623,6 +70622,7 @@ cordeasse
 cordeaste
 cordeemos
 corkscrew
+cornbread
 corneemos
 cornelius
 cornifica
@@ -69669,6 +70669,7 @@ coxeadura
 cozedeira
 cozimento
 crabbiest
+crackdown
 crackling
 craftiest
 craggiest
@@ -69700,8 +70701,11 @@ criogenia
 criologia
 crisalida
 criterion
+croissant
 crossfire
+crossover
 crossroad
+crosstown
 crosswalk
 crossword
 cruamente
@@ -69738,6 +70742,7 @@ cutileiro
 dachshund
 dagoberto
 dalailama
+dalmatian
 damasceno
 danamento
 dandelion
@@ -69751,6 +70756,7 @@ dastardly
 dauntless
 davidinho
 deadliest
+deathtrap
 decagrama
 decalitro
 deceiving
@@ -69781,10 +70787,12 @@ deitadura
 delgadeza
 delineada
 delineado
+delineate
 delineava
 delirious
 delituoso
 demagogia
+demagogic
 demagogue
 demetrius
 democracy
@@ -69797,6 +70805,7 @@ dentadura
 deodorant
 deodorize
 depleting
+depletion
 deploring
 deponente
 depravity
@@ -69900,6 +70909,7 @@ diametral
 diaphragm
 diarreica
 diarreico
+dichotomy
 dicotomia
 dictating
 dictation
@@ -69929,6 +70939,7 @@ diogojoao
 diphthong
 disabling
 discoteca
+dishtowel
 dispepsia
 disputing
 dissemine
@@ -69956,12 +70967,14 @@ doidivana
 doidivane
 doidivano
 doiradura
+dollhouse
 domitilia
 dormitivo
 doubtless
 douradura
 downgrade
 downright
+downstate
 draconian
 draftiest
 dragagens
@@ -69994,10 +71007,12 @@ eagerness
 earthiest
 earthlier
 earthworm
+eastbound
 easygoing
 eavesdrop
 ebriedade
 ebuliente
+ebullient
 eccentric
 ecletismo
 eclipsing
@@ -70022,8 +71037,10 @@ efeminizo
 efficient
 egasmoniz
 eglantina
+egregious
 eightieth
 eisenberg
+elbowroom
 electrify
 electriza
 electrize
@@ -70038,6 +71055,7 @@ elopement
 eloquence
 elsewhere
 elvis1976
+emaciated
 emanating
 embasbaca
 embasbaco
@@ -70061,6 +71079,7 @@ empaleava
 empantane
 empantufe
 emparelhe
+empathize
 empecilha
 empecilhe
 empecilho
@@ -70115,6 +71134,7 @@ enceleire
 encharque
 enchedela
 enchedura
+enchilada
 encoleire
 encoronhe
 encoronho
@@ -70172,6 +71192,7 @@ entenreci
 enternece
 enterneci
 entertain
+entourage
 entreacto
 entrelace
 entroniza
@@ -70190,6 +71211,7 @@ epilepsia
 epileptic
 episcopal
 epitelial
+epitomize
 equaciona
 equacione
 equaciono
@@ -70213,6 +71235,7 @@ ergonomic
 ermiterio
 erroneous
 erstwhile
+erudition
 escabeche
 escabrosa
 escabroso
@@ -70363,8 +71386,6 @@ executing
 execution
 exemplify
 exibitivo
-exorcismo
-exorcista
 expansion
 expansiva
 expansive
@@ -70392,6 +71413,7 @@ extrafino
 extrapola
 extrapole
 extrapolo
+extremism
 extremist
 extremity
 extricate
@@ -70420,10 +71442,10 @@ falsifies
 famagusta
 fanatismo
 farinhoso
+farmhouse
 farofeiro
 fartadela
 fastiento
-fatalismo
 fatiguing
 fatuidade
 faulhamos
@@ -70465,6 +71487,7 @@ fibriloso
 ficcional
 fidalguia
 fidedigno
+fieldwork
 fielmente
 figadeira
 figurinha
@@ -70474,6 +71497,7 @@ filigrana
 filigrane
 filigrano
 filmagens
+filmmaker
 filogenia
 filologia
 filthiest
@@ -70482,6 +71506,7 @@ finamente
 finamento
 financing
 finessing
+firebrand
 fireflies
 fireproof
 firsthand
@@ -70508,6 +71533,8 @@ fledgling
 fleeciest
 fleshiest
 flimsiest
+floodgate
+flophouse
 floreamos
 floreasse
 floreaste
@@ -70540,8 +71567,10 @@ fonologia
 foodstuff
 foolhardy
 foolproof
+footloose
 footprint
 footstool
+foreclose
 forefront
 foresight
 foretaste
@@ -70569,6 +71598,7 @@ fotograma
 fotologia
 foundling
 foundries
+fractious
 fradicida
 fragrance
 frailties
@@ -70576,6 +71606,7 @@ framboesa
 framework
 franchise
 frankfurt
+frankness
 franqueai
 franquear
 franqueei
@@ -70595,8 +71626,6 @@ freelance
 freirinha
 frentismo
 freshness
-freudiana
-freudiano
 freudismo
 frialdade
 friamente
@@ -70611,6 +71640,7 @@ frivolous
 frizziest
 frostiest
 frothiest
+fruitcake
 fruitiest
 fruitless
 frutifica
@@ -70649,7 +71679,6 @@ ganglioma
 gangplank
 garagista
 gargaludo
-garibaldo
 garrancha
 garridice
 garrulous
@@ -70668,7 +71697,6 @@ gatafunho
 gatopardo
 gatunismo
 gauchamos
-gauchemos
 gaussiana
 gaussiano
 gazeteada
@@ -70678,6 +71706,7 @@ gazeteiro
 gazetista
 gazetting
 gearldine
+gearshift
 gelifique
 gemedoiro
 gemedouro
@@ -70686,16 +71715,15 @@ genebrino
 gengivite
 genovense
 genoveses
+genuflect
 geography
 geologies
 geologist
 geometral
 geometria
+geriatric
 germicida
 germicide
-gerundial
-gerundiva
-gerundivo
 gesticula
 gesticule
 gesticulo
@@ -70732,6 +71760,7 @@ golpeasse
 golpeaste
 golpeemos
 gonorreia
+gonorrhea
 goodnight
 gordurosa
 gorduroso
@@ -70760,6 +71789,7 @@ graovasco
 grapevine
 grappling
 grassiest
+grassland
 gravadura
 gravativo
 graveyard
@@ -70787,10 +71817,12 @@ gruguleja
 gruguleje
 grugulejo
 grumpiest
+guacamole
 guanabara
 guanoapes
 guarantee
 guarantor
+guardrail
 guatemala
 guerreada
 guerreado
@@ -70805,12 +71837,14 @@ guiamento
 guianense
 guidebook
 guideline
+guileless
 guillermo
 guiltiest
 guiltless
 guineense
 guionista
 gumesindo
+gunnysack
 gustativa
 gustativo
 gutemberg
@@ -70819,13 +71853,18 @@ gymnasium
 gyroscope
 habacuque
 hailstone
+hairbrush
+hairpiece
+hairstyle
 halloween
 hampshire
 handiwork
 handshake
+handstand
 hannelore
 happycasa
 haraquiri
+hardcover
 hardliner
 harmoniza
 harmonize
@@ -70836,6 +71875,7 @@ hasteando
 hasteasse
 hasteaste
 hasteemos
+hatchback
 haughtier
 haughtily
 headfirst
@@ -70846,6 +71886,7 @@ heartache
 heartbeat
 heartburn
 heartfelt
+heartland
 heartless
 heaviness
 hebraista
@@ -70853,7 +71894,6 @@ hebraizai
 hebraizar
 hebraizei
 hebraizou
-hedonismo
 hegelismo
 hegemonia
 heidegger
@@ -70870,6 +71910,7 @@ henriette
 hepatitis
 heptaedro
 herbicida
+herbivore
 herboriza
 herborize
 herborizo
@@ -70911,7 +71952,9 @@ holandizo
 hollywood
 holocaust
 homeliest
+homemaker
 homeopata
+homeowner
 homestead
 homofobia
 homofonia
@@ -70922,6 +71965,7 @@ homotetia
 honeycomb
 honeymoon
 honorable
+honorably
 horoscope
 horrified
 horrifies
@@ -70959,7 +72003,6 @@ hypnotist
 hypnotize
 hypocrisy
 hypocrite
-idealismo
 identical
 ideograma
 ideologia
@@ -70979,6 +72022,7 @@ imitation
 imitativa
 imitative
 imitativo
+immediacy
 immensity
 immersing
 immersion
@@ -71030,15 +72074,17 @@ incorporo
 incrimina
 incrimine
 incrimino
+incurably
 incurring
 indalecio
 indefesso
 indelible
 indelibly
+indemnify
+indemnity
 indemniza
 indemnize
 indemnizo
-indigente
 individua
 individue
 individuo
@@ -71206,6 +72252,7 @@ joaolopes
 joaopires
 joaosousa
 joaotiago
+jockstrap
 johnathon
 josealves
 josediogo
@@ -71268,7 +72315,7 @@ lambeemos
 lambidela
 lamecense
 lamparina
-landowner
+lampshade
 landscape
 laqueamos
 laqueando
@@ -71292,7 +72339,9 @@ lavamento
 lavoisier
 lawerence
 lealmente
+lecherous
 lecturing
+leftovers
 legalismo
 legumista
 leiriense
@@ -71311,6 +72360,7 @@ licenceio
 licensing
 lifeforms
 lifeguard
+lifesaver
 lifestyle
 ligeireza
 ligeirice
@@ -71354,15 +72404,19 @@ logarithm
 logaritmo
 logicismo
 logistica
+logistics
 logrativo
 loincloth
 loneliest
 longboard
 longevity
 longitude
+lookalike
 lotteries
+loudmouth
 louletano
 love4ever
+lowercase
 loyalties
 luandense
 lubrifica
@@ -71392,6 +72446,7 @@ machinist
 macilento
 macinhata
 mackenzie
+macrocosm
 madamismo
 madrilena
 madrileno
@@ -71457,6 +72512,7 @@ mascolino
 masculina
 masculine
 masculino
+masochism
 masochist
 massaging
 massaroco
@@ -71518,6 +72574,7 @@ mesquinhe
 messenger
 metabolic
 metalgear
+methadone
 metodismo
 metodista
 metragens
@@ -71525,7 +72582,9 @@ mezinhice
 mezzanine
 miauzinha
 microbial
+microchip
 microcode
+microcosm
 microfilm
 microfone
 microwave
@@ -71543,6 +72602,7 @@ milheiral
 miliciano
 miligrama
 mililitro
+millennia
 millicent
 milligram
 mimalhice
@@ -71557,6 +72617,7 @@ minefield
 miniatura
 miniature
 miniaturo
+miniskirt
 minnesota
 minotauro
 minuciosa
@@ -71595,10 +72656,10 @@ monologia
 monologue
 monolugar
 monotonia
-montagens
 montalvao
 montebelo
 monthlies
+moodiness
 moralismo
 mordedela
 mordedura
@@ -71618,7 +72679,9 @@ moscavide
 moscovita
 motociclo
 motorbike
+motorboat
 motorcade
+mouthwash
 mudamente
 mugginess
 mulatinha
@@ -71632,6 +72695,7 @@ mummified
 mummifies
 mungidura
 municipal
+munitions
 muramento
 musaranho
 musculada
@@ -71648,6 +72712,7 @@ nacionais
 nadadeira
 naftaleno
 naftalina
+nailbrush
 nakedness
 namorique
 naotedigo
@@ -71692,6 +72757,7 @@ nietzsche
 nightclub
 nightfall
 nightgown
+nightlife
 nighttime
 ninetieth
 nitrifica
@@ -71762,6 +72828,7 @@ officiate
 officious
 olhadinha
 olhanense
+ombudsman
 omgomgomg
 oncologia
 onslaught
@@ -71776,6 +72843,7 @@ opiologia
 opportune
 opressiva
 opressivo
+optometry
 oraculiza
 oraculize
 oraculizo
@@ -71816,6 +72884,7 @@ overboard
 overborne
 overcrowd
 overdraft
+overjoyed
 overnight
 overpower
 overprice
@@ -71823,6 +72892,7 @@ overprint
 overreact
 overshoot
 oversight
+oversized
 oversleep
 overslept
 overstate
@@ -71899,23 +72969,28 @@ panteando
 panteasse
 panteaste
 panteemos
+pantheism
 pantomime
 pantomina
 pantomine
 pantomino
+pantyhose
 papalvice
 paparique
 papelinho
 papelista
 papelucho
 paperback
+papergirl
 paperwork
 parachute
 paradinha
 paragraph
+paralegal
 paralyses
 paralysis
 paralytic
+paramedic
 paramento
 parameter
 parapeita
@@ -71964,6 +73039,7 @@ pathology
 patifaria
 patogenia
 patologia
+patricide
 patrimony
 patrocina
 patrocine
@@ -71975,6 +73051,8 @@ pavoneada
 pavoneado
 pavoneava
 peaceable
+peaceably
+peacetime
 pechinche
 pechincho
 pecunioso
@@ -72086,6 +73164,7 @@ petticoat
 pettiness
 phenomena
 philomena
+phosphate
 photocopy
 picadeiro
 pictorial
@@ -72132,6 +73211,7 @@ plebeizei
 plebeizou
 plenitude
 plentiful
+plexiglas
 plutonium
 pneumatic
 pneumonia
@@ -72155,6 +73235,8 @@ polluting
 pollution
 polvorosa
 polvoroso
+polyester
+polygraph
 pomareiro
 pomifique
 pompeamos
@@ -72163,6 +73245,7 @@ pompeante
 pompeasse
 pompeaste
 pompeemos
+pomposity
 ponteamos
 ponteando
 ponteasse
@@ -72193,6 +73276,8 @@ posiciono
 possuente
 posturing
 potassium
+potpourri
+powerboat
 powerless
 practical
 pragmatic
@@ -72317,7 +73402,7 @@ proxeneta
 proximity
 prudencia
 prudencio
-pruriente
+prurience
 psicopata
 psiquismo
 puberdade
@@ -72339,6 +73424,7 @@ purgativo
 purgatory
 purifique
 purulento
+pussyfoot
 putamadre
 putrifica
 putrifico
@@ -72369,6 +73455,7 @@ quibbling
 quicksand
 quietismo
 quietista
+quietness
 quilovolt
 quilowatt
 quimeriza
@@ -72378,7 +73465,6 @@ quimifica
 quimifico
 quitinoso
 quixotada
-quixotice
 quizzical
 quotation
 rabeadura
@@ -72402,6 +73488,7 @@ radiating
 radiation
 radicular
 radiohead
+radiology
 rainstorm
 rainwater
 raleadura
@@ -72461,7 +73548,6 @@ recheaste
 recheemos
 rechoncha
 rechonche
-rechoncho
 recipient
 reciproca
 reciproco
@@ -72530,6 +73616,7 @@ repreenda
 repreende
 repreendi
 repreendo
+reptilian
 repulsion
 repulsiva
 repulsive
@@ -72571,6 +73658,7 @@ ricketier
 righteous
 rightmost
 rightness
+rigmarole
 rigoberto
 rigorismo
 rigorista
@@ -72578,6 +73666,7 @@ rinologia
 riopiedra
 riscadura
 roadblock
+roadhouse
 rocinante
 rockinrio
 romancice
@@ -72608,6 +73697,7 @@ ruboresce
 ruboresci
 rudesindo
 rudimento
+rudiments
 rummaging
 rupturing
 ruralismo
@@ -72616,10 +73706,12 @@ russifico
 rustifica
 rustifico
 rustiquez
+rustproof
 rutilante
 saboreada
 saboreado
 saboreava
+saccharin
 sacerdote
 sachadela
 sachadura
@@ -72634,6 +73726,7 @@ sacrilege
 sadrudine
 safeguard
 sagebrush
+sailboard
 saintlier
 salamanca
 salgadura
@@ -72643,12 +73736,14 @@ salteando
 salteasse
 salteaste
 salteemos
+saltwater
 salvaging
 salvation
 salvatore
 salzburgo
 samthekid
 sanctuary
+sandblast
 sandpaper
 sandstone
 sandstorm
@@ -72667,7 +73762,6 @@ saqueemos
 sarampelo
 sarcastic
 sarjadura
-satanismo
 satanista
 satirical
 satisfied
@@ -72677,9 +73771,11 @@ scapegoat
 scarecrow
 scarlatti
 schelling
+scorecard
 scoundrel
 scrapbook
 scrawnier
+screwball
 screwiest
 scrupling
 scuffling
@@ -72745,6 +73841,7 @@ sexologia
 shabbiest
 shackling
 shaggiest
+shakedown
 shameless
 shapelier
 sharmaine
@@ -72760,6 +73857,8 @@ shortfall
 shorthand
 shortlist
 shortness
+shortwave
+showpiece
 shredding
 shrugging
 shuffling
@@ -72767,9 +73866,12 @@ shuttling
 siciliano
 sickliest
 siddartha
+sideburns
 sidetrack
 siegfried
 sightless
+sightread
+signatory
 significa
 significo
 signified
@@ -72810,16 +73912,19 @@ situation
 skimpiest
 skinflint
 skinniest
+skintight
 slapstick
 sleaziest
 sleepiest
 sleepless
+sleepwalk
 sloppiest
 smuggling
 sneakiest
 sniffling
 snootiest
 snowboard
+snowbound
 snowdrift
 snowflake
 snowstorm
@@ -72834,11 +73939,13 @@ sobrepujo
 sobretaxa
 sobretudo
 societies
+sociopath
 sofistica
 sofistico
 solavanco
 soldadura
 soldagens
+soliloquy
 soluciona
 solucione
 soluciono
@@ -72854,6 +73961,7 @@ sonolenta
 sonolento
 sophistry
 sophomore
+soporific
 sorceress
 sorteamos
 sorteando
@@ -72862,6 +73970,8 @@ sorteaste
 sorteemos
 sorvedela
 sorvedura
+soundness
+sourdough
 southeast
 southerly
 southward
@@ -72901,12 +74011,18 @@ starboard
 starlight
 startling
 statement
+statewide
 statistic
 statutory
 steadfast
+steamboat
 steamiest
+steamroll
+steepness
 steffanie
+stepchild
 stephaine
+sterility
 sterilize
 sternness
 stiffness
@@ -72918,8 +74034,10 @@ stipulate
 stockiest
 stockpile
 stodgiest
+stonewall
 stopwatch
 stormiest
+strapless
 strategic
 stratford
 strenuous
@@ -72932,6 +74050,7 @@ stupefies
 sturdiest
 stuttgart
 stylistic
+styrofoam
 suavidade
 subimento
 subordina
@@ -72980,6 +74099,7 @@ supervise
 surfboard
 surgeries
 surmising
+surrogate
 surviving
 suserania
 suspicion
@@ -72991,6 +74111,7 @@ swampiest
 swarthier
 swindling
 swordfish
+sycophant
 sylvester
 symphonic
 synagogue
@@ -73001,6 +74122,7 @@ tabagismo
 taboritas
 tabuleiro
 tacanhice
+tackiness
 tacteamos
 tacteando
 tacteante
@@ -73027,6 +74149,7 @@ tasqueiro
 tasteless
 tatuagens
 tautology
+taxidermy
 taxilogia
 taxinomia
 taxonomia
@@ -73092,6 +74215,7 @@ thickness
 thirtieth
 throwaway
 throwback
+thumbnail
 thumbtack
 tightness
 tightrope
@@ -73116,6 +74240,7 @@ toireasse
 toireaste
 toireemos
 tolhedura
+tollbooth
 tomamento
 tombstone
 tonelagem
@@ -73155,6 +74280,7 @@ toureamos
 toureasse
 toureaste
 toureemos
+townhouse
 tradition
 tragedies
 traimento
@@ -73203,6 +74329,7 @@ trauteava
 travadura
 treachery
 treadmill
+treatable
 treatment
 trembling
 tremedura
@@ -73243,6 +74370,8 @@ troteemos
 troubling
 trouncing
 trovisque
+truckload
+truculent
 tudoigual
 turbativo
 turbulent
@@ -73256,10 +74385,13 @@ tyrannize
 ugandeses
 umbilical
 unanimity
+uncannily
 underflow
 underfoot
+undergrad
 underlain
 undermine
+underpaid
 underpass
 underrate
 underside
@@ -73313,10 +74445,12 @@ variolado
 varioloso
 varredura
 vasculoso
+vasectomy
 vasomotor
 vasotomia
 vazamento
 vedetismo
+vehicular
 veleidade
 velocista
 vengeance
@@ -73378,6 +74512,7 @@ virilismo
 virologia
 viscerais
 visceroso
+viscosity
 vislumbra
 vislumbre
 vislumbro
@@ -73398,9 +74533,12 @@ voracious
 vulcaniza
 vulcanize
 vulcanizo
+waistband
 waistline
 wallpaper
 warehouse
+warmonger
+washbasin
 washcloth
 wasteland
 watchword
@@ -73411,6 +74549,7 @@ waterpolo
 wearisome
 wednesday
 weirdness
+westbound
 wheedling
 whereupon
 whichever
@@ -73423,6 +74562,8 @@ whittling
 wilhemina
 willodean
 willpower
+windswept
+wineglass
 winnifred
 wintriest
 wisecrack
@@ -73430,10 +74571,12 @@ withstand
 withstood
 witticism
 wobbliest
+woebegone
 woodchuck
 workbench
 workforce
 workplace
+worksheet
 worldlier
 worldwide
 worrisome
@@ -73462,12 +74605,12 @@ abhorrence
 abocamento
 abolimento
 aboveboard
+abridgment
 abrunheiro
 absorption
 abstention
 abstimento
 abstinence
-abstinente
 academismo
 academista
 accelerate
@@ -73485,6 +74628,7 @@ admissible
 admittance
 admonition
 adrenalina
+adrenaline
 adulteries
 adulterino
 advisories
@@ -73495,6 +74639,8 @@ affinities
 aficionada
 aficionado
 afterlives
+aftershave
+aftershock
 aggression
 aggressive
 agorafobia
@@ -73506,6 +74652,7 @@ alcalinize
 alcalinizo
 alcibiades
 aldeamento
+alderwoman
 alegorismo
 alegorista
 alfabetiza
@@ -73526,6 +74673,7 @@ ambivalent
 ambulativo
 ameixieira
 ameixoeira
+ameliorate
 amendoeira
 amigdalite
 ammunition
@@ -73549,7 +74697,6 @@ andromorfo
 andropausa
 anedotista
 anesthesia
-anesthetic
 anfetamina
 angiologia
 anglicismo
@@ -73564,6 +74711,7 @@ announcing
 ansiamento
 antagonism
 antagonist
+antebellum
 antecessor
 antibiotic
 anticipate
@@ -73575,10 +74723,12 @@ anualidade
 anualmente
 apalaciane
 apendicite
+apocalypse
 apocryphal
 apogiatura
 apologetic
 apologista
+apoplectic
 apostrophe
 apparition
 appetizing
@@ -73631,6 +74781,7 @@ assoreemos
 assumption
 assumptivo
 astrofobia
+astrologer
 astrologia
 astromante
 astronomer
@@ -73662,7 +74813,6 @@ backgammon
 bacoquismo
 bacteriose
 bailomania
-ballistics
 banalidade
 banalmente
 bandalhice
@@ -73680,6 +74830,7 @@ beautician
 beautified
 beautifies
 beberrique
+bedraggled
 believable
 belittling
 beneditina
@@ -73736,6 +74887,7 @@ borreguice
 boundaries
 bracarense
 braceleira
+brainchild
 bramanismo
 branqueada
 branqueado
@@ -73802,6 +74954,7 @@ cantaloupe
 cantanhede
 capachinho
 capazmente
+cappuccino
 capricious
 capsulador
 capuchinho
@@ -73858,8 +75011,6 @@ catequista
 catoliciza
 catolicize
 catolicizo
-caucasiana
-caucasiano
 caulifique
 caulifloro
 cauteleiro
@@ -73873,6 +75024,7 @@ cemeteries
 cemiterial
 centennial
 centesimal
+centigrade
 centigrama
 centimeter
 centrifuga
@@ -73895,6 +75047,8 @@ chacoteada
 chacoteado
 chacoteava
 chafurdice
+chairwoman
+chalkboard
 chalreamos
 chalreasse
 chalreaste
@@ -73907,14 +75061,19 @@ charutaria
 charuteira
 charuteiro
 chastising
+chauvinism
 chauvinist
+cheapskate
 checkpoint
+chessboard
 childbirth
+childproof
 chimpanzee
 chineleiro
 chivalrous
 chloroform
 chocalhice
+choppiness
 choradeira
 choradinho
 chromosome
@@ -73964,6 +75123,7 @@ collegiate
 colloquial
 colonizing
 coloquiais
+colorblind
 comboniana
 comboniano
 combustion
@@ -73983,6 +75143,7 @@ completiva
 completivo
 completude
 compliance
+complicity
 compliment
 compositor
 compoteira
@@ -74032,6 +75193,7 @@ conjecturo
 conjuntiva
 conjuntivo
 conjuntura
+connivance
 consecrate
 consequent
 conspiring
@@ -74050,6 +75212,7 @@ contingent
 continuing
 continuity
 contribuem
+contrition
 contriving
 convalesce
 convalesci
@@ -74077,6 +75240,7 @@ corpanzudo
 correntoso
 corridinho
 corrimento
+corrugated
 cortadeira
 corticeira
 corticeiro
@@ -74109,6 +75273,7 @@ cronologia
 cronometra
 cronometre
 cronometro
+crosscheck
 crucifique
 cruciforme
 cruelmente
@@ -74123,6 +75288,7 @@ currencies
 curriculum
 curtimento
 cuspideira
+cyberspace
 d147852369
 debauchery
 debilidade
@@ -74150,7 +75316,6 @@ delineaste
 delineemos
 delinquent
 delvecchio
-demagogice
 democracia
 denouncing
 densamente
@@ -74254,6 +75419,7 @@ discrimine
 discrimino
 disgruntle
 disguising
+disheveled
 disjuntiva
 disjuntivo
 dispensing
@@ -74262,9 +75428,11 @@ dispersivo
 disponente
 disposable
 dissension
+dissidence
 dissonance
 dissuasivo
 distancing
+distention
 distintiva
 distintivo
 distraught
@@ -74277,6 +75445,7 @@ doiradinha
 dorminhoco
 dramatismo
 dramaturgo
+dreadlocks
 dressmaker
 drowsiness
 dubiamente
@@ -74286,8 +75455,10 @@ dumbledore
 dunquerque
 duodecenal
 dynamiting
+earthiness
 earthliest
 earthquake
+ebullience
 ecumenical
 ecumenismo
 effeminate
@@ -74439,7 +75610,6 @@ estatutivo
 esteriliza
 esterilizo
 esterquice
-estoicismo
 estomatite
 estorninho
 estorrique
@@ -74472,6 +75642,7 @@ euviumsapo
 evagelista
 evaluating
 evaluation
+everyplace
 everything
 everywhere
 evidencing
@@ -74484,6 +75655,7 @@ excavation
 excellence
 excomunhal
 exhilarate
+exhumation
 exiguidade
 exoftalmia
 exoterismo
@@ -74493,7 +75665,6 @@ experiment
 extralegal
 extramuros
 extraneous
-extremismo
 facilidade
 facilities
 facilmente
@@ -74562,17 +75733,21 @@ flanqueada
 flanqueado
 flanqueava
 flashlight
+flatulence
 flatulento
 flimsiness
 flirtation
 floodlight
 fluminense
 fluxograma
+flyswatter
 fogosidade
 foguetaria
 folheteiro
 fonometria
+forgivable
 formidable
+formidably
 formulista
 fornaceiro
 forthright
@@ -74625,6 +75800,7 @@ ganhadeiro
 gargaleira
 gargaleiro
 garganteio
+gargantuan
 gaseifique
 gaseiforme
 gazeteamos
@@ -74635,6 +75811,7 @@ gazeteemos
 genealogia
 genebrense
 generosity
+geographer
 geometries
 geralmente
 ghastliest
@@ -74643,6 +75820,7 @@ gigantismo
 giuseppina
 glandulosa
 glanduloso
+gloominess
 glorifique
 glossaries
 goleamento
@@ -74701,6 +75879,7 @@ harmonioso
 harmonious
 haughtiest
 heartbreak
+heartthrob
 heavymetal
 hebraizada
 hebraizado
@@ -74711,7 +75890,6 @@ hegemoniza
 hegemonize
 hegemonizo
 helicoidal
-helicopter
 hemoglobin
 hemophilia
 hemorragia
@@ -74743,13 +75921,14 @@ hipotrofia
 hispanismo
 hispanista
 histerismo
+histrionic
 hobbyhorse
 hodgepodge
 holandeses
 homenzinho
+homeopathy
 homeopatia
 homogenize
-homophobic
 homozigoto
 hondurenha
 hondurenho
@@ -74757,6 +75936,8 @@ honorifica
 honorifico
 horsepower
 hospitable
+housebound
+housewares
 housewives
 hullabaloo
 humanidade
@@ -74765,6 +75946,7 @@ humanizing
 humidified
 humidifies
 hydroplane
+hypodermic
 hypotenuse
 iconofilia
 iconologia
@@ -74791,6 +75973,7 @@ immunizing
 impacienta
 impaciento
 impeccable
+impeccably
 impervious
 implacable
 impoverish
@@ -74807,7 +75990,6 @@ incendiado
 incendiava
 incipiente
 incombusto
-incredibly
 indigenous
 indociliza
 indocilize
@@ -74818,6 +76000,7 @@ inevitable
 inevitably
 inexorable
 inexorably
+infatuated
 infecciona
 infeccione
 infecciono
@@ -74833,6 +76016,7 @@ influencie
 influencio
 ingratiate
 ingredient
+inhalation
 iniquidade
 initiating
 initiation
@@ -74920,6 +76104,7 @@ justifique
 kenndikenn
 kensington
 klapaucius
+knickknack
 kristopher
 labreguice
 lacor700mb
@@ -74943,6 +76128,7 @@ lanuginoso
 laringiano
 laryngitis
 lascivious
+laundromat
 lauralaura
 lavandeira
 lavandeiro
@@ -75005,6 +76191,7 @@ loteamento
 loucamente
 loveliness
 lubrifique
+lugubrious
 luminaries
 luxemburgo
 maastricht
@@ -75085,6 +76272,7 @@ mastreasse
 mastreaste
 mastreemos
 matchmaker
+matchstick
 matilheiro
 matreirice
 matrimonia
@@ -75107,6 +76295,7 @@ membranoso
 memorizing
 mendicante
 meneamento
+meningitis
 menoridade
 menospreza
 menospreze
@@ -75132,7 +76321,6 @@ metropolis
 microbiana
 microbiano
 microclima
-microcosmo
 microfiche
 microflora
 microfonia
@@ -75159,6 +76347,7 @@ minorities
 mirandense
 misantropo
 miscellany
+misogynist
 misticismo
 mistifique
 mitsubishi
@@ -75176,7 +76365,6 @@ monoculize
 monoculizo
 monogamous
 monolingue
-monolithic
 monopolies
 monopoliza
 monopolize
@@ -75213,6 +76401,7 @@ motdepasse
 motilidade
 motorcycle
 motorizing
+motormouth
 mouthpiece
 mozambique
 multibanco
@@ -75225,6 +76414,8 @@ municipais
 museologia
 narcisismo
 narcisista
+narcissism
+narcissist
 narcomania
 narcotismo
 narigueiro
@@ -75254,6 +76445,8 @@ nocividade
 nodosidade
 nominating
 nonchalant
+nonplussed
+northbound
 norueguesa
 notabiliza
 notabilize
@@ -75308,6 +76501,7 @@ ostrogodos
 outlandish
 ovuliforme
 ozonifique
+paintbrush
 paisagismo
 paisagista
 palavreada
@@ -75411,12 +76605,14 @@ perniciosa
 pernicioso
 pernicious
 peroxiding
+perquisite
 persecutor
 perspiring
 persuasion
 persuasiva
 persuasive
 persuasivo
+perversity
 pestaneada
 pestaneado
 pestaneava
@@ -75424,6 +76620,7 @@ pestilence
 pestilento
 petrifique
 phenomenon
+philistine
 philosophy
 phonograph
 photogenic
@@ -75456,10 +76653,12 @@ plebiscito
 plenamente
 plexiforme
 pluriforme
+plutocracy
 plutocrata
 pneumococo
 pobrezinho
 pocahontas
+podiatrist
 poinsettia
 polaridade
 polarizing
@@ -75468,8 +76667,10 @@ poligonais
 polimorfia
 polinomial
 politician
+politicize
 poltronice
 polvorento
+polygamist
 polygamous
 polynomial
 pontedesor
@@ -75488,12 +76689,14 @@ positivism
 possidente
 postgresql
 posthumous
+postmortem
 postponing
 pouquidade
 pousadeiro
 powerhouse
 practicing
 pragmatism
+pragmatist
 prateadura
 prateleira
 preambular
@@ -75516,6 +76719,7 @@ principado
 principais
 prioridade
 priorities
+prioritize
 prisionais
 privilegia
 privilegie
@@ -75538,6 +76742,7 @@ propensity
 prophecies
 prophesied
 prophesies
+propitious
 proprietor
 propulsion
 propulsiva
@@ -75579,6 +76784,7 @@ quarteando
 quarteasse
 quarteaste
 quarteemos
+queasiness
 queenliest
 queenqueen
 quezilenta
@@ -75639,6 +76845,7 @@ rectamente
 rectifique
 rectiforme
 recurrence
+recyclable
 redemption
 redondinha
 redondinho
@@ -75692,6 +76899,7 @@ reumatismo
 reversible
 rhapsodies
 rheumatism
+rhinestone
 rhinoceros
 ribanceira
 ribatejana
@@ -75702,6 +76910,7 @@ ricketiest
 ridiculing
 ridiculoso
 ridiculous
+riverfront
 rochemback
 rodeamento
 romancismo
@@ -75732,6 +76941,7 @@ sadiamente
 sagazmente
 saintliest
 salamandra
+salesclerk
 saleswoman
 saleswomen
 salgadeira
@@ -75768,6 +76978,7 @@ scheduling
 scholastic
 schumacher
 scientific
+scoreboard
 scrawniest
 scribbling
 scrounging
@@ -75798,12 +77009,12 @@ serrabulho
 servofreio
 servomotor
 setecentas
+seventieth
 severidade
 sextuplica
 sextuplico
 seychelles
 shapeliest
-shoplifter
 siderurgia
 sigismundo
 signifique
@@ -75864,6 +77075,7 @@ solubilize
 solubilizo
 somersault
 sonoridade
+sophomoric
 sopranista
 sororities
 sorrateira
@@ -75872,6 +77084,7 @@ sorvedoiro
 sorvedouro
 soundproof
 soundtrack
+southbound
 spacecraft
 spellbound
 spindliest
@@ -75881,6 +77094,7 @@ stagnating
 standpoint
 starvation
 stateliest
+stillbirth
 stinginess
 stockading
 storehouse
@@ -75889,9 +77103,11 @@ straggling
 strategies
 stravinsky
 strawberry
+striptease
 structural
 struggling
 stupendous
+sturdiness
 subjacente
 subjuntivo
 subliminal
@@ -75917,6 +77133,7 @@ sugestiono
 superhomem
 superhuman
 supermario
+superpower
 supervisor
 surgimento
 surpreenda
@@ -75929,6 +77146,7 @@ suspicious
 sustenance
 sustimento
 swarthiest
+sweatpants
 sweetheart
 sympathies
 sympathize
@@ -75958,6 +77176,7 @@ telemetria
 teleologia
 telepathic
 telescopia
+telescopic
 televisiva
 televisivo
 templarios
@@ -75985,7 +77204,7 @@ theatrical
 theologian
 theologies
 theorizing
-thermostat
+thereabout
 throttling
 timorleste
 tingimento
@@ -75999,6 +77218,7 @@ titubeasse
 titubeaste
 titubeemos
 tolhimento
+tomfoolery
 tonalidade
 tontamente
 toothbrush
@@ -76017,8 +77237,10 @@ tossezinha
 totalidade
 totalities
 totalmente
+touchstone
 tournament
 tourniquet
+toxicology
 trafulhice
 trampoline
 trampolins
@@ -76084,7 +77306,6 @@ troglodita
 tropecilho
 troposfera
 trovejante
-truculento
 turbulence
 turpentine
 tutancamon
@@ -76099,6 +77320,7 @@ unbeatable
 undeniable
 undeniably
 underbrush
+underclass
 undercover
 underlying
 underneath
@@ -76119,6 +77341,7 @@ unicamente
 unionizing
 unitarismo
 unitarista
+unruliness
 unseemlier
 unwieldier
 urologista
@@ -76178,6 +77401,7 @@ vocabuliza
 vocabulize
 vocabulizo
 vocacional
+volatility
 volatiliza
 volatilize
 volatilizo
@@ -76188,6 +77412,7 @@ voluptuous
 vorarlberg
 vulcanismo
 vulnerable
+watchmaker
 watercolor
 waterfront
 waterproof
@@ -76199,6 +77424,7 @@ wheelchair
 wilhelmina
 witchcraft
 woodpecker
+workaholic
 worldliest
 worthwhile
 wristwatch
@@ -76242,7 +77468,9 @@ alfabetista
 alibilidade
 allegorical
 alleviating
+alleviation
 almofadilha
+altercation
 amabilidade
 ambiguidade
 ambiguities
@@ -76252,6 +77480,8 @@ anachronism
 anacronismo
 anaerobiose
 anaximandro
+anesthetist
+anesthetize
 anexionismo
 anexionista
 animosidade
@@ -76269,6 +77499,8 @@ aparcamento
 apaziguemos
 apendiciado
 apenhascado
+aphrodisiac
+apocalyptic
 apologizing
 application
 appreciable
@@ -76350,6 +77582,7 @@ branqueando
 branqueasse
 branqueaste
 branqueemos
+bucktoothed
 burguesismo
 burocratiza
 burocratize
@@ -76401,6 +77634,7 @@ celuliforme
 centrifugue
 cerceamento
 ceremonious
+certifiable
 chacoteamos
 chacoteando
 chacoteasse
@@ -76416,8 +77650,8 @@ chanfradura
 chantagista
 charcutaria
 chateamento
-chauvinismo
 chlorophyll
+choreograph
 choupaneiro
 chouriceiro
 cientifique
@@ -76449,6 +77683,7 @@ cloroplasta
 colegiatura
 collapsible
 combustible
+comeuppance
 commodities
 communicate
 commutative
@@ -76650,6 +77885,7 @@ etnicamente
 etnologista
 etymologies
 euequemando
+euphemistic
 excepcional
 exemplifica
 exemplifico
@@ -76732,10 +77968,13 @@ galvanizing
 garbosidade
 gargantilha
 gaspeadeira
+gastronomic
 genealogies
+genealogist
 genuinidade
 geographies
 geotermismo
+gerrymander
 ginecofobia
 glamorizing
 gnoseologia
@@ -76746,8 +77985,13 @@ gradeamento
 gramaticais
 grammatical
 guadalajara
+guesstimate
 guillermina
+gullibility
+hairstylist
+halfhearted
 hanoveriano
+hardhearted
 harmonizing
 harpsichord
 haughtiness
@@ -76757,6 +78001,7 @@ hebraizasse
 hebraizaste
 hebraizemos
 hematologia
+hemorrhoids
 hemorroidal
 herbivorous
 herzegovina
@@ -76771,7 +78016,9 @@ hiperbolizo
 hipertrofia
 hipertrofie
 hipertrofio
+homeopathic
 homofonismo
+homogeneity
 homogeneous
 honorifique
 humidamente
@@ -76779,6 +78026,7 @@ humiliating
 humiliation
 hypnotizing
 hypocrisies
+hypothermia
 hypothesize
 iconoclasta
 identifique
@@ -76825,6 +78073,7 @@ intensidade
 intensifica
 intensifico
 intensified
+intensifier
 intensifies
 interluding
 intervening
@@ -76846,6 +78095,7 @@ jansenistas
 joanesburgo
 justifiable
 justifiably
+kindhearted
 lacticinoso
 lamborghini
 landscaping
@@ -76888,12 +78138,12 @@ maratonista
 marselheses
 marshmallow
 marsupilami
+masculinity
 masculiniza
 masculinize
 masculinizo
 masticating
 maternidade
-mathematics
 maximiliano
 maximiniana
 mecanicismo
@@ -76926,6 +78176,7 @@ mirabolante
 misantropia
 mischievous
 mitologista
+moisturizer
 molanqueiro
 monasterial
 monasteries
@@ -76976,6 +78227,7 @@ noruegueses
 notacionais
 notoriedade
 nutricional
+nymphomania
 obediencial
 obfuscation
 obscenidade
@@ -77004,6 +78256,7 @@ ontologismo
 operosidade
 oportunismo
 oportunista
+opportunism
 opportunist
 opportunity
 optometrist
@@ -77052,6 +78305,7 @@ patranheiro
 patranhento
 patrimonial
 pechisbeque
+pedagogical
 pedagogismo
 pedagogista
 pedunculoso
@@ -77067,6 +78321,7 @@ percepciona
 percepcione
 percepciono
 perceptible
+perceptibly
 percevejada
 percolating
 percolation
@@ -77113,7 +78368,6 @@ possibilite
 possibility
 poucochinho
 practicable
-pragmatista
 prazenteira
 prazenteiro
 preciosismo
@@ -77144,6 +78398,7 @@ propriedade
 proprietary
 prosecuting
 prosecution
+proselytize
 prosopopeia
 prossecutor
 protagonist
@@ -77159,8 +78414,6 @@ pulverizing
 punctiforme
 punctuating
 punctuation
-puritanical
-puritanismo
 putademerda
 putrescente
 quadricolor
@@ -77181,6 +78434,7 @@ rabequeando
 rabequeasse
 rabequeaste
 rabequeemos
+radiologist
 radiometria
 rapidamente
 rapioqueiro
@@ -77233,6 +78487,7 @@ sacerdotisa
 sacrificial
 sacrificing
 sadicamente
+sagittarius
 salamaleque
 salteamento
 saltimbanco
@@ -77256,6 +78511,7 @@ sequenciais
 sernancelhe
 serounaoser
 sexagesimal
+shenanigans
 simplicista
 simplifique
 sinceridade
@@ -77265,6 +78521,7 @@ sinuosidade
 sinusoidais
 slovenliest
 smithereens
+smorgasbord
 sobranceada
 sobranceado
 sobranceava
@@ -77273,6 +78530,7 @@ sobranceria
 sociabiliza
 sociabilize
 sociabilizo
+softhearted
 solidifique
 somiticaria
 sorteamento
@@ -77307,6 +78565,7 @@ substrutura
 subvenciona
 subvencione
 subvenciono
+sufficiency
 suffocating
 suffocation
 summarizing
@@ -77320,6 +78579,7 @@ susceptible
 synchronize
 synchronous
 syndicating
+syndication
 tacitamente
 tacteamento
 tactilidade
@@ -77339,9 +78599,12 @@ territories
 testiculoso
 therapeutic
 thermometer
+thingamajig
+tightfisted
 timidamente
 tipicamente
 titillating
+topographer
 tordesilhas
 torneamento
 torrenciais
@@ -77369,11 +78632,14 @@ tuberculose
 tuberculoso
 tyrannizing
 unanimidade
+unavoidably
 ungainliest
 unseemliest
 unsightlier
 unspeakable
+unstoppable
 unthinkable
+untouchable
 untuosidade
 unwieldiest
 uranometria
@@ -77421,7 +78687,6 @@ alcalinidade
 alfarrabista
 anabolizante
 andrologista
-anglicanismo
 angulometria
 angulosidade
 annihilating
@@ -77454,8 +78719,10 @@ autoctonismo
 bambaleadura
 bandolinista
 basaltiforme
+belligerence
 bisbilhotice
 bizantinismo
+blabbermouth
 bloqueamento
 bonacheirice
 branqueadura
@@ -77485,7 +78752,6 @@ catecumenado
 categorizing
 celulosidade
 chiropractor
-choreography
 chorinquento
 chronologies
 circumcising
@@ -77523,6 +78789,7 @@ constituting
 constitution
 constitutiva
 constitutivo
+consummation
 contiguidade
 continuidade
 contribuente
@@ -77597,6 +78864,7 @@ encadeamento
 encyclopedia
 enraizamento
 entomologist
+entrepreneur
 entretimento
 equilibrismo
 equilibrista
@@ -77649,11 +78917,11 @@ galhardeando
 galhardeasse
 galhardeaste
 galhardeemos
-genealogista
 generosidade
 genuinamente
 geocentrismo
 ginecocracia
+globetrotter
 gramatiquice
 gramatologia
 granuliforme
@@ -77664,6 +78932,7 @@ guadalquivir
 guatemalteca
 guatemalteco
 guillotining
+haberdashery
 hegelianismo
 hemorrhaging
 hemorroidoso
@@ -77698,6 +78967,7 @@ inaccuracies
 incendimento
 incolumidade
 incompatibly
+incontinence
 indoctrinate
 inextricably
 inflammation
@@ -77725,6 +78995,7 @@ lascivamente
 legibilidade
 legitimidade
 legivelmente
+lighthearted
 limpidamente
 longitudinal
 longshoreman
@@ -77739,7 +79010,6 @@ manteigueira
 manteigueiro
 manteiguento
 masculinismo
-mathematical
 mediatamente
 mediocridade
 mediocrities
@@ -77774,6 +79044,7 @@ onomatopaico
 onomatopeico
 onomatopoeia
 ornitorrinco
+orthodontics
 orthodontist
 oscilloscope
 palacianismo
@@ -77812,6 +79083,7 @@ poliomielite
 politiquismo
 pomposamente
 populacional
+pornographer
 positividade
 possibilismo
 possibilista
@@ -77820,7 +79092,9 @@ potabilidade
 practitioner
 precariedade
 preciosidade
+predilection
 prerrogativa
+presbyterian
 primitivismo
 probabilismo
 probabilista
@@ -77850,9 +79124,10 @@ quantitativo
 quarantining
 quinhentismo
 quinhentista
-radiologista
+rambunctious
 recalcitrant
 recognizable
+recognizably
 recompensing
 rejuvenating
 relampagueai
@@ -77904,6 +79179,7 @@ subalterniza
 subalternize
 subalternizo
 subdiaconado
+subservience
 substantiate
 substituente
 substituting
@@ -77920,12 +79196,13 @@ territoriais
 testosterona
 topographies
 tortuosidade
+translucence
 transparency
 transpositor
+transvestite
 trigonometry
 tuberculosis
 unbelievably
-unforgivable
 univocamente
 unmistakable
 unmistakably
@@ -77959,6 +79236,8 @@ agressividade
 alcoviteirice
 amoravelmente
 amovibilidade
+anachronistic
+antihistamine
 antropomorfia
 anulabilidade
 apelabilidade
@@ -77985,7 +79264,6 @@ cavalheiresco
 cavalheirismo
 celibatarismo
 chafariqueiro
-choreographer
 cilindriforme
 circumference
 circunstancia
@@ -78016,6 +79294,7 @@ countenancing
 credibilidade
 culpabilidade
 curandeirismo
+decaffeinated
 deflacionismo
 deflacionista
 delinquencies
@@ -78088,7 +79367,6 @@ imitabilidade
 impassibiliza
 impassibilize
 impassibilizo
-imperceptibly
 impertinencia
 impertinencie
 impertinencio
@@ -78097,6 +79375,7 @@ incongruities
 inefabilidade
 inegavelmente
 infalibilismo
+infallibility
 inflacionismo
 inflacionista
 inquisitorial
@@ -78128,7 +79407,7 @@ maneabilidade
 manufacturing
 masculinidade
 massachusetts
-mathematician
+mechanization
 merchandising
 metamorphosis
 metodicamente
@@ -78177,6 +79456,7 @@ produtividade
 proficuamente
 proprietaries
 provavelmente
+rapprochement
 razoabilidade
 razoavelmente
 recepcionista
@@ -78193,6 +79473,7 @@ salsaparrilha
 sanctimonious
 sanguinolenta
 sanguinolento
+scintillating
 sensibilidade
 sensibilities
 sensitivities
@@ -78218,10 +79499,12 @@ teocraticismo
 terribilidade
 trigonometria
 trocadilhista
+upperclassman
 variabilidade
 velocipedismo
 velocipedista
 vencibilidade
+ventriloquism
 ventriloquist
 versilibrismo
 vibratilidade
@@ -78234,6 +79517,7 @@ acknowledgment
 aleatoriamente
 alimentividade
 anthropologist
+antiperspirant
 antropologista
 antropomorfiza
 antropomorfize
@@ -78247,7 +79531,6 @@ bacterioscopia
 circumstancing
 circumstantial
 circunscritivo
-climaticamente
 coercibilidade
 companheirismo
 conglumerativo
@@ -78269,7 +79552,6 @@ dramatologista
 dubitabilidade
 ecumenicamente
 entretenimento
-episodicamente
 espeleologista
 espontaneidade
 estequiometria
@@ -78278,10 +79560,10 @@ exequibilidade
 exequivelmente
 farmacologista
 favoravelmente
-freneticamente
 fuliginosidade
+gentrification
+hallucinogenic
 heliocentrismo
-hermeticamente
 hieraticamente
 higienicamente
 hipocritamente
@@ -78366,7 +79648,7 @@ susceptibilizo
 tacteabilidade
 transparencies
 tucultininurta
-ventriloquismo
+unconscionable
 verosimilhante
 voluptuosidade
 abstraccionismo
@@ -78429,6 +79711,8 @@ telepaticamente
 tendenciosidade
 tuberculosidade
 vulnerabilidade
+whatchamacallit
+anesthesiologist
 antropocentrismo
 burocraticamente
 circunscricional
