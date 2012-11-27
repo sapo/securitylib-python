@@ -32,6 +32,15 @@ def get_password_strength_values():
     'pacfwldj7wlx',
     'asdf',
     '2wsxploxsw2',
+    '23-df-48',
+    'aa.66.99',
+    '12/12/12',
+    '01081996',
+    '01 8 1996',
+    '01.8.1996',
+    '18.1.2020',
+    '1900.01.29',
+    '96.30.01',
     ]
 
     passwords_to_test = [
@@ -137,7 +146,7 @@ def get_password_strength_values():
     '1p']
 
     for password in first_passwords_to_test:
-        print "eq_(get_password_strength('{}'), {})".format(password, get_password_strength(password))
+        print "    eq_(get_password_strength('{}'), {})".format(password, get_password_strength(password))
 
     print
     d = {}
@@ -146,4 +155,12 @@ def get_password_strength_values():
         d[password] = strength
     sorted_d = sorted(d.iteritems(), key=operator.itemgetter(1))
     for password, strength in reversed(sorted_d):
-        print "eq_(get_password_strength('{}'), {})".format(password, strength)
+        print "    eq_(get_password_strength('{}'), {})".format(password, strength)
+
+
+def main():
+    get_password_strength_values()
+
+
+if __name__ == '__main__':
+    main()
