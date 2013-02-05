@@ -2,8 +2,10 @@ from random import Random, SystemRandom
 from securitylib import random
 from nose.tools import eq_, assert_raises
 import os
+import datetime
 
 old_urandom = os.urandom
+old_datetime = datetime.datetime
 
 RANDOM_BYTES = '10790832727821f6ff615d45d373f27f2a48210f332e1c20c67984387397deb5e6fcd0051c2cb3e4dfd\
 9a965d0470d5fdefdd86dcf4548a70cd0d954435c26b9e9e6df3ee8cc28acb6840d78528820b812bf9b73f5f8ddaef597fb\
@@ -53,3 +55,32 @@ def assert_raises_with_message(exception, message, callable, *args, **kwargs):
     with assert_raises(exception) as cm:
         callable(*args, **kwargs)
     eq_(cm.exception.message, message)
+
+
+class FakeDatetimeNow(object):
+    def __init__(self):
+        self.time_passed = 0
+
+    def __call__(self):
+        result = datetime.datetime.fromtimestamp(self.time_passed)
+        return result
+
+    def advance_time(self, seconds):
+        self.time_passed += seconds
+
+
+class FakeDatetime(datetime.datetime):
+    pass
+
+
+def setup_fake_datetime():
+    FakeDatetime.now = FakeDatetimeNow()
+    datetime.datetime = FakeDatetime
+
+
+def teardown_fake_datetime():
+    datetime.datetime = old_datetime
+
+
+def fake_sleep(seconds):
+    datetime.datetime.now.advance_time(seconds)
