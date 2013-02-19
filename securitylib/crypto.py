@@ -1,9 +1,3 @@
-"""
-.. module:: crypto
-    :synopsis: Use this lib if you need cryptographic functions (encrypt, hash, etc).
-
-.. moduleauthor:: Francisco Vieira <francisco.vieira@co.sapo.pt>
-"""
 from securitylib import advanced_crypto
 from securitylib.advanced_crypto import ENCRYPTION_KEY_MINIMUM_LENGTH, HMAC_KEY_MINIMUM_LENGTH
 from securitylib.utils import decode_hex_param

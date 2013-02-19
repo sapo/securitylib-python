@@ -1,10 +1,3 @@
-"""
-.. module:: passwords
-    :synopsis: Creation and validation of user passwords.
-
-.. moduleauthor:: Francisco Vieira <francisco.vieira@co.sapo.pt>
-"""
-
 from securitylib.utils import randomize, get_random_element
 import string
 import math

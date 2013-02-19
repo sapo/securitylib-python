@@ -10,6 +10,7 @@ Modules:
     advanced_crypto
     random
     passwords
+    throttling/throttling
 
 
 Indices and tables

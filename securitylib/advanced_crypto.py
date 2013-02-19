@@ -1,10 +1,3 @@
-"""
-.. module:: advanced_crypto
-    :synopsis: Use this lib if you need cryptographic functions
-               or extra parameteres not present in the crypto lib.
-
-.. moduleauthor:: Francisco Vieira <francisco.vieira@co.sapo.pt>
-"""
 from hashlib import md5, sha1, sha256, sha512
 import hmac as hmac_mod
 import struct

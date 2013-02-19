@@ -1,9 +1,3 @@
-"""
-.. module:: random
-    :synopsis: Use this lib to generate random numbers and strings.
-
-.. moduleauthor:: Francisco Vieira <francisco.vieira@co.sapo.pt>
-"""
 from __future__ import absolute_import
 import os
 import string
