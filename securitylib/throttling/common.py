@@ -269,18 +269,22 @@ class Session(object):
 
     def __init__(self, previous_logins=None):
         if not previous_logins:
-            previous_logins = []
+            previous_logins = {}
         self.previous_logins = previous_logins
 
-    def has_valid_login(self, ip, user):
-        for valid_ip, valid_user in self.previous_logins:
-            if ip == valid_ip and user == valid_user:
-                return True
-        return False
+    def has_valid_login(self, user):
+        return user in self.previous_logins
 
-    def add_valid_login(self, ip, user):
-        if not self.has_valid_login(ip, user):
-            self.previous_logins.append((ip, user))
+    def add_valid_login(self, user):
+        self.previous_logins[user] = 0
+
+    def remove_valid_login(self, user):
+        if self.has_valid_login(user):
+            del self.previous_logins[user]
+
+    def add_failed_attempt(self, user):
+        self.previous_logins[user] += 1
+        return self.previous_logins[user]
 
     @staticmethod
     def serialize(session):

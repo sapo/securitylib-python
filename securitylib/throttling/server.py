@@ -89,6 +89,8 @@ class StateUpdater(object):
         'initial_blocking_time': 30,
     }
 
+    FREE_PASS_LIMIT = 10
+
     def __init__(self, counters_storage, session_storage, config=None):
         self.counters_storage = counters_storage
         self.session_storage = session_storage
@@ -129,12 +131,19 @@ class StateUpdater(object):
         self._update_counters_values(counters, success)
         self._update_counters_status(counters)
         self.counters_storage.set(ip, user, pwd, counters, ctx)
-        if success and session_id and ip and user:
-            throttling_session = self.session_storage.get(session_id)
-            if not throttling_session:
-                throttling_session = Session()
-            throttling_session.add_valid_login(ip, user)
-            self.session_storage.set(session_id, throttling_session)
+        if session_id and user:
+            session = self.session_storage.get(session_id)
+            if not session:
+                session = Session()
+
+            if success:
+                session.add_valid_login(user)
+            elif session.has_valid_login(user):
+                failed_attempts = session.add_failed_attempt(user)
+                if failed_attempts >= self.FREE_PASS_LIMIT:
+                    session.remove_valid_login(user)
+
+            self.session_storage.set(session_id, session)
 
     def _update_counters_values(self, counters, success=False):
         if success:

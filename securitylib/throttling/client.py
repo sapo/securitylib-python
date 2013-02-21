@@ -71,7 +71,7 @@ class StateChecker(object):
         """
         if session_id:
             session = self.session_storage.get(session_id)
-            if session and ip and user and session.has_valid_login(ip, user):
+            if session and user and session.has_valid_login(user):
                 return {'state': 'ok'}
 
         counters = self.counters_storage.get(ip, user, pwd, ctx)
