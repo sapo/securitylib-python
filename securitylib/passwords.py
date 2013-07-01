@@ -159,16 +159,20 @@ def count_occurrences_in_set(seq, target_set):
     return count
 
 
-def get_password_strength(password):
+def get_password_strength(password, username=None):
     """
     Evaluate a password's strength according to some heuristics.
 
     :param password: Password to evaluate.
     :type password: :class:`str`
 
+    :param username: Username of the password's owner. When provided, the password strength will
+                     be lower if it contains the given username.
+    :type username: :class:`str`
+
     :returns: :class:`int` -- Strength of the password as an int between 0 and 100.
     """
-    return min(int(get_entropy_bits(password) * 100 / 52), 100)
+    return min(int(get_entropy_bits(password, username) * 100 / 52), 100)
 
 
 class PassVariant:
@@ -241,7 +245,7 @@ def get_NIST_num_bits(password, repeatcalc=False):
     return result
 
 
-def get_entropy_bits(password):
+def get_entropy_bits(password, username=None):
     """
     Evaluate a password's strength according to some heuristics.
     Returns the entropy of the given password in bits.
@@ -252,6 +256,10 @@ def get_entropy_bits(password):
 
     :param password: Password to evaluate.
     :type password: :class:`str`
+
+    :param username: Username of the password's owner. When provided, the password strength will
+                     be lower if it contains the given username.
+    :type username: :class:`str`
 
     returns: :class:`int` -- Number of bits of entropy that the password has.
     """
@@ -311,6 +319,11 @@ def get_entropy_bits(password):
 
     orig_pass = handle_license_plates(orig_pass)
     orig_pass = handle_dates(orig_pass)
+
+    if username:
+        # In case the given username is an email, only keep the left part of it
+        username = username.partition('@')[0]
+        orig_pass = handle_username(orig_pass, username)
 
     ### Creates many variants of the origial password ###
     # Lowercase variant
@@ -413,6 +426,24 @@ def handle_dates(pwd):
         m = DATE_REGEX.search(pwd)
         if m:
             pwd = replace_at_span(pwd, '\x00' * 2, m.start(), m.end())
+    return pwd
+
+
+def handle_username(pwd, username):
+
+    def remove_username(pwd, username_lower):
+        index = pwd.lower().find(username_lower)
+        while index != -1:
+            pwd = replace_at_span(pwd, '\x00' * 2, index, index + len(username_lower))
+            index = pwd.lower().find(username_lower)
+        return pwd
+
+    if len(username) > 2:
+        username_lower = username.lower()
+        pwd = remove_username(pwd, username_lower)
+        pwd = reverse_string(pwd)
+        pwd = remove_username(pwd, username_lower)
+        pwd = reverse_string(pwd)
     return pwd
 
 

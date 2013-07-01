@@ -166,3 +166,17 @@ def test_get_password_strength():
     eq_(get_password_strength('7p'), 12)
     eq_(get_password_strength('6Y'), 12)
     eq_(get_password_strength('1p'), 12)
+
+    # Using username parameter
+    eq_(get_password_strength('2wsxploxsw2', 'piox'), 52)  # no match
+    eq_(get_password_strength('2wsxploxsw2', 'plox'), 46)  # simple match
+    eq_(get_password_strength('x3m4@xukebowq3$d', 'kebow'), 74)  # simple match
+    eq_(get_password_strength('x3m4@xukebowq3$d', 'wobek'), 74)  # reversed match
+    eq_(get_password_strength('QH8RbHEipy7bYoOY', 'HEipy7'), 69)  # simple match
+    eq_(get_password_strength('QH8RbHEipy7bYoOY', 'hEiPy7'), 69)  # case insensitive match
+    eq_(get_password_strength('abab', 'a'), 19)  # username too small
+    eq_(get_password_strength('xkebow@kebowq3$d', 'kebow'), 60)  # double match
+    eq_(get_password_strength('xwobekukebowq3$d', 'wobek'), 60)  # double match, one simple another reversed
+    eq_(get_password_strength('xkeBow@kEbowq3$d', 'kebow'), 64)  # double case insensitive match
+    eq_(get_password_strength('xkebow@kebowq3$d', 'kebow@sapo.pt'), 60)  # double match, email username
+    eq_(get_password_strength('xkebow@kebowq3$d', 'kebow@sapo.pt@sapo.pt'), 60)  # double match, email username, two @
