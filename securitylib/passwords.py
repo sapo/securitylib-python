@@ -167,7 +167,8 @@ def get_password_strength(password, username=None):
     :type password: :class:`str`
 
     :param username: Username of the password's owner. When provided, the password strength will
-                     be lower if it contains the given username.
+                     be lower if it contains the given username. If the username is an email,
+                     both the whole email and its left part will be used.
     :type username: :class:`str`
 
     :returns: :class:`int` -- Strength of the password as an int between 0 and 100.
@@ -258,7 +259,8 @@ def get_entropy_bits(password, username=None):
     :type password: :class:`str`
 
     :param username: Username of the password's owner. When provided, the password strength will
-                     be lower if it contains the given username.
+                     be lower if it contains the given username. If the username is an email,
+                     both the whole email and its left part will be used.
     :type username: :class:`str`
 
     returns: :class:`int` -- Number of bits of entropy that the password has.
