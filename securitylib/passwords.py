@@ -321,9 +321,12 @@ def get_entropy_bits(password, username=None):
     orig_pass = handle_dates(orig_pass)
 
     if username:
-        # In case the given username is an email, only keep the left part of it
-        username = username.partition('@')[0]
+        # Remove whole username
         orig_pass = handle_username(orig_pass, username)
+        if '@' in username:
+            # If username is an email, also remove the first part of the email
+            username = username.partition('@')[0]
+            orig_pass = handle_username(orig_pass, username)
 
     ### Creates many variants of the origial password ###
     # Lowercase variant

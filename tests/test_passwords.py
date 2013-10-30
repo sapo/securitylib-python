@@ -180,3 +180,6 @@ def test_get_password_strength():
     eq_(get_password_strength('xkeBow@kEbowq3$d', 'kebow'), 64)  # double case insensitive match
     eq_(get_password_strength('xkebow@kebowq3$d', 'kebow@sapo.pt'), 60)  # double match, email username
     eq_(get_password_strength('xkebow@kebowq3$d', 'kebow@sapo.pt@sapo.pt'), 60)  # double match, email username, two @
+    eq_(get_password_strength('2wsxplox@sapo.ptsw2', 'plox@sapo.pt'), 54)  # simple match
+    eq_(get_password_strength('2wsxtp.opas@xolpsw2', 'plox@sapo.pt'), 54)  # reversed match
+    eq_(get_password_strength('2plox@sapo.ptwsxplox@sapo.ptsw2', 'plox@sapo.pt'), 61)  # double match
