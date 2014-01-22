@@ -414,7 +414,7 @@ def handle_license_plates(pwd):
     m = LICENCE_PLATE_REGEX.search(pwd)
     if m:
         filtered_license = ''.join(filter(None, m.groups()))
-        count_letters = sum(1 for c in filtered_license if c.islower())
+        count_letters = sum(1 for c in filtered_license if c.isalpha())
         if count_letters == 2:
             # is valid license plate
             pwd = replace_at_span(pwd, filtered_license, m.start(), m.end())

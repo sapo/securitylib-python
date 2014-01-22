@@ -57,6 +57,7 @@ def test_get_password_strength():
     eq_(get_password_strength('asdf'), 11)
     eq_(get_password_strength('2wsxploxsw2'), 52)
     eq_(get_password_strength('23-df-48'), 43)
+    eq_(get_password_strength('23-DF-48'), 43)
     eq_(get_password_strength('aa.66.99'), 40)
     eq_(get_password_strength('12/12/12'), 21)
     eq_(get_password_strength('01081996'), 13)
