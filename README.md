@@ -1,12 +1,11 @@
-SAPO Security Lib - Python
-============
+# SAPO Security Lib - Python
 
 The SAPO Security Lib is a library whose purpuse is to provide functions/classes that solve common security related problems, while being easy to use even by those who are not security experts. This repository contains the Python version of this library.
 
 Our design principles:
 
 - **Security** — This is an obvious one, but it is important to explain how it is enforced.
-    - No security primitives were invented, all security sensitive code was based on modern security best-practices (e.g. we use PBKDF2 to derive keys from passwords, we didn't reinvent the wheel).
+    - No security primitives were invented, all security sensitive code is based on modern security best-practices (e.g. we use PBKDF2 to derive keys from passwords, we didn't reinvent the wheel).
     - Very high (near 100%) testing code coverage.
     - Manual code review by security professionals.
 - **Security by default** — Using the library with the default parameters should provide enough security for most cases (maybe not military grade top security, but enough for an application like Gmail, for example). Flexibility was even traded in some places for increased security, for example by making it hard (i.e., impossible without messing with the lib code) for someone to use a weak algorithm instead of the default one.
@@ -26,15 +25,15 @@ Some examples of use cases for each of these modules are given below.
 For the full documentation of the library, go [here](http://securitylib.bk.sapo.pt/python/).
 
 
-# Discussion
+## Discussion
 
 Please file any bugs you find in our [issue tracker](https://gitlab.intra.sapo.pt/security/securitylib-python).
 
-# Examples:
+## Examples:
 
 ### Crypto
 
-- Generating a key for encryption:
+Generating a key for encryption:
 
 ```python
 import securitylib
@@ -44,7 +43,7 @@ encryption_key = securitylib.crypto.generate_encryption_key()
 print(encryption_key)
 ```
 
-- Generating a key for encryption based on a user's password:
+Generating a key for encryption based on a user's password:
 
 ```python
 import securitylib
@@ -56,7 +55,7 @@ encryption_key = securitylib.crypto.generate_encryption_key_from_password(passwo
 print(encryption_key)
 ```
 
-- Encrypting and decrypting data:
+Encrypting and decrypting data:
 
 ```python
 import securitylib
@@ -71,7 +70,7 @@ assert(decrypted_data == data)
 
 ### Advanced Crypto
 
-- Using a stream cipher to encrypt or decrypt a stream:
+Using a stream cipher to encrypt or decrypt a stream:
 
 ```python
 import securitylib
@@ -96,7 +95,7 @@ assert(decrypted_data == original_data)
 
 ### Random
 
-- Generating random values using a secure source of randomness:
+Generating random values using a secure source of randomness:
 
 ```python
 import securitylib
@@ -111,7 +110,7 @@ print(random_bytes, random_integer, random_string, random_GUID)
 
 ### Passwords
 
-- Generating a random password:
+Generating a random password:
 
 ```python
 import securitylib
@@ -121,7 +120,7 @@ password = securitylib.passwords.generate_password(length=12, lower=True, upper=
 print(password)
 ```
 
-- Getting a password's strength (between 0 and 100):
+Getting a password's strength (between 0 and 100):
 
 ```python
 import securitylib
@@ -133,7 +132,7 @@ print(securitylib.passwords.get_password_strength('u6fm08xw@RLs'))
 print(securitylib.passwords.get_password_strength('This 1s My P4ssword...'))
 ```
 
-- Validate a user's password against a list of rules:
+Validate a user's password against a list of rules:
 
 ```python
 import securitylib
