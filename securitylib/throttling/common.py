@@ -1,6 +1,7 @@
 import datetime
 from time import mktime
 import json
+from securitylib.crypto import generate_authenticator_key, generate_authenticator
 
 
 __all__ = ['CountersStorage', 'SessionStorage']
@@ -93,9 +94,12 @@ class CountersStorage(object):
         self.counter_keys_formats = config.get('counter_keys_formats', self.DEFAULT_CONFIG['counter_keys_formats'])
         self.total_format = config.get('total_format', self.DEFAULT_CONFIG['total_format'])
         self.expiration_times = config.get('expiration_times', self.DEFAULT_CONFIG['expiration_times'])
+        self.hmac_key = generate_authenticator_key()
 
     def get_storage_keys(self, ip, user=None, pwd=None, ctx=None):
         storage_keys = {}
+        if pwd:
+            pwd = generate_authenticator(pwd, self.hmac_key)
         if ctx is None:
             ctx = ''
 
