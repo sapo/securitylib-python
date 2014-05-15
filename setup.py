@@ -22,7 +22,7 @@ setup(
     author='Francisco José Marques Vieira',
     author_email='francisco.vieira@co.sapo.pt',
     url='http://trac.intra.sapo.pt/securitylib/',
-    description=('The SAPO Security Lib is a library whose purpuse is to provide functions/classes '
+    description=('The SAPO Security Lib is a library whose purpose is to provide functions/classes '
         'that solve common security related problems, while being easy to use even by those who are not security experts.'),
     long_description = get_readme(),
     license='GPL',

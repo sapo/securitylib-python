@@ -1,6 +1,6 @@
 # SAPO Security Lib - Python
 
-The SAPO Security Lib is a library whose purpuse is to provide functions/classes that solve common security related problems, while being easy to use even by those who are not security experts. This repository contains the Python version of this library.
+The SAPO Security Lib is a library whose purpose is to provide functions/classes that solve common security related problems, while being easy to use even by those who are not security experts. This repository contains the Python version of this library.
 
 Our design principles:
 
