@@ -1,5 +1,6 @@
 from securitylib import throttling
 from securitylib.random import get_random_token
+from securitylib.crypto import generate_authenticator_key
 from test_utils import setup_fake_datetime, teardown_fake_datetime, fake_sleep
 from nose.tools import eq_, ok_
 import mockcache
@@ -13,7 +14,8 @@ class TestThrottling(unittest.TestCase):
 
     def setUp(self):
         storage_client = mockcache.Client(["127.0.0.1:11211"])
-        self.counters_storage = throttling.CountersStorage(storage_client)
+        config = {'authenticator_key': generate_authenticator_key()}
+        self.counters_storage = throttling.CountersStorage(storage_client, config)
         self.session_storage = throttling.SessionStorage(storage_client)
 
         # client
