@@ -7,7 +7,7 @@ from Crypto.Cipher import AES
 from Crypto.Util import Counter
 
 __all__ = ['hash', 'generate_authenticator', 'hmac', 'validate_authenticator', 'validate_hmac', 'safe_compare',
-        'prepare_password_for_storage', 'compare_stored_password', 'generate_encryption_key', 'generate_secret_key',
+        'generate_encryption_key', 'generate_secret_key',
         'generate_authenticator_key', 'generate_hmac_key', 'generate_encryption_key_from_password',
         'generate_authenticator_key_from_password', 'generate_key_from_password',
         'encrypt', 'decrypt', 'BlockCipher', 'StreamCipher']
@@ -104,59 +104,6 @@ def validate_hmac(data, hmac_key, authenticator, length=32, iterations=1):
     :returns: :class:`bool` -- True if the given HMAC authenticator matches the HMAC of the data, False otherwise.
     """
     return safe_compare(hmac(data, hmac_key, length, iterations), authenticator)
-
-
-def prepare_password_for_storage(password, hmac_key):
-    """
-    Use this function if you want to store a password.
-    This function returns a hex representation of the password that is safe to be stored.
-    It uses a one-way algorithm which means you need to provide the password
-    you are trying to verify in :func:`~securitylib.advanced_crypto.compare_stored_password` as one of the parameters.
-
-    :param password: The password to be prepared for storage.
-    :type password: :class:`str`
-
-    :param hmac_key: This key is used to make it harder for an attacker to find the users passwords,
-                     even if he compromises the database.
-                     This is done by making the transformation of the password be unique for the given key
-                     (it uses an HMAC with the given key),
-                     so even if an attacker gets hold of the stored password,
-                     he has no way to verify whether a password matches it without knowing the key.
-                     This also means that this key MUST be stored separate from the stored passwords,
-                     else an attacker that compromises the database will also get hold of this key.
-                     Other recomendations include storing it outside the webserver tree and
-                     with read permissions only for the application that must read it.
-                     You can use :func:`~securitylib.advanced_crypto.generate_hmac_key` to generate it.
-    :type hmac_key: :class:`str`
-
-    :returns: :class:`str` -- Returns the password prepared for storage.
-    """
-    version = 1
-    salt = get_random_bytes(8)
-    return prepare_password_for_storage_all_params(password, hmac_key, salt, version)
-
-
-def compare_stored_password(password, hmac_key, stored_password):
-    """
-    Use this function to verify a password given by a user
-    against a password stored with :func:`~securitylib.advanced_crypto.prepare_password_for_storage`.
-
-    :param password: The password to be compared to the stored one.
-    :type password: :class:`str`
-
-    :param hmac_key: The key that was used when storing the password, in byte string.
-    :type hmac_key: :class:`str`
-
-    :param stored_password: Stored password against which the given password is to be compared.
-    :type stored_password: :class:`str`
-
-    :returns: :class:`bool` -- True if the given password matches the stored one.
-    """
-    # Tests whether stored_password is correct hex but does not replace it
-    version = ord(stored_password[:2].decode('hex'))
-    salt = stored_password[2:18].decode('hex')
-    return safe_compare(prepare_password_for_storage_all_params(password, hmac_key, salt, version),
-           stored_password.lower())
 
 
 def safe_compare(val1, val2):
@@ -488,38 +435,6 @@ class StreamCipher(object):
 
 ### PRIVATE FUNCTIONS ###
 
-def prepare_password_for_storage_all_params(password, hmac_key, salt, version):
-    """
-    Use this function if you want to store a password.
-    This function returns a hex representation of the password that is safe to be stored.
-    It uses a one-way algorithm which means you need to provide the password
-    you are trying to verify in :func:`~securitylib.advanced_crypto.compare_stored_password` as one of the parameters.
-
-    :param password: The password to be prepared for storage.
-    :type password: :class:`str`
-
-    :param hmac_key: Secret to be used in the one-way algorithm, in hex.
-    :type hmac_key: :class:`str`
-
-    :param salt: Salt for the password.
-    :type salt: :class:`str`
-
-    :param version: Version of the function to use.
-            It is used to guarantee backward compatibility in case
-            a new version of this function is released.
-    :type version: :class:`int`
-
-    :returns: :class:`str` -- Returns the password prepared for storage.
-    """
-    # Tests whether hmac_key is correct hex but does not replace it
-    if version == 1:
-        version_hex = chr(version).encode('hex')
-        hpass = hmac(salt + password, hmac_key, 32, 10).encode('hex')
-        return version_hex + salt.encode('hex') + hpass
-    else:
-        raise NotImplementedError('Version {0} not supported'.format(version))
-
-
 def pbkdf2(password, salt, iterations, dklen, hashfunc=None):
     """
     Implementation of the PBKDF2 key derivation function as described in RFC 2898.
@@ -615,3 +530,13 @@ def unpad_pkcs5(padded, block_size):
     pad = padded[-pad_size:]
     assert pad == pad[-1] * pad_size
     return padded[:-pad_size]
+
+
+def validate_authenticator_key(authenticator_key):
+    if len(authenticator_key) != HMAC_KEY_MINIMUM_LENGTH:
+        raise ValueError('Parameter authenticator_key must have length {0} bytes.'.format(HMAC_KEY_MINIMUM_LENGTH))
+
+
+def validate_encryption_key(key):
+    if len(key) != ENCRYPTION_KEY_MINIMUM_LENGTH:
+        raise ValueError('Parameter key must have length 16 bytes.')

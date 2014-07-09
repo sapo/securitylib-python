@@ -1,10 +1,14 @@
+from securitylib.advanced_crypto import safe_compare, validate_authenticator_key, hmac
+from securitylib.random import get_random_bytes
 from securitylib.utils import randomize, get_random_element
 import string
 import math
 import os
 import re
 
-__all__ = ['generate_password', 'validate_password', 'get_password_strength', 'get_entropy_bits']
+__all__ = ['prepare_password_for_storage', 'compare_stored_password',
+        'generate_password', 'validate_password', 'get_password_strength',
+        'get_entropy_bits']
 
 
 KEYBOARD_SEQUENCES = [
@@ -41,6 +45,93 @@ FULL_DATE_REGEXS = [
 ]
 
 DICT_WORDS = None
+
+
+def prepare_password_for_storage(password, authenticator_key):
+    """
+    Use this function if you want to store a password.
+    This function returns a hex representation of the password that is safe to be stored.
+    It uses a one-way algorithm which means you need to provide the password
+    you are trying to verify in :func:`~securitylib.crypto.compare_stored_password` as one of the parameters.
+
+    :param password: The password to be prepared for storage.
+    :type password: :class:`str`
+
+    :param authenticator_key: This key is used to make it harder for an attacker to find the users passwords,
+                              even if he compromises the database.
+                              This is done by making the transformation of the password be unique for the given key
+                              (using the given authenticator_key),
+                              so even if an attacker gets hold of the stored password,
+                              he has no way to verify whether a password matches it without knowing the key.
+                              This also means that this key MUST be stored separate from the stored passwords,
+                              else an attacker that compromises the database will also get hold of this key.
+                              Other recomendations include storing it outside the webserver tree and
+                              with read permissions only for the application that must read it.
+                              You can use :func:`~securitylib.crypto.generate_authenticator_key` to generate it.
+    :type authenticator_key: :class:`str`
+
+    :returns: :class:`str` -- Returns the password prepared for storage.
+    """
+    validate_authenticator_key(authenticator_key)
+    version = 1
+    salt = get_random_bytes(8)
+    return prepare_password_for_storage_all_params(password, authenticator_key, salt, version)
+
+
+def compare_stored_password(password, authenticator_key, stored_password):
+    """
+    Use this function to verify a password given by a user
+    against a password stored with :func:`~securitylib.crypto.prepare_password_for_storage`.
+
+    :param password: The password to be compared to the stored one.
+    :type password: :class:`str`
+
+    :param authenticator_key: The key that was used when storing the password, in byte string.
+    :type authenticator_key: :class:`str`
+
+    :param stored_password: Stored password against which the given password is to be compared.
+    :type stored_password: :class:`str`
+
+    :returns: :class:`bool` -- True if the given password matches the stored one.
+    """
+    validate_authenticator_key(authenticator_key)
+    # Tests whether stored_password is correct hex but does not replace it
+    version = ord(stored_password[:2].decode('hex'))
+    salt = stored_password[2:18].decode('hex')
+    return safe_compare(prepare_password_for_storage_all_params(password, authenticator_key, salt, version),
+           stored_password.lower())
+
+
+def prepare_password_for_storage_all_params(password, authenticator_key, salt, version):
+    """
+    Use this function if you want to store a password.
+    This function returns a hex representation of the password that is safe to be stored.
+    It uses a one-way algorithm which means you need to provide the password
+    you are trying to verify in :func:`~securitylib.advanced_crypto.compare_stored_password` as one of the parameters.
+
+    :param password: The password to be prepared for storage.
+    :type password: :class:`str`
+
+    :param authenticator_key: Secret to be used in the one-way algorithm, in hex.
+    :type authenticator_key: :class:`str`
+
+    :param salt: Salt for the password.
+    :type salt: :class:`str`
+
+    :param version: Version of the function to use.
+            It is used to guarantee backward compatibility in case
+            a new version of this function is released.
+    :type version: :class:`int`
+
+    :returns: :class:`str` -- Returns the password prepared for storage.
+    """
+    # Tests whether authenticator_key is correct hex but does not replace it
+    if version == 1:
+        version_hex = chr(version).encode('hex')
+        hpass = hmac(salt + password, authenticator_key, 32, 10).encode('hex')
+        return version_hex + salt.encode('hex') + hpass
+    else:
+        raise NotImplementedError('Version {0} not supported'.format(version))
 
 
 def generate_password(length=12, lower=True, upper=True, digits=True, special=True, ambig=True):

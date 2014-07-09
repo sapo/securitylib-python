@@ -14,17 +14,6 @@ def test_validate_authenticator():
 
 
 @with_setup(setup_seeded_random, teardown_seeded_random)
-def test_prepare_password_for_storage():
-    eq_(prepare_password_for_storage('EmY5uff2OS', '5f07ec7a02bb0d7dc92d8aae1e0817e2a64a1265797b45f4780b49af11df61e1'.decode('hex')), '01b857327311a73c1bb3792cc1581f2f679a719cfa83ea9edb396fd5bee285909c97b769893fad96ea')
-    assert_raises_with_message(ValueError, 'Parameter authenticator_key must have length 32 bytes.', prepare_password_for_storage, 'EmY5uff2OS', 'cf9021efdfec6a4e3fd8'.decode('hex'))
-
-
-def test_compare_stored_password():
-    ok_(compare_stored_password('EmY5uff2OS', '5f07ec7a02bb0d7dc92d8aae1e0817e2a64a1265797b45f4780b49af11df61e1'.decode('hex'), '01b857327311a73c1bb3792cc1581f2f679a719cfa83ea9edb396fd5bee285909c97b769893fad96ea'))
-    assert_raises_with_message(ValueError, 'Parameter authenticator_key must have length 32 bytes.', compare_stored_password, 'EmY5uff2OS', 'cf9021efdfec6a4e3fd8'.decode('hex'), '')
-
-
-@with_setup(setup_seeded_random, teardown_seeded_random)
 def test_generate_encryption_key():
     eq_(generate_encryption_key(), '9a45076e45211648b857327311a73c1b'.decode('hex'))
 

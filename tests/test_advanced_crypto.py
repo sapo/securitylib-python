@@ -65,20 +65,6 @@ def test_safe_compare():
 
 
 @with_setup(setup_seeded_random, teardown_seeded_random)
-def test_prepare_password_for_storage():
-    eq_(prepare_password_for_storage('EmY5uff2OS', '5fbf0ef570691bd5345b'.decode('hex')), '01b857327311a73c1b2ad7b3322ba9bc2f47b327b68309468a1be93b420367f34e175d3059146efcea')
-    eq_(prepare_password_for_storage('EmY5uff2OS', '5fbf0ef570691bd5345b'.decode('hex')), '019a45076e45211648b5d34f9f4ae490b4f72a14b2304921b4cc88b3bee19751ea6248b294e91ec112')
-
-
-def test_compare_stored_password():
-    ok_(compare_stored_password('EmY5uff2OS', '5fbf0ef570691bd5345b'.decode('hex'), '01b857327311a73c1b2ad7b3322ba9bc2f47b327b68309468a1be93b420367f34e175d3059146efcea'))
-    # Test comparison to upper case stored password
-    ok_(compare_stored_password('EmY5uff2OS', '5fbf0ef570691bd5345b'.decode('hex'), '01B857327311A73C1B2AD7B3322BA9BC2F47B327B68309468A1BE93B420367F34E175D3059146EFCEA'))
-    ok_(compare_stored_password('EmY5uff2OS', '5fbf0ef570691bd5345b'.decode('hex'), '019a45076e45211648b5d34f9f4ae490b4f72a14b2304921b4cc88b3bee19751ea6248b294e91ec112'))
-    ok_(not compare_stored_password('EmY5uff2OS', '5fbf0ef570691bd5345b'.decode('hex'), '019a45076e45211648b5d34f9f4ae490b4f72a14b2304921b4cc88b3bee19751ea6248b294e91ec113'))
-
-
-@with_setup(setup_seeded_random, teardown_seeded_random)
 def test_generate_encryption_key():
     eq_(generate_encryption_key(), '9a45076e45211648b857327311a73c1b'.decode('hex'))
 
