@@ -52,7 +52,7 @@ def prepare_password_for_storage(password, authenticator_key):
     Use this function if you want to store a password.
     This function returns a hex representation of the password that is safe to be stored.
     It uses a one-way algorithm which means you need to provide the password
-    you are trying to verify in :func:`~securitylib.crypto.compare_stored_password` as one of the parameters.
+    you are trying to verify in :func:`~securitylib.passwords.compare_stored_password` as one of the parameters.
 
     :param password: The password to be prepared for storage.
     :type password: :class:`str`
@@ -81,7 +81,7 @@ def prepare_password_for_storage(password, authenticator_key):
 def compare_stored_password(password, authenticator_key, stored_password):
     """
     Use this function to verify a password given by a user
-    against a password stored with :func:`~securitylib.crypto.prepare_password_for_storage`.
+    against a password stored with :func:`~securitylib.passwords.prepare_password_for_storage`.
 
     :param password: The password to be compared to the stored one.
     :type password: :class:`str`
@@ -107,7 +107,7 @@ def prepare_password_for_storage_all_params(password, authenticator_key, salt, v
     Use this function if you want to store a password.
     This function returns a hex representation of the password that is safe to be stored.
     It uses a one-way algorithm which means you need to provide the password
-    you are trying to verify in :func:`~securitylib.advanced_crypto.compare_stored_password` as one of the parameters.
+    you are trying to verify in :func:`~securitylib.passwords.compare_stored_password` as one of the parameters.
 
     :param password: The password to be prepared for storage.
     :type password: :class:`str`
