@@ -20,7 +20,7 @@ _trans_5c = b"".join([chr(x ^ 0x5C) for x in xrange(256)])
 _trans_36 = b"".join([chr(x ^ 0x36) for x in xrange(256)])
 
 
-def hash(data, length=32, iterations=1, raw_output=False):
+def hash(data, length=32, iterations=1):
     """
     This function will generate a hashed representation of the data.
     We want it to be simple, but for advanced usage you can set the length
@@ -35,24 +35,20 @@ def hash(data, length=32, iterations=1, raw_output=False):
     :param iterations: The number of iterations.
     :type iterations: :class:`int`
 
-    :param raw_output: If set to True, this function returns bin instead of hex.
-    :type raw_output: :class:`bool`
-
-    :returns: :class:`str` -- The generated hash in hex or bin if raw_output is enabled.
+    :returns: :class:`str` -- The generated hash in byte string.
     """
     return hash_or_hmac(lambda next_data, hashfunc: hashfunc(next_data),
-               data, length, iterations, raw_output)
+               data, length, iterations)
 
 
-def generate_authenticator(data, authenticator_key, length=32, iterations=1, raw_output=False):
+def generate_authenticator(data, authenticator_key, length=32, iterations=1):
     """
     Alias for the :func:`~securitylib.advanced_crypto.hmac` function.
     """
-    decode_hex_param(authenticator_key, 'authenticator_key')
-    return hmac(data, authenticator_key, length, iterations, raw_output)
+    return hmac(data, authenticator_key, length, iterations)
 
 
-def hmac(data, hmac_key, length=32, iterations=1, raw_output=False):
+def hmac(data, hmac_key, length=32, iterations=1):
     """
     This function will generate an HMAC of the data (provides authentication and integrity).
     We want it to be simple, but for advanced usage you can set the length in bytes
@@ -61,7 +57,7 @@ def hmac(data, hmac_key, length=32, iterations=1, raw_output=False):
     :param data: The data to be hashed.
     :type data: :class:`str`
 
-    :param hmac_key: The secret key to be used by the HMAC, in hex.
+    :param hmac_key: The secret key to be used by the HMAC, in byte string.
                 You can use :func:`~securitylib.advanced_crypto.generate_hmac_key` to generate it.
     :type hmac_key: :class:`str`
 
@@ -71,21 +67,16 @@ def hmac(data, hmac_key, length=32, iterations=1, raw_output=False):
     :param iterations: The number of iterations.
     :type iterations: :class:`int`
 
-    :param raw_output: If set to True, this function returns bin instead of hex.
-    :type raw_output: :class:`bool`
-
-    :returns: :class:`str` -- The generated hmac in hex or bin if raw_output is enabled.
+    :returns: :class:`str` -- The generated hmac in byte string.
     """
-    hmac_key = decode_hex_param(hmac_key, 'hmac_key')
     return hash_or_hmac(lambda next_data, hashfunc: hmac_mod.new(hmac_key, next_data, hashfunc),
-               data, length, iterations, raw_output)
+               data, length, iterations)
 
 
 def validate_authenticator(data, authenticator_key, authenticator, length=32, iterations=1):
     """
     Alias for the :func:`~securitylib.advanced_crypto.validate_hmac` function.
     """
-    decode_hex_param(authenticator_key, 'authenticator_key')
     return validate_hmac(data, authenticator_key, authenticator, length, iterations)
 
 
@@ -98,10 +89,10 @@ def validate_hmac(data, hmac_key, authenticator, length=32, iterations=1):
     :param data: The data protected by the HMAC authenticator.
     :type data: :class:`str`
 
-    :param hmac_key: The secret key used to generate the given HMAC authenticator, in hex.
+    :param hmac_key: The secret key used to generate the given HMAC authenticator, in byte string.
     :type hmac_key: :class:`str`
 
-    :param authenticator: The HMAC authenticator you want to compare, in hex.
+    :param authenticator: The HMAC authenticator you want to compare, in byte string.
     :type authenticator: :class:`str`
 
     :param length: The length used to generate the given HMAC authenticator.
@@ -112,7 +103,7 @@ def validate_hmac(data, hmac_key, authenticator, length=32, iterations=1):
 
     :returns: :class:`bool` -- True if the given HMAC authenticator matches the HMAC of the data, False otherwise.
     """
-    return safe_compare(hmac(data, hmac_key, length, iterations), authenticator.lower())
+    return safe_compare(hmac(data, hmac_key, length, iterations), authenticator)
 
 
 def prepare_password_for_storage(password, hmac_key):
@@ -153,7 +144,7 @@ def compare_stored_password(password, hmac_key, stored_password):
     :param password: The password to be compared to the stored one.
     :type password: :class:`str`
 
-    :param hmac_key: The key that was used when storing the password, in hex.
+    :param hmac_key: The key that was used when storing the password, in byte string.
     :type hmac_key: :class:`str`
 
     :param stored_password: Stored password against which the given password is to be compared.
@@ -162,7 +153,6 @@ def compare_stored_password(password, hmac_key, stored_password):
     :returns: :class:`bool` -- True if the given password matches the stored one.
     """
     # Tests whether stored_password is correct hex but does not replace it
-    decode_hex_param(stored_password, 'stored_password')
     version = ord(stored_password[:2].decode('hex'))
     salt = stored_password[2:18].decode('hex')
     return safe_compare(prepare_password_for_storage_all_params(password, hmac_key, salt, version),
@@ -197,16 +187,16 @@ def generate_secret_key(length=16):
     :param length: Length of the key to generate, in bytes.
     :type length: :class:`int`
 
-    :returns: :class:`str` -- The generated key, in hex.
+    :returns: :class:`str` -- The generated key, in byte string.
     """
-    return get_random_bytes(length).encode('hex')
+    return get_random_bytes(length)
 
 
 def generate_encryption_key():
     """
     Generates a key for use in the encryption functions and classes.
 
-    :returns: :class:`str` -- The generated key, in hex.
+    :returns: :class:`str` -- The generated key, in byte string.
     """
     return generate_secret_key(ENCRYPTION_KEY_MINIMUM_LENGTH)
 
@@ -222,7 +212,7 @@ def generate_hmac_key():
     """
     Generates a key for use in the :func:`~securitylib.advanced_crypto.hmac` function.
 
-    :returns: :class:`str` -- The generated key, in hex.
+    :returns: :class:`str` -- The generated key, in byte string.
     """
     return generate_secret_key(HMAC_KEY_MINIMUM_LENGTH)
 
@@ -248,7 +238,7 @@ def generate_key_from_password(password, salt, iterations=15000, dklen=16, hashf
     :param password: The password from which to generate the key.
     :type password: :class:`str`
 
-    :param salt: Salt for the password, in hex.
+    :param salt: Salt for the password, in byte string.
                  You can use :func:`~securitylib.random.get_random_token` to generate it.
     :type salt: :class:`str`
 
@@ -261,13 +251,12 @@ def generate_key_from_password(password, salt, iterations=15000, dklen=16, hashf
     :param hashfunc: Hash function from the :mod:`hashlib` module.
             If none is provided, sha256 is used.
 
-    :returns: :class:`str` -- The generated key, in hex.
+    :returns: :class:`str` -- The generated key, in byte string.
     """
-    salt = decode_hex_param(salt, 'salt')
-    return pbkdf2(password, salt, iterations, dklen, hashfunc or sha256).encode('hex')
+    return pbkdf2(password, salt, iterations, dklen, hashfunc or sha256)
 
 
-def encrypt(data, key, hmac_key, associated_data=None, raw_output=False):
+def encrypt(data, key, hmac_key, associated_data=None):
     """
     Use this function to encrypt data (except streaming data, such as video streaming).
     Two keys must be provided, one to guarantee confidentiality
@@ -276,26 +265,23 @@ def encrypt(data, key, hmac_key, associated_data=None, raw_output=False):
     :param data: The data to encrypt.
     :type data: :class:`str`
 
-    :param key: The key to encrypt the data, in hex. Provides confidentiality.
+    :param key: The key to encrypt the data, in byte string. Provides confidentiality.
                 You can use :func:`~securitylib.advanced_crypto.generate_encryption_key` to generate it.
     :type key: :class:`str`
 
-    :param hmac_key: The key to authenticate the data, in hex. Provides integrity.
+    :param hmac_key: The key to authenticate the data, in byte string. Provides integrity.
                      You can use :func:`~securitylib.advanced_crypto.generate_hmac_key` to generate it.
     :type hmac_key: :class:`str`
 
     :param associated_data: Data to be authenticated but not encrypted.
     :type associated_data: :class:`str`
 
-    :param raw_output: If set to True, this function returns bin instead of hex.
-    :type raw_output: :class:`bool`
-
     :returns: :class:`str` -- The encrypted data.
     """
-    return BlockCipher(key, hmac_key).encrypt(data, associated_data, raw_output)
+    return BlockCipher(key, hmac_key).encrypt(data, associated_data)
 
 
-def decrypt(ciphertext, key, hmac_key, raw_input=False):
+def decrypt(ciphertext, key, hmac_key):
     """
     Use this function to decrypt data that was encrypted using :func:`~securitylib.advanced_crypto.encrypt`.
     The same keys used to encrypt the data must be provided to decrypt it.
@@ -303,19 +289,16 @@ def decrypt(ciphertext, key, hmac_key, raw_input=False):
     :param ciphertext: The encrypted data.
     :type ciphertext: :class:`str`
 
-    :param key: The key that was used to encrypt the data, in hex.
+    :param key: The key that was used to encrypt the data, in byte string.
     :type key: :class:`str`
 
-    :param hmac_key: The key that was used to authenticate the data, in hex.
+    :param hmac_key: The key that was used to authenticate the data, in byte string.
     :type hmac_key: :class:`str`
-
-    :param raw_input: Set this to True if the ciphertext is bin instead of hex.
-    :type raw_input: :class:`bool`
 
     :returns: :class:`dict` -- A dictionary with two keys, "data" with the decrypted data,
                                and "associated_data" with the associated data.
     """
-    return BlockCipher(key, hmac_key).decrypt(ciphertext, raw_input)
+    return BlockCipher(key, hmac_key).decrypt(ciphertext)
 
 
 class BlockCipher(object):
@@ -337,11 +320,11 @@ class BlockCipher(object):
     >>> ctb = encrypt(key, hmac_key, b)
     >>> ctc = encrypt(key, hmac_key, c)
 
-    :param key: The key to encrypt or decrypt the data, in hex. Provides confidentiality.
+    :param key: The key to encrypt or decrypt the data, in byte string. Provides confidentiality.
                 You can use :func:`~securitylib.advanced_crypto.generate_encryption_key` to generate it.
     :type key: :class:`str`
 
-    :param hmac_key: The key which was or will be used to authenticate the data, in hex. Provides integrity.
+    :param hmac_key: The key which was or will be used to authenticate the data, in byte string. Provides integrity.
                      You can use :func:`~securitylib.advanced_crypto.generate_hmac_key` to generate it.
     :type hmac_key: :class:`str`
     """
@@ -349,8 +332,8 @@ class BlockCipher(object):
     def __init__(self, key, hmac_key):
         self.current_version = 1
 
-        self.key = decode_hex_param(key, 'key')
-        self.hmac_key = decode_hex_param(hmac_key, 'hmac_key')
+        self.key = key
+        self.hmac_key = hmac_key
 
         if self.key == self.hmac_key:
             raise ValueError('Please provide different keys for encryption and authentication.')
@@ -360,16 +343,13 @@ class BlockCipher(object):
         if len(self.hmac_key) < HMAC_KEY_MINIMUM_LENGTH:
             raise ValueError('Parameter hmac_key must have at least {0} bytes.'.format(HMAC_KEY_MINIMUM_LENGTH))
 
-    def encrypt(self, data, associated_data=None, raw_output=False):
+    def encrypt(self, data, associated_data=None):
         """
         :param data: The data to encrypt.
         :type data: :class:`str`
 
         :param associated_data: Data to be authenticated but not encrypted.
         :type associated_data: :class:`str`
-
-        :param raw_output: If set to True, this function returns bin instead of hex.
-        :type raw_output: :class:`bool`
 
         :returns: :class:`str` -- The encrypted data.
         """
@@ -384,20 +364,16 @@ class BlockCipher(object):
         authenticated_data = iv + packed_associated_data_length + associated_data + ciphertext
         sig = hmac_mod.new(self.hmac_key, authenticated_data, sha256).digest()
         output = version_byte + sig + authenticated_data
-        return conditional_encode(output, raw_output)
+        return output
 
-    def decrypt(self, ciphertext, raw_input=False):
+    def decrypt(self, ciphertext):
         """
         :param ciphertext: The encrypted data.
         :type ciphertext: :class:`str`
 
-        :param raw_input: Set this to True if the ciphertext is bin instead of hex.
-        :type raw_input: :class:`bool`
-
         :returns: :class:`dict` -- A dictionary with two keys, "data" with the decrypted data,
                                    and "associated_data" with the associated data.
         """
-        ciphertext = conditional_decode(ciphertext, raw_input)
         if len(ciphertext) < 69:
             raise ValueError('Parameter ciphertext is too short to '\
                     'have been generated with encrypt.')
@@ -451,24 +427,21 @@ class StreamCipher(object):
     this would have a huge overhead if the chunks are very small, so a better solution
     must be found depending on each specific case.
 
-    :param key: The key to encrypt or decrypt the stream, in hex. Provides confidentiality.
+    :param key: The key to encrypt or decrypt the stream, in byte string. Provides confidentiality.
                 You can use :func:`~securitylib.advanced_crypto.generate_encryption_key` to generate it.
     :type key: :class:`str`
     """
 
     def __init__(self, key):
-        self.key = decode_hex_param(key, 'key')
+        self.key = key
         self.current_version = 1
         self.initialized = False
         self.encrypt_mode = None
 
-    def encrypt(self, stream, raw_output=False):
+    def encrypt(self, stream):
         """
         :param stream: The stream to encrypt, or part of it.
         :type stream: :class:`str`
-
-        :param raw_output: If set to True, this function returns bin instead of hex.
-        :type raw_output: :class:`bool`
 
         :returns: :class:`str` -- The encrypted cipherstream.
         """
@@ -485,19 +458,15 @@ class StreamCipher(object):
         else:
             raise ValueError('You tried to call the encrypt method after calling decrypt.'\
                     ' Please use each StreamCipher object either to encrypt or to decrypt.')
-        return conditional_encode(cipherstream, raw_output)
+        return cipherstream
 
-    def decrypt(self, cipherstream, raw_input=False):
+    def decrypt(self, cipherstream):
         """
         :param cipherstream: The encrypted cipherstream, or part of it.
         :type cipherstream: :class:`str`
 
-        :param raw_input: Set this to True if the cipherstream is bin instead of hex.
-        :type raw_input: :class:`bool`
-
         :returns: :class:`str` -- The decrypted stream.
         """
-        cipherstream = conditional_decode(cipherstream, raw_input)
         if not self.initialized:
             version = ord(cipherstream[0])
             if version == 1:
@@ -543,10 +512,9 @@ def prepare_password_for_storage_all_params(password, hmac_key, salt, version):
     :returns: :class:`str` -- Returns the password prepared for storage.
     """
     # Tests whether hmac_key is correct hex but does not replace it
-    decode_hex_param(hmac_key, 'hmac_key')
     if version == 1:
         version_hex = chr(version).encode('hex')
-        hpass = hmac(salt + password, hmac_key, 32, 10)
+        hpass = hmac(salt + password, hmac_key, 32, 10).encode('hex')
         return version_hex + salt.encode('hex') + hpass
     else:
         raise NotImplementedError('Version {0} not supported'.format(version))
@@ -574,7 +542,7 @@ def pbkdf2(password, salt, iterations, dklen, hashfunc=None):
     return dk
 
 
-def hash_or_hmac(func, data, length=32, iterations=1, raw_output=False):
+def hash_or_hmac(func, data, length=32, iterations=1):
     """
     Helper function for the hash and hmac functions.
     It receives a function that receives two parameters, data and an hashing algorithm,
@@ -596,7 +564,7 @@ def hash_or_hmac(func, data, length=32, iterations=1, raw_output=False):
     for _ in xrange(iterations):
         data = func(data, hashfunc).digest()
 
-    return conditional_encode(data, raw_output)
+    return data
 
 
 def fast_hmac(key, msg, digest):
