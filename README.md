@@ -1,15 +1,32 @@
 # SAPO Security Lib - Python
 
-The SAPO Security Lib is a library whose purpose is to provide functions/classes that solve common security related problems, while being easy to use even by those who are not security experts. This repository contains the Python version of this library.
+The SAPO Security Lib is a library whose purpose is to provide functions/classes
+that solve common security related problems, while being easy to use even by
+those who are not security experts. This repository contains the Python version
+of this library.
 
 Our design principles:
 
-- **Security** — This is an obvious one, but it is important to explain how it is enforced.
-    - No security primitives were invented, all security sensitive code is based on modern security best-practices (e.g. we use PBKDF2 to derive keys from passwords, we didn't reinvent the wheel).
+- **Security** — This is an obvious one, but it is important to explain how it
+  is enforced.
+    - No security primitives were invented, all security sensitive code is based
+      on modern security best-practices (e.g. we use PBKDF2 to derive keys from
+      passwords, we didn't reinvent the wheel).
     - Very high (near 100%) testing code coverage.
     - Manual code review by security professionals.
-- **Security by default** — Using the library with the default parameters should provide enough security for most cases (maybe not military grade top security, but enough for an application like Gmail, for example). Flexibility was even traded in some places for increased security, for example by making it hard (i.e., impossible without messing with the lib code) for someone to use a weak algorithm instead of the default one.
-- **Simple API** — Unfortunately, the acronyms AES, PBKDF2, HMAC, etc. are cryptic for many developers, and many others know them but might have difficulty knowing when and how to use them. As such, we decided to hide the implementation details in the API function names, resulting in names such as `generate_encryption_key`, `encrypt`, `prepare_password_for_storage`, etc. which most developers are able to understand even if they are not security experts.
+- **Security by default** — Using the library with the default parameters should
+  provide enough security for most cases (maybe not military grade top security,
+  but enough for an application like Gmail, for example). Flexibility was even
+  traded in some places for increased security, for example by making it hard
+  (i.e., impossible without messing with the lib code) for someone to use a weak
+  algorithm instead of the default one.
+- **Simple API** — Unfortunately, the acronyms AES, PBKDF2, HMAC, etc. are
+  cryptic for many developers, and many others know them but might have
+  difficulty knowing when and how to use them. As such, we decided to hide the
+  implementation details in the API function names, resulting in names such as
+  `generate_encryption_key`, `encrypt`, `prepare_password_for_storage`, etc.
+  which most developers are able to understand even if they are not security
+  experts.
 
 
 
@@ -22,12 +39,32 @@ There are currently 4 modules in this library:
 
 Some examples of use cases for each of these modules are given below.
 
-For the full documentation of the library, go [here](http://securitylib.bk.sapo.pt/python/).
+For the full documentation of the library, go [here](http://oss.sapo.pt/securitylib-python/).
 
 
 ## Discussion
 
-Please file any bugs you find in our [issue tracker](https://gitlab.intra.sapo.pt/security/securitylib-python).
+Please file any bugs you find in our [issue tracker](https://github.com/sapo/securitylib-python).
+
+
+## Installation
+
+Only Python 2.7 is supported.
+There are severall ways to install SAPO Security Lib.
+
+
+### Via PyPI
+
+Just run:
+`pip install securitylib`
+
+
+### Via a tarball release
+
+1. Dowload the [tarball](https://github.com/sapo/securitylib-python/archive/1.0.0.tar.gz)
+2. Unpack the tarball
+3. `python setup.py install`
+
 
 ## Examples:
 
