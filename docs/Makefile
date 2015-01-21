@@ -156,18 +156,17 @@ doctest:
 	      "results in $(BUILDDIR)/doctest/output.txt."
 
 gh-pages:
-	cd ..
-	git checkout gh-pages
-	rm -rf build _sources _static
-	git checkout master $(GH_PAGES_SOURCES)
-	git reset HEAD
-	cd docs
-	make html
-	mv -fv $(BUILDDIR)/html/* ../
-	rm -rf $(BUILDDIR)
-	cd ..
-	rm -rf $(GH_PAGES_SOURCES)
-	git add -A
-	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`"
-	#git push origin gh-pages
+	cd .. && \
+	git checkout gh-pages && \
+	rm -rf build _sources _static && \
+	git checkout master $(GH_PAGES_SOURCES) && \
+	git reset HEAD && \
+	cd docs && \
+	make html && \
+	rsync -avh ./$(BUILDDIR)/html/* ../ && \
+	rm -rf $(BUILDDIR) && \
+	cd .. && \
+	rm -rf $(GH_PAGES_SOURCES) && \
+	git add -A && \
+	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && \
 	git checkout master
