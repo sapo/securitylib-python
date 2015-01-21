@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>securitylib.throttling.client — Throttling client functions &mdash; Security Lib 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Security Lib 0.1 documentation" href="../index.html" />
+    <link rel="up" title="securitylib.throttling — Throttling framework" href="throttling.html" />
+    <link rel="next" title="securitylib.throttling.common — Throttling common functions" href="common.html" />
+    <link rel="prev" title="securitylib.throttling — Throttling framework" href="throttling.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="common.html" title="securitylib.throttling.common — Throttling common functions"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="throttling.html" title="securitylib.throttling — Throttling framework"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Security Lib 0.1 documentation</a> &raquo;</li>
+          <li><a href="throttling.html" accesskey="U"><tt class="docutils literal"><span class="pre">securitylib.throttling</span></tt> &#8212; Throttling framework</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="throttling.html"
+                        title="previous chapter"><tt class="docutils literal"><span class="pre">securitylib.throttling</span></tt> &#8212; Throttling framework</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="common.html"
+                        title="next chapter"><tt class="docutils literal"><span class="pre">securitylib.throttling.common</span></tt> &#8212; Throttling common functions</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/throttling/client.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-securitylib.throttling.client">
+<span id="securitylib-throttling-client-throttling-client-functions"></span><h1><a class="reference internal" href="#module-securitylib.throttling.client" title="securitylib.throttling.client"><tt class="xref py py-mod docutils literal"><span class="pre">securitylib.throttling.client</span></tt></a> &#8212; Throttling client functions<a class="headerlink" href="#module-securitylib.throttling.client" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="securitylib.throttling.client.StateChecker">
+<em class="property">class </em><tt class="descclassname">securitylib.throttling.client.</tt><tt class="descname">StateChecker</tt><big>(</big><em>counters_storage</em>, <em>session_storage</em><big>)</big><a class="headerlink" href="#securitylib.throttling.client.StateChecker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this class to check the throttling state of client requests.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>counters_storage</strong> (<a class="reference internal" href="common.html#securitylib.throttling.common.CountersStorage" title="securitylib.throttling.common.CountersStorage"><tt class="xref py py-class docutils literal"><span class="pre">securitylib.throttling.common.CountersStorage</span></tt></a>) &#8211; Storage to be used for storing throttling counters.</li>
+<li><strong>session_storage</strong> (<a class="reference internal" href="common.html#securitylib.throttling.common.SessionStorage" title="securitylib.throttling.common.SessionStorage"><tt class="xref py py-class docutils literal"><span class="pre">securitylib.throttling.common.SessionStorage</span></tt></a>) &#8211; Storage to be used to store sessions.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="securitylib.throttling.client.StateChecker.check_state">
+<tt class="descname">check_state</tt><big>(</big><em>ip</em>, <em>user=None</em>, <em>pwd=None</em>, <em>session_id=None</em>, <em>ctx=''</em><big>)</big><a class="headerlink" href="#securitylib.throttling.client.StateChecker.check_state" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the throttling state for a given request.
+You should call this method before processing a request to find out if a request should be blocked,
+if a captcha must be validated before processing the request, or if no action is needed before proceeding.
+You can also call this method before presenting a page to the user in order to find out
+what you should present: a message saying the user is blocked, a captcha for the user to
+fill, or neither.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ip</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The ip of the client that made the request.</li>
+<li><strong>user</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The user that the client sent in his login request. (used for login attempts)</li>
+<li><strong>pwd</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The password that the client sent in his login request. (used for login attempts)</li>
+<li><strong>session_id</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The session_id for the client&#8217;s session. This session_id should be generated using
+<a class="reference internal" href="../random.html#securitylib.random.get_random_token" title="securitylib.random.get_random_token"><tt class="xref py py-func docutils literal"><span class="pre">get_random_token()</span></tt></a> or another function with the same properties,
+and should be stored in a cookie in the client&#8217;s browser.
+This session_id is to be used for thottling purposes only and so should persist even after the
+user logs out of the application, contrary to typical sessions.
+This session_id is used only for login requests and thus can be omitted for other requests.</li>
+<li><strong>ctx</strong> &#8211; The context of the request. Use this if you want to have different throttling counters for different
+parts of your application. For example, you might want to separate the throttling for login requests from
+that of password recovery requests, meaning that a user can be blocked from sending login requests but
+can still try a password recovery.
+Each string will access different counters, so make sure that you always use the same string for a given context.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">dict</span></tt> &#8211; A dictionary with the requested throttling state. It always has a &#8216;state&#8217; key
+which can have three values: &#8216;ok&#8217;, &#8216;captcha&#8217; and &#8216;block&#8217; (meaning should be obvious from the documentation above).
+If &#8216;state&#8217; is &#8216;block&#8217; there is an additional key called &#8216;unblock_timestamp&#8217; which will contain a timestamp
+of the time when the &#8216;block&#8217; state will end. This can be used to tell the client when he will be
+unblocked.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="common.html" title="securitylib.throttling.common — Throttling common functions"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="throttling.html" title="securitylib.throttling — Throttling framework"
+             >previous</a> |</li>
+        <li><a href="../index.html">Security Lib 0.1 documentation</a> &raquo;</li>
+          <li><a href="throttling.html" ><tt class="docutils literal"><span class="pre">securitylib.throttling</span></tt> &#8212; Throttling framework</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, SAPO Security Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

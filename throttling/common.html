@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>securitylib.throttling.common — Throttling common functions &mdash; Security Lib 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Security Lib 0.1 documentation" href="../index.html" />
+    <link rel="up" title="securitylib.throttling — Throttling framework" href="throttling.html" />
+    <link rel="next" title="securitylib.throttling.server — Throttling server functions" href="server.html" />
+    <link rel="prev" title="securitylib.throttling.client — Throttling client functions" href="client.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="server.html" title="securitylib.throttling.server — Throttling server functions"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="client.html" title="securitylib.throttling.client — Throttling client functions"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">Security Lib 0.1 documentation</a> &raquo;</li>
+          <li><a href="throttling.html" accesskey="U"><tt class="docutils literal"><span class="pre">securitylib.throttling</span></tt> &#8212; Throttling framework</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="client.html"
+                        title="previous chapter"><tt class="docutils literal"><span class="pre">securitylib.throttling.client</span></tt> &#8212; Throttling client functions</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="server.html"
+                        title="next chapter"><tt class="docutils literal"><span class="pre">securitylib.throttling.server</span></tt> &#8212; Throttling server functions</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/throttling/common.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-securitylib.throttling.common">
+<span id="securitylib-throttling-common-throttling-common-functions"></span><h1><a class="reference internal" href="#module-securitylib.throttling.common" title="securitylib.throttling.common"><tt class="xref py py-mod docutils literal"><span class="pre">securitylib.throttling.common</span></tt></a> &#8212; Throttling common functions<a class="headerlink" href="#module-securitylib.throttling.common" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="securitylib.throttling.common.CountersStorage">
+<em class="property">class </em><tt class="descclassname">securitylib.throttling.common.</tt><tt class="descname">CountersStorage</tt><big>(</big><em>storage_client</em>, <em>config=None</em><big>)</big><a class="headerlink" href="#securitylib.throttling.common.CountersStorage" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class represents the storage used to store counters and can be used to configure storage parameters.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>storage_client</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; <p>Object used to actually access the storage.</p>
+<p>At a minimum, the storage should have two methods, <tt class="docutils literal"><span class="pre">get(key)</span></tt> and <tt class="docutils literal"><span class="pre">set(key,</span> <span class="pre">value)</span></tt>,
+where both <tt class="docutils literal"><span class="pre">key</span></tt> and <tt class="docutils literal"><span class="pre">value</span></tt> are strings.</p>
+<p>A typical example is an <tt class="xref py py-class docutils literal"><span class="pre">memcache.Client</span></tt> instance.</p>
+</li>
+<li><strong>config</strong> (<tt class="xref py py-class docutils literal"><span class="pre">dict</span></tt>) &#8211; <p>A dictionary containing storage parameters (dictionary keys are the parameter name
+and dictionary values are the parameter value).
+Allows defining the format of the storage keys, and the expiration times for each type of counter.</p>
+<p>You can ommit all dictionary keys except for the <tt class="docutils literal"><span class="pre">authenticator_key</span></tt> parameter,
+the missing keys will be taken from the default configuration.</p>
+<blockquote>
+<div><em>Structure</em>:<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="21%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">keys_prefix</span></tt></td>
+<td><em>string</em></td>
+<td>Prefix for all storage keys.</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">counter_keys_formats</span></tt></td>
+<td><em>dictionary with string values</em></td>
+<td>Formats for each type of counter.</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">total_format</span></tt></td>
+<td><em>string</em></td>
+<td>Total format of the storage keys, including the prefix,
+the context and the specific counter key.</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">expiration_times</span></tt></td>
+<td><em>dictionary with integer values</em></td>
+<td>Expiration time for each type of counter, in seconds.</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">authenticator_key</span></tt></td>
+<td><em>string</em></td>
+<td>Authenticator key as generated by <a class="reference internal" href="../crypto.html#securitylib.crypto.generate_authenticator_key" title="securitylib.crypto.generate_authenticator_key"><tt class="xref py py-func docutils literal"><span class="pre">generate_authenticator_key()</span></tt></a>.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Default configuration</em>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&#39;keys_prefix&#39;</span><span class="p">:</span> <span class="s">&#39;&#39;</span><span class="p">,</span>
+    <span class="s">&#39;counter_keys_formats&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s">&#39;ip&#39;</span><span class="p">:</span> <span class="s">&#39;ip:{ip}&#39;</span><span class="p">,</span>
+        <span class="s">&#39;user&#39;</span><span class="p">:</span> <span class="s">&#39;user:{user}&#39;</span><span class="p">,</span>
+        <span class="s">&#39;pwd&#39;</span><span class="p">:</span> <span class="s">&#39;pwd:{pwd}&#39;</span><span class="p">,</span>
+        <span class="s">&#39;ip_user&#39;</span><span class="p">:</span> <span class="s">&#39;ip_user:{ip}{user}&#39;</span><span class="p">,</span>
+        <span class="s">&#39;ip_pwd&#39;</span><span class="p">:</span> <span class="s">&#39;ip_pwd:{ip}{pwd}&#39;</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="s">&#39;total_format&#39;</span><span class="p">:</span> <span class="s">&#39;{keys_prefix}:{ctx}:{counter_key}&#39;</span><span class="p">,</span>
+    <span class="s">&#39;expiration_times&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s">&#39;ip&#39;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+        <span class="s">&#39;user&#39;</span><span class="p">:</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">,</span>
+        <span class="s">&#39;pwd&#39;</span><span class="p">:</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">,</span>
+        <span class="s">&#39;ip_user&#39;</span><span class="p">:</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">,</span>
+        <span class="s">&#39;ip_pwd&#39;</span><span class="p">:</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">3600</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="securitylib.throttling.common.SessionStorage">
+<em class="property">class </em><tt class="descclassname">securitylib.throttling.common.</tt><tt class="descname">SessionStorage</tt><big>(</big><em>storage_client</em>, <em>config=None</em><big>)</big><a class="headerlink" href="#securitylib.throttling.common.SessionStorage" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class represents the storage used to store the throttling session and can be used to configure storage parameters.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>storage_client</strong> (<tt class="xref py py-class docutils literal"><span class="pre">object</span></tt>) &#8211; <p>Object used to actually access the storage.</p>
+<p>At a minimum, the storage should have two methods, <tt class="docutils literal"><span class="pre">get(key)</span></tt> and <tt class="docutils literal"><span class="pre">set(key,</span> <span class="pre">value)</span></tt>,
+where both <tt class="docutils literal"><span class="pre">key</span></tt> and <tt class="docutils literal"><span class="pre">value</span></tt> are strings.</p>
+<p>A typical example is an <tt class="xref py py-class docutils literal"><span class="pre">memcache.Client</span></tt> instance.</p>
+</li>
+<li><strong>config</strong> (<tt class="xref py py-class docutils literal"><span class="pre">dict</span></tt>) &#8211; <p>A dictionary containing storage parameters (dictionary keys are the parameter name
+and dictionary values are the parameter value).
+Allows defining the format of the storage key, and its expiration time.</p>
+<p>You can ommit the whole dictionary or some of its keys as the values
+for the missing keys will be taken from the default configuration.</p>
+<blockquote>
+<div><em>Structure</em>:<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="12%" />
+<col width="61%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key</th>
+<th class="head">Type</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">key_prefix</span></tt></td>
+<td><em>string</em></td>
+<td>Prefix for all storage keys.</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">session_key_format</span></tt></td>
+<td><em>string</em></td>
+<td>Format of the storage key.</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">total_format</span></tt></td>
+<td><em>string</em></td>
+<td>Total format of the storage key, including the prefix
+and the session storage key.</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">expiration_time</span></tt></td>
+<td><em>integer</em></td>
+<td>Expiration time for the session, in seconds.</td>
+</tr>
+</tbody>
+</table>
+<p><em>Default configuration</em>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s">&#39;key_prefix&#39;</span><span class="p">:</span> <span class="s">&#39;&#39;</span><span class="p">,</span>
+    <span class="s">&#39;session_key_format&#39;</span><span class="p">:</span> <span class="s">&#39;throttling_session:{session_id}&#39;</span><span class="p">,</span>
+    <span class="s">&#39;total_format&#39;</span><span class="p">:</span> <span class="s">&#39;{key_prefix}:{session_key}&#39;</span><span class="p">,</span>
+    <span class="s">&#39;expiration_time&#39;</span><span class="p">:</span> <span class="mi">3600</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">*</span> <span class="mi">30</span><span class="p">,</span>  <span class="c"># one month</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="server.html" title="securitylib.throttling.server — Throttling server functions"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="client.html" title="securitylib.throttling.client — Throttling client functions"
+             >previous</a> |</li>
+        <li><a href="../index.html">Security Lib 0.1 documentation</a> &raquo;</li>
+          <li><a href="throttling.html" ><tt class="docutils literal"><span class="pre">securitylib.throttling</span></tt> &#8212; Throttling framework</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, SAPO Security Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

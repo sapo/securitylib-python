@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>securitylib.advanced_crypto — Advanced cryptographic functions library &mdash; Security Lib 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Security Lib 0.1 documentation" href="index.html" />
+    <link rel="next" title="securitylib.random — Secure generation of random numbers and strings" href="random.html" />
+    <link rel="prev" title="securitylib.crypto — Cryptographic functions library" href="crypto.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="random.html" title="securitylib.random — Secure generation of random numbers and strings"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="crypto.html" title="securitylib.crypto — Cryptographic functions library"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Security Lib 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="crypto.html"
+                        title="previous chapter"><tt class="docutils literal"><span class="pre">securitylib.crypto</span></tt> &#8212; Cryptographic functions library</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="random.html"
+                        title="next chapter"><tt class="docutils literal"><span class="pre">securitylib.random</span></tt> &#8212; Secure generation of random numbers and strings</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/advanced_crypto.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-securitylib.advanced_crypto">
+<span id="securitylib-advanced-crypto-advanced-cryptographic-functions-library"></span><h1><a class="reference internal" href="#module-securitylib.advanced_crypto" title="securitylib.advanced_crypto: Cryptographic functions or extra parameteres not present in the crypto lib."><tt class="xref py py-mod docutils literal"><span class="pre">securitylib.advanced_crypto</span></tt></a> &#8212; Advanced cryptographic functions library<a class="headerlink" href="#module-securitylib.advanced_crypto" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="securitylib.advanced_crypto.hash">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">hash</tt><big>(</big><em>data</em>, <em>length=32</em>, <em>iterations=1</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.hash" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function will generate a hashed representation of the data.
+We want it to be simple, but for advanced usage you can set the length
+in bytes and the number of iterations.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The data to be hashed.</li>
+<li><strong>length</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The length of the output that we want, in bytes.</li>
+<li><strong>iterations</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The number of iterations.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The generated hash in byte string.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.generate_authenticator">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">generate_authenticator</tt><big>(</big><em>data</em>, <em>authenticator_key</em>, <em>length=32</em>, <em>iterations=1</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.generate_authenticator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for the <a class="reference internal" href="#securitylib.advanced_crypto.hmac" title="securitylib.advanced_crypto.hmac"><tt class="xref py py-func docutils literal"><span class="pre">hmac()</span></tt></a> function.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.hmac">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">hmac</tt><big>(</big><em>data</em>, <em>hmac_key</em>, <em>length=32</em>, <em>iterations=1</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.hmac" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function will generate an HMAC of the data (provides authentication and integrity).
+We want it to be simple, but for advanced usage you can set the length in bytes
+and the number of iterations.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The data to be hashed.</li>
+<li><strong>hmac_key</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The secret key to be used by the HMAC, in byte string.
+You can use <a class="reference internal" href="#securitylib.advanced_crypto.generate_hmac_key" title="securitylib.advanced_crypto.generate_hmac_key"><tt class="xref py py-func docutils literal"><span class="pre">generate_hmac_key()</span></tt></a> to generate it.</li>
+<li><strong>length</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The length of the output that we want, in bytes.</li>
+<li><strong>iterations</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The number of iterations.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The generated hmac in byte string.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.validate_authenticator">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">validate_authenticator</tt><big>(</big><em>data</em>, <em>authenticator_key</em>, <em>authenticator</em>, <em>length=32</em>, <em>iterations=1</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.validate_authenticator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for the <a class="reference internal" href="#securitylib.advanced_crypto.validate_hmac" title="securitylib.advanced_crypto.validate_hmac"><tt class="xref py py-func docutils literal"><span class="pre">validate_hmac()</span></tt></a> function.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.validate_hmac">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">validate_hmac</tt><big>(</big><em>data</em>, <em>hmac_key</em>, <em>authenticator</em>, <em>length=32</em>, <em>iterations=1</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.validate_hmac" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function will validate a given HMAC authenticator against the HMAC of the data.
+Use this function instead of performing the comparison yourself, because it
+avoids timing attacks.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The data protected by the HMAC authenticator.</li>
+<li><strong>hmac_key</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The secret key used to generate the given HMAC authenticator, in byte string.</li>
+<li><strong>authenticator</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The HMAC authenticator you want to compare, in byte string.</li>
+<li><strong>length</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The length used to generate the given HMAC authenticator.</li>
+<li><strong>iterations</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The number of iterations used to generate the given HMAC authenticator.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt> &#8211; True if the given HMAC authenticator matches the HMAC of the data, False otherwise.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.safe_compare">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">safe_compare</tt><big>(</big><em>val1</em>, <em>val2</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.safe_compare" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compares two strings to each other.
+The time taken is independent of the number of characters that match.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>val1</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; First string for comparison.</li>
+<li><strong>val2</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; Second string for comparison.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt> &#8211; True if the two strings are equal, False otherwise.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.generate_secret_key">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">generate_secret_key</tt><big>(</big><em>length=16</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.generate_secret_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a key of the given length.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>length</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; Length of the key to generate, in bytes.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The generated key, in byte string.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.generate_encryption_key">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">generate_encryption_key</tt><big>(</big><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.generate_encryption_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a key for use in the encryption functions and classes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The generated key, in byte string.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.generate_authenticator_key">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">generate_authenticator_key</tt><big>(</big><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.generate_authenticator_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for the <a class="reference internal" href="#securitylib.advanced_crypto.generate_hmac_key" title="securitylib.advanced_crypto.generate_hmac_key"><tt class="xref py py-func docutils literal"><span class="pre">generate_hmac_key()</span></tt></a> function.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.generate_hmac_key">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">generate_hmac_key</tt><big>(</big><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.generate_hmac_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a key for use in the <a class="reference internal" href="#securitylib.advanced_crypto.hmac" title="securitylib.advanced_crypto.hmac"><tt class="xref py py-func docutils literal"><span class="pre">hmac()</span></tt></a> function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The generated key, in byte string.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.generate_encryption_key_from_password">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">generate_encryption_key_from_password</tt><big>(</big><em>password</em>, <em>salt</em>, <em>iterations=15000</em>, <em>dklen=16</em>, <em>hashfunc=None</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.generate_encryption_key_from_password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for the <a class="reference internal" href="#securitylib.advanced_crypto.generate_key_from_password" title="securitylib.advanced_crypto.generate_key_from_password"><tt class="xref py py-func docutils literal"><span class="pre">generate_key_from_password()</span></tt></a> function.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.generate_authenticator_key_from_password">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">generate_authenticator_key_from_password</tt><big>(</big><em>password</em>, <em>salt</em>, <em>iterations=15000</em>, <em>dklen=32</em>, <em>hashfunc=None</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.generate_authenticator_key_from_password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for the <a class="reference internal" href="#securitylib.advanced_crypto.generate_key_from_password" title="securitylib.advanced_crypto.generate_key_from_password"><tt class="xref py py-func docutils literal"><span class="pre">generate_key_from_password()</span></tt></a> function.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.generate_key_from_password">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">generate_key_from_password</tt><big>(</big><em>password</em>, <em>salt</em>, <em>iterations=15000</em>, <em>dklen=16</em>, <em>hashfunc=None</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.generate_key_from_password" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to generate a key from a password.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>password</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The password from which to generate the key.</li>
+<li><strong>salt</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; Salt for the password, in byte string.
+You can use <a class="reference internal" href="random.html#securitylib.random.get_random_token" title="securitylib.random.get_random_token"><tt class="xref py py-func docutils literal"><span class="pre">get_random_token()</span></tt></a> to generate it.</li>
+<li><strong>iterations</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The number of iterations.</li>
+<li><strong>dklen</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; Size of the derived key, in bytes.</li>
+<li><strong>hashfunc</strong> &#8211; Hash function from the <tt class="xref py py-mod docutils literal"><span class="pre">hashlib</span></tt> module.
+If none is provided, sha256 is used.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The generated key, in byte string.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.encrypt">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">encrypt</tt><big>(</big><em>data</em>, <em>key</em>, <em>hmac_key</em>, <em>associated_data=None</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.encrypt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to encrypt data (except streaming data, such as video streaming).
+Two keys must be provided, one to guarantee confidentiality
+and another to guarantee integrity.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The data to encrypt.</li>
+<li><strong>key</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The key to encrypt the data, in byte string. Provides confidentiality.
+You can use <a class="reference internal" href="#securitylib.advanced_crypto.generate_encryption_key" title="securitylib.advanced_crypto.generate_encryption_key"><tt class="xref py py-func docutils literal"><span class="pre">generate_encryption_key()</span></tt></a> to generate it.</li>
+<li><strong>hmac_key</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The key to authenticate the data, in byte string. Provides integrity.
+You can use <a class="reference internal" href="#securitylib.advanced_crypto.generate_hmac_key" title="securitylib.advanced_crypto.generate_hmac_key"><tt class="xref py py-func docutils literal"><span class="pre">generate_hmac_key()</span></tt></a> to generate it.</li>
+<li><strong>associated_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; Data to be authenticated but not encrypted.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The encrypted data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.advanced_crypto.decrypt">
+<tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">decrypt</tt><big>(</big><em>ciphertext</em>, <em>key</em>, <em>hmac_key</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.decrypt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this function to decrypt data that was encrypted using <a class="reference internal" href="#securitylib.advanced_crypto.encrypt" title="securitylib.advanced_crypto.encrypt"><tt class="xref py py-func docutils literal"><span class="pre">encrypt()</span></tt></a>.
+The same keys used to encrypt the data must be provided to decrypt it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ciphertext</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The encrypted data.</li>
+<li><strong>key</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The key that was used to encrypt the data, in byte string.</li>
+<li><strong>hmac_key</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The key that was used to authenticate the data, in byte string.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">dict</span></tt> &#8211; A dictionary with two keys, &#8220;data&#8221; with the decrypted data,
+and &#8220;associated_data&#8221; with the associated data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="securitylib.advanced_crypto.BlockCipher">
+<em class="property">class </em><tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">BlockCipher</tt><big>(</big><em>key</em>, <em>hmac_key</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.BlockCipher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this class to encrypt or decrypt data (except streaming data, such as video streaming).
+Use it if you want to encrypt or decrypt multiple pieces of data with the same keys,
+else you can simply use the <a class="reference internal" href="#securitylib.advanced_crypto.encrypt" title="securitylib.advanced_crypto.encrypt"><tt class="xref py py-func docutils literal"><span class="pre">encrypt()</span></tt></a> and <a class="reference internal" href="#securitylib.advanced_crypto.decrypt" title="securitylib.advanced_crypto.decrypt"><tt class="xref py py-func docutils literal"><span class="pre">decrypt()</span></tt></a> functions.</p>
+<p>In other words, this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">block_cipher</span> <span class="o">=</span> <span class="n">BlockCipher</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">hmac_key</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cta</span> <span class="o">=</span> <span class="n">block_cipher</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ctb</span> <span class="o">=</span> <span class="n">block_cipher</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ctc</span> <span class="o">=</span> <span class="n">block_cipher</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>is equivalent to this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cta</span> <span class="o">=</span> <span class="n">encrypt</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">hmac_key</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ctb</span> <span class="o">=</span> <span class="n">encrypt</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">hmac_key</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ctc</span> <span class="o">=</span> <span class="n">encrypt</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">hmac_key</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>key</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The key to encrypt or decrypt the data, in byte string. Provides confidentiality.
+You can use <a class="reference internal" href="#securitylib.advanced_crypto.generate_encryption_key" title="securitylib.advanced_crypto.generate_encryption_key"><tt class="xref py py-func docutils literal"><span class="pre">generate_encryption_key()</span></tt></a> to generate it.</li>
+<li><strong>hmac_key</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The key which was or will be used to authenticate the data, in byte string. Provides integrity.
+You can use <a class="reference internal" href="#securitylib.advanced_crypto.generate_hmac_key" title="securitylib.advanced_crypto.generate_hmac_key"><tt class="xref py py-func docutils literal"><span class="pre">generate_hmac_key()</span></tt></a> to generate it.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="securitylib.advanced_crypto.BlockCipher.encrypt">
+<tt class="descname">encrypt</tt><big>(</big><em>data</em>, <em>associated_data=None</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.BlockCipher.encrypt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The data to encrypt.</li>
+<li><strong>associated_data</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; Data to be authenticated but not encrypted.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The encrypted data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="securitylib.advanced_crypto.BlockCipher.decrypt">
+<tt class="descname">decrypt</tt><big>(</big><em>ciphertext</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.BlockCipher.decrypt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ciphertext</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The encrypted data.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">dict</span></tt> &#8211; A dictionary with two keys, &#8220;data&#8221; with the decrypted data,
+and &#8220;associated_data&#8221; with the associated data.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="securitylib.advanced_crypto.StreamCipher">
+<em class="property">class </em><tt class="descclassname">securitylib.advanced_crypto.</tt><tt class="descname">StreamCipher</tt><big>(</big><em>key</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.StreamCipher" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this class to encrypt or decrypt a stream using a stream cipher.</p>
+<p>Calling encrypt (or decrypt) multiple times for the same StreamCipher instance
+is equal to calling it once with the concatenation of the input.
+In other words, this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">stream_cipher</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">+</span> <span class="n">stream_cipher</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">+</span> <span class="n">stream_cipher</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>is equivalent to this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">stream_cipher</span><span class="o">.</span><span class="n">encrypt</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This property makes this class perfect for streams of data which must be encrypted
+in chunks instead of all at once.</p>
+<p>Beware that this class only provides confidentiality, not integrity, i.e. it does
+not provide any protection against tampering.
+An HMAC could be computed over each chunk being encrypted to provide integrity, but
+this would have a huge overhead if the chunks are very small, so a better solution
+must be found depending on each specific case.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>key</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The key to encrypt or decrypt the stream, in byte string. Provides confidentiality.
+You can use <a class="reference internal" href="#securitylib.advanced_crypto.generate_encryption_key" title="securitylib.advanced_crypto.generate_encryption_key"><tt class="xref py py-func docutils literal"><span class="pre">generate_encryption_key()</span></tt></a> to generate it.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="securitylib.advanced_crypto.StreamCipher.encrypt">
+<tt class="descname">encrypt</tt><big>(</big><em>stream</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.StreamCipher.encrypt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stream</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The stream to encrypt, or part of it.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The encrypted cipherstream.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="securitylib.advanced_crypto.StreamCipher.decrypt">
+<tt class="descname">decrypt</tt><big>(</big><em>cipherstream</em><big>)</big><a class="headerlink" href="#securitylib.advanced_crypto.StreamCipher.decrypt" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>cipherstream</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The encrypted cipherstream, or part of it.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The decrypted stream.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="random.html" title="securitylib.random — Secure generation of random numbers and strings"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="crypto.html" title="securitylib.crypto — Cryptographic functions library"
+             >previous</a> |</li>
+        <li><a href="index.html">Security Lib 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, SAPO Security Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>

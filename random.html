@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>securitylib.random — Secure generation of random numbers and strings &mdash; Security Lib 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Security Lib 0.1 documentation" href="index.html" />
+    <link rel="next" title="securitylib.passwords — Creation and validation of user passwords." href="passwords.html" />
+    <link rel="prev" title="securitylib.advanced_crypto — Advanced cryptographic functions library" href="advanced_crypto.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="passwords.html" title="securitylib.passwords — Creation and validation of user passwords."
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="advanced_crypto.html" title="securitylib.advanced_crypto — Advanced cryptographic functions library"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Security Lib 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="advanced_crypto.html"
+                        title="previous chapter"><tt class="docutils literal"><span class="pre">securitylib.advanced_crypto</span></tt> &#8212; Advanced cryptographic functions library</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="passwords.html"
+                        title="next chapter"><tt class="docutils literal"><span class="pre">securitylib.passwords</span></tt> &#8212; Creation and validation of user passwords.</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/random.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-securitylib.random">
+<span id="securitylib-random-secure-generation-of-random-numbers-and-strings"></span><h1><a class="reference internal" href="#module-securitylib.random" title="securitylib.random: Generation of random numbers and strings."><tt class="xref py py-mod docutils literal"><span class="pre">securitylib.random</span></tt></a> &#8212; Secure generation of random numbers and strings<a class="headerlink" href="#module-securitylib.random" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="securitylib.random.get_random_bytes">
+<tt class="descclassname">securitylib.random.</tt><tt class="descname">get_random_bytes</tt><big>(</big><em>length</em><big>)</big><a class="headerlink" href="#securitylib.random.get_random_bytes" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function will generate strong random data for cryptographic usage.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>length</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The length of the generated string of random bytes.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The generated random bytes as a binary string.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.random.get_random_integer">
+<tt class="descclassname">securitylib.random.</tt><tt class="descname">get_random_integer</tt><big>(</big><em>min_result=0</em>, <em>max_result=65535</em><big>)</big><a class="headerlink" href="#securitylib.random.get_random_integer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a random integer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>min_result</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The minimum number that can be generated.</li>
+<li><strong>max_result</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The maximum number that can be generated.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">int</span></tt> &#8211; The generated random number.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.random.get_random_token">
+<tt class="descclassname">securitylib.random.</tt><tt class="descname">get_random_token</tt><big>(</big><em>length=20</em><big>)</big><a class="headerlink" href="#securitylib.random.get_random_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a random token that satisfies 2 properties: unique and unpredictable.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>length</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The length of the token to be generated in bytes.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The generated token (hex).</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">random</span><span class="o">.</span><span class="n">get_random_token</span><span class="p">()</span> 
+<span class="go">&#39;0f280bd84a4c6ae15c2deddec28c8e2e94b00dba&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.random.get_random_boolean">
+<tt class="descclassname">securitylib.random.</tt><tt class="descname">get_random_boolean</tt><big>(</big><big>)</big><a class="headerlink" href="#securitylib.random.get_random_boolean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a random boolean value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">bool</span></tt> &#8211; True or False.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.random.get_random_string">
+<tt class="descclassname">securitylib.random.</tt><tt class="descname">get_random_string</tt><big>(</big><em>length</em>, <em>charset='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'</em><big>)</big><a class="headerlink" href="#securitylib.random.get_random_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a random string based on the given length and the character set.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>length</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The length of the random string to be generated.</li>
+<li><strong>charset</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The char set to be used (default is a-zA-Z0-9).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The generated random string.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.random.get_random_filename">
+<tt class="descclassname">securitylib.random.</tt><tt class="descname">get_random_filename</tt><big>(</big><em>length=12</em>, <em>extension=None</em>, <em>charset='abcdefghijklmnopqrstuvwxyz0123456789'</em><big>)</big><a class="headerlink" href="#securitylib.random.get_random_filename" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a random filename based on the given length and extension.
+The dot between the filename and the extension is added automatically if
+an extension is given.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>length</strong> (<tt class="xref py py-class docutils literal"><span class="pre">int</span></tt>) &#8211; The length of the random filename to be generated.</li>
+<li><strong>extension</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The extension to be appended to the filename.</li>
+<li><strong>charset</strong> (<tt class="xref py py-class docutils literal"><span class="pre">str</span></tt>) &#8211; The char set to be used (default is a-z0-9).</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The generated random filename.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">random</span><span class="o">.</span><span class="n">get_random_filename</span><span class="p">()</span> 
+<span class="go">&#39;x7152s2lzbu5&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">random</span><span class="o">.</span><span class="n">get_random_filename</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span> 
+<span class="go">&#39;b2exn8ah&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">random</span><span class="o">.</span><span class="n">get_random_filename</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="s">&#39;txt&#39;</span><span class="p">)</span> 
+<span class="go">&#39;6fcldehx.txt&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="securitylib.random.get_random_GUID">
+<tt class="descclassname">securitylib.random.</tt><tt class="descname">get_random_GUID</tt><big>(</big><big>)</big><a class="headerlink" href="#securitylib.random.get_random_GUID" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a random GUID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><tt class="xref py py-class docutils literal"><span class="pre">str</span></tt> &#8211; The generated GUID.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">random</span><span class="o">.</span><span class="n">get_random_GUID</span><span class="p">()</span> 
+<span class="go">&#39;A7093430-468C-BBB6-ED70-DFF7B609B7A7&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="passwords.html" title="securitylib.passwords — Creation and validation of user passwords."
+             >next</a> |</li>
+        <li class="right" >
+          <a href="advanced_crypto.html" title="securitylib.advanced_crypto — Advanced cryptographic functions library"
+             >previous</a> |</li>
+        <li><a href="index.html">Security Lib 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, SAPO Security Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
