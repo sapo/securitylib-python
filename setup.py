@@ -10,7 +10,7 @@ def get_readme():
 
 setup(
     name='securitylib',
-    version='1.0.1',
+    version='1.0.2',
     packages=find_packages(),
     install_requires=[
         'pycrypto>=2.6.1',
