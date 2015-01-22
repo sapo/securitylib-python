@@ -167,7 +167,8 @@ gh-pages:
 	rm -rf $(BUILDDIR) && \
 	cd .. && \
 	rm -rf $(GH_PAGES_SOURCES) && \
-	echo "include:\n- _static\n" > _config.yaml && \
+	echo "include:" > _config.yaml && \
+	echo "- _static" >> _config.yaml && \
 	git add -A && \
 	git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`" && \
 	git checkout master
