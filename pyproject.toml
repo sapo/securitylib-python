@@ -1,0 +1,20 @@
+[project]
+name = "securitylib"
+version = "1.0.5"
+license = { text = "MIT License" }
+keywords = ['security', 'crypto', 'securitylib']
+
+authors = [
+  { name="José Nuno Pires", email="jose-n-pires@telecom.pt" },
+]
+description = "SAPO Security Lib - Python"
+readme = "README.md"
+requires-python = ">=3.4"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/sapo/securitylib-python"
+Issues = "https://github.com/sapo/securitylib-python/issues"

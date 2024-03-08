@@ -1,10 +1,12 @@
 from securitylib.advanced_crypto import safe_compare, validate_authenticator_key, hmac
-from securitylib.random import get_random_bytes
+from securitylib.random_utils import get_random_bytes
 from securitylib.utils import randomize, get_random_element
 import string
 import math
 import os
 import re
+import codecs
+
 
 __all__ = ['prepare_password_for_storage', 'compare_stored_password',
         'generate_password', 'validate_password', 'get_password_strength',
@@ -75,7 +77,7 @@ def prepare_password_for_storage(password, authenticator_key):
     validate_authenticator_key(authenticator_key)
     version = 1
     salt = get_random_bytes(8)
-    return prepare_password_for_storage_all_params(password, authenticator_key, salt, version)
+    return prepare_password_for_storage_all_params(password, authenticator_key, salt, version).encode('utf8')
 
 
 def compare_stored_password(password, authenticator_key, stored_password):
@@ -95,9 +97,13 @@ def compare_stored_password(password, authenticator_key, stored_password):
     :returns: :class:`bool` -- True if the given password matches the stored one.
     """
     validate_authenticator_key(authenticator_key)
-    # Tests whether stored_password is correct hex but does not replace it
-    version = ord(stored_password[:2].decode('hex'))
-    salt = stored_password[2:18].decode('hex')
+
+    if type(stored_password) is bytes:
+        stored_password = stored_password.decode('utf8')
+
+    # Tests whether stored_password is correct hex but does not replace it    
+    version = ord(codecs.decode(stored_password[:2], 'hex'))
+    salt = codecs.decode(stored_password[2:18], 'hex')
     return safe_compare(prepare_password_for_storage_all_params(password, authenticator_key, salt, version),
            stored_password.lower())
 
@@ -127,9 +133,10 @@ def prepare_password_for_storage_all_params(password, authenticator_key, salt, v
     """
     # Tests whether authenticator_key is correct hex but does not replace it
     if version == 1:
-        version_hex = chr(version).encode('hex')
-        hpass = hmac(salt + password, authenticator_key, 32, 10).encode('hex')
-        return version_hex + salt.encode('hex') + hpass
+        password = password.encode('utf8')
+        version_hex = chr(version).encode('utf8').hex() 
+        hpass = hmac(salt + password, authenticator_key, 32, 10)
+        return version_hex + salt.hex() + hpass.hex()
     else:
         raise NotImplementedError('Version {0} not supported'.format(version))
 
@@ -187,7 +194,7 @@ def generate_password(length=12, lower=True, upper=True, digits=True, special=Tr
     if special:
         s_all += s_special
         password.append(get_random_element(s_special))
-    for _ in xrange(length - len(password)):
+    for _ in range(length - len(password)):
         password.append(get_random_element(s_all))
     randomize(password)
     return ''.join(password)
@@ -221,6 +228,8 @@ def validate_password(password, min_length=12, min_lower=1, min_upper=1, min_dig
     :returns: :class:`list` -- A list with the name of the parameters whose validations have failed.
                                This means a password is valid only if this function returns an empty list.
     """
+def validate_password(password, min_length=12, min_lower=1, min_upper=1, min_digits=1, min_special=1, min_strength=50):
+    
     s_lower = set('abcdefghijklmnopqrstuvwxyz')
     s_upper = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
     s_digits = set('0123456789')
@@ -272,14 +281,24 @@ class PassVariant:
         self.password = password
         self.entropy = entropy
 
+    
     def __hash__(self):
         return hash(self.password)
 
     def __eq__(self, other):
         return self.password == other.password
 
-    def __cmp__(self, other):
-        return cmp(self.entropy, other.entropy)
+    def __lt__(self, other):
+        return self.entropy < other.entropy
+    
+    def __gt__(self, other):
+        return self.entropy > other.entropy
+
+    def __le__(self, other):
+        return self.entropy <= other.entropy
+
+    def __ge__(self, other):
+        return self.entropy >= other.entropy
 
     def __repr__(self):
         return '{0} {1}'.format(self.password, self.entropy)
@@ -312,7 +331,7 @@ def get_NIST_num_bits(password, repeatcalc=False):
     if repeatcalc:
         # Variant on NIST rules to reduce long sequences of repeated characters.
         charmult = [1] * 256
-        for i in xrange(passlen):
+        for i in range(passlen):
             tempchr = ord(password[i])
             if i >= 19:
                 result += charmult[tempchr]
@@ -432,18 +451,18 @@ def get_entropy_bits(password, username=None):
     passwords_variants[rev_pass.password] = rev_pass
 
     # Leet-speak substitutions variants
-    leetspeakmap = string.maketrans('@!$1234567890', 'aisizeasgtbgo')
+    leetspeakmap = str.maketrans('@!$1234567890', 'aisizeasgtbgo')
     leetspeak_pass = PassVariant(lower_pass.password.translate(leetspeakmap), 1)
     passwords_variants[leetspeak_pass.password] = leetspeak_pass
 
-    leetspeakmap2 = string.maketrans('@!$1234567890', 'aislzeasgtbgo')
+    leetspeakmap2 = str.maketrans('@!$1234567890', 'aislzeasgtbgo')
     leetspeak_pass2 = PassVariant(lower_pass.password.translate(leetspeakmap2), 1)
     passwords_variants[leetspeak_pass2.password] = leetspeak_pass2
 
     if find_keyboard_sequences:
         # Tries to find sequences from keyboard
         # in the variants of the password and removes them.
-        for cur_pass in passwords_variants.values():
+        for cur_pass in list(passwords_variants.values()):
             tmp_pass = cur_pass.password
             for keyboard_seq in KEYBOARD_SEQUENCES:
                 tmp_pass = remove_sequence(tmp_pass, keyboard_seq)
@@ -458,7 +477,7 @@ def get_entropy_bits(password, username=None):
     if find_dict_words:
         # Looks for dictionary words in the password variants.
         dict_words = load_dict_words()
-        for cur_pass in passwords_variants.values():
+        for cur_pass in list(passwords_variants.values()):
             clean_pass = ''.join(char for char in cur_pass.password if char != '\x00')
             n_alpha_chars = len([char for char in clean_pass if char_is_lower(char)])
             if len(clean_pass) >= minwordlen:
@@ -482,11 +501,11 @@ def get_entropy_bits(password, username=None):
                     # If no word is found in the password give it's entropy a bonus.
                     cur_pass.entropy += 6
 
-    for pwd in passwords_variants.values():
+    for pwd in list(passwords_variants.values()):
         pwd.entropy += get_NIST_num_bits(pwd.password)
 
     # Find the minimum entropy among all password variants.
-    min_entropy = min(pass_variant.entropy for pass_variant in passwords_variants.values())
+    min_entropy = min(pass_variant.entropy for pass_variant in list(passwords_variants.values()))
 
     # Also consider the entropy of running the get_NIST_num_bits variant
     # for repeated chars against the original password.
@@ -504,7 +523,7 @@ def get_entropy_bits(password, username=None):
 def handle_license_plates(pwd):
     m = LICENCE_PLATE_REGEX.search(pwd)
     if m:
-        filtered_license = ''.join(filter(None, m.groups()))
+        filtered_license = ''.join([_f for _f in m.groups() if _f])
         count_letters = sum(1 for c in filtered_license if c.isalpha())
         if count_letters == 2:
             # is valid license plate
@@ -514,7 +533,7 @@ def handle_license_plates(pwd):
 
 def handle_dates(pwd):
     all_full_date_matches = (regex.search(pwd) for regex in FULL_DATE_REGEXS)
-    all_full_date_matches = filter(None, all_full_date_matches)
+    all_full_date_matches = [_f for _f in all_full_date_matches if _f]
     if all_full_date_matches:
         maximum_match = max(all_full_date_matches, key=lambda m: m.end() - m.start())
         pwd = replace_at_span(pwd, '\x00' * 4, maximum_match.start(), maximum_match.end())
@@ -571,8 +590,8 @@ def get_substrings_set(string, min_length):
     """
     substr_set = set()
     slen = len(string)
-    for substr_len in xrange(min_length, slen + 1):
-        for substr_start in xrange(slen - substr_len + 1):
+    for substr_len in range(min_length, slen + 1):
+        for substr_start in range(slen - substr_len + 1):
             substr_set.add(string[substr_start:substr_start + substr_len])
     return substr_set
 

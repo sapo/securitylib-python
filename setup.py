@@ -10,10 +10,10 @@ def get_readme():
 
 setup(
     name='securitylib',
-    version='1.0.2',
+    version='1.0.5',
     packages=find_packages(),
     install_requires=[
-        'pycrypto>=2.6.1',
+        'pycryptodome==3.16.0',
     ],
     package_data={
         '': ['*.txt', '*.md'],
@@ -25,7 +25,7 @@ setup(
     description=('The SAPO Security Lib is a library whose purpose is to '
         'provide functions/classes that solve common security related problems,'
         ' while being easy to use even by those who are not security experts.'),
-    long_description = get_readme(),
+    long_description=get_readme(),
     license='MIT',
     keywords=['security', 'crypto', 'securitylib'],
     classifiers=[
@@ -35,7 +35,7 @@ setup(
         'Operating System :: Unix',
         'Operating System :: Microsoft :: Windows',
         'Operating System :: MacOS :: MacOS X',
-        'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 3',
         'Topic :: Security :: Cryptography',
         ],
 )

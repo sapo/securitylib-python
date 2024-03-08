@@ -46,12 +46,26 @@ For the full documentation of the library, go [here](http://oss.sapo.pt/security
 
 Please file any bugs you find in our [issue tracker](https://github.com/sapo/securitylib-python).
 
+## Testing
+- docker-compose build
+- docker-compose up -d
+- docker exec -it upgrade sh
+- cd /securitylib/tests
+- nosetests
+
+## Building wheel
+- docker-compose build
+- docker-compose up -d
+- docker exec -it upgrade sh
+- cd /securitylib
+- python setup.py bdist
+
+_You should change version in setup.py when upgrading_
 
 ## Installation
 
-Only Python 2.7 is supported.
-There are severall ways to install SAPO Security Lib.
-
+Upgraded to support from Python 3.5 to 3.12.
+There are several ways to install SAPO Security Lib.
 
 ### Via PyPI
 

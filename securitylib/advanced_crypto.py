@@ -2,7 +2,7 @@ from hashlib import md5, sha1, sha256, sha512
 import hmac as hmac_mod
 import struct
 from securitylib.utils import long_to_bin, bin_to_long, decode_hex_param, conditional_encode, conditional_decode
-from securitylib.random import get_random_bytes
+from securitylib.random_utils import get_random_bytes
 from Crypto.Cipher import AES
 from Crypto.Util import Counter
 
@@ -16,8 +16,8 @@ HASHING_ALGOS_BY_LENGTH = {16: md5, 20: sha1, 32: sha256, 64: sha512}
 ENCRYPTION_KEY_MINIMUM_LENGTH = 16
 HMAC_KEY_MINIMUM_LENGTH = 32
 
-_trans_5c = b"".join([chr(x ^ 0x5C) for x in xrange(256)])
-_trans_36 = b"".join([chr(x ^ 0x36) for x in xrange(256)])
+_trans_5c = bytes((x ^ 0x5C) for x in range(256))
+_trans_36 = bytes((x ^ 0x36) for x in range(256))
 
 
 def hash(data, length=32, iterations=1):
@@ -122,8 +122,13 @@ def safe_compare(val1, val2):
     if len(val1) != len(val2):
         return False
     result = 0
+    
+    if type(val1) is str:
+        val1 = bytes(val1, 'utf8')
+    if type(val2) is str:
+        val2 = bytes(val2, 'utf8')
     for c1, c2 in zip(val1, val2):
-        result |= ord(c1) ^ ord(c2)
+        result |= c1 ^ c2
     return result == 0
 
 
@@ -276,6 +281,9 @@ class BlockCipher(object):
     :type hmac_key: :class:`str`
     """
 
+    def get_current_version(self):
+        return bytes(chr(self.current_version), 'utf8')
+
     def __init__(self, key, hmac_key):
         self.current_version = 1
 
@@ -306,11 +314,13 @@ class BlockCipher(object):
         padded_data = pad_pkcs5(data, AES.block_size)
         ciphertext = cipher.encrypt(padded_data)
         if not associated_data:
-            associated_data = ''
-        packed_associated_data_length = struct.pack('>I', len(associated_data))
+            associated_data = b''
+        elif type(associated_data) is str:
+            associated_data = bytes(associated_data, 'utf8')
+        packed_associated_data_length = struct.pack(b'>I', len(associated_data))
         authenticated_data = iv + packed_associated_data_length + associated_data + ciphertext
         sig = hmac_mod.new(self.hmac_key, authenticated_data, sha256).digest()
-        output = version_byte + sig + authenticated_data
+        output = self.get_current_version() + sig + authenticated_data
         return output
 
     def decrypt(self, ciphertext):
@@ -324,8 +334,8 @@ class BlockCipher(object):
         if len(ciphertext) < 69:
             raise ValueError('Parameter ciphertext is too short to '\
                     'have been generated with encrypt.')
-
-        version = ord(ciphertext[0])
+        version = int(str(ciphertext[0]))
+        version = int(str(ciphertext[0]))
         if version == 1:
             given_sig = ciphertext[1:33]
             sig = hmac_mod.new(self.hmac_key, ciphertext[33:], sha256).digest()
@@ -335,15 +345,14 @@ class BlockCipher(object):
 
             # Extract associated data
             packed_associated_data_length = ciphertext[49:53]
-            associated_data_length = struct.unpack('>I', packed_associated_data_length)[0]
+            associated_data_length = struct.unpack(b'>I', packed_associated_data_length)[0]
             associated_data = ciphertext[53:53 + associated_data_length]
-
             real_ciphertext = ciphertext[53 + associated_data_length:]
             cipher = AES.new(self.key, AES.MODE_CBC, iv)
             padded_data = cipher.decrypt(real_ciphertext)
             try:
                 data = unpad_pkcs5(padded_data, AES.block_size)
-            except AssertionError:
+            except AssertionError as e:
                 raise ValueError('Failed to decrypt ciphertext.')
             return {"data": data,
                     "associated_data": associated_data}
@@ -384,7 +393,7 @@ class StreamCipher(object):
         self.current_version = 1
         self.initialized = False
         self.encrypt_mode = None
-
+        
     def encrypt(self, stream):
         """
         :param stream: The stream to encrypt, or part of it.
@@ -392,11 +401,14 @@ class StreamCipher(object):
 
         :returns: :class:`str` -- The encrypted cipherstream.
         """
+        if not type(stream) is bytes:
+            stream = stream.encode('utf8')
+
         if not self.initialized:
             iv = get_random_bytes(12)
             counter = Counter.new(32, prefix=iv)
             self.cipher = AES.new(self.key, AES.MODE_CTR, counter=counter)
-            version_byte = chr(self.current_version)
+            version_byte = bytes(chr(self.current_version), 'utf8')
             cipherstream = version_byte + iv + self.cipher.encrypt(stream)
             self.initialized = True
             self.encrypt_mode = True
@@ -415,7 +427,7 @@ class StreamCipher(object):
         :returns: :class:`str` -- The decrypted stream.
         """
         if not self.initialized:
-            version = ord(cipherstream[0])
+            version = cipherstream[0]
             if version == 1:
                 iv = cipherstream[1:13]
                 counter = Counter.new(32, prefix=iv)
@@ -439,6 +451,8 @@ def pbkdf2(password, salt, iterations, dklen, hashfunc=None):
     """
     Implementation of the PBKDF2 key derivation function as described in RFC 2898.
     """
+    if type(salt) not in [bytes, bytearray]:
+        salt = bytes(salt, 'utf8')
     hashfunc = hashfunc or sha1
     hlen = hashfunc().digest_size
     if dklen > (2 ** 31 - 2) * hlen:
@@ -446,10 +460,10 @@ def pbkdf2(password, salt, iterations, dklen, hashfunc=None):
     # behold the smartass way of doing ceil:
     l = -(-dklen // hlen)  # number of derived key blocks to compute
     dk_blocks = []
-    for i in xrange(1, l + 1):
+    for i in range(1, l + 1):
         t = 0
-        u = salt + struct.pack('>I', i)
-        for _ in xrange(iterations):
+        u = salt + struct.pack(b'>I', i)
+        for _ in range(iterations):
             u = fast_hmac(password, u, hashfunc).digest()
             t ^= bin_to_long(u)
         dk_blocks.append(long_to_bin(t, hlen))
@@ -476,20 +490,30 @@ def hash_or_hmac(func, data, length=32, iterations=1):
         lengths_string = ', '.join(str(l) for l in available_lengths[:-1]) + ' or ' + str(available_lengths[-1])
         raise ValueError('You must choose one of the supported sizes: {0} bytes.'.format(lengths_string))
 
-    for _ in xrange(iterations):
+    # It must return utf8 encoded data!!!!
+    if type(data) is str:
+        data = data.encode('utf8')
+    
+    for _ in range(iterations):
         data = func(data, hashfunc).digest()
-
-    return data
+    
+    return bytes(data)
 
 
 def fast_hmac(key, msg, digest):
     """
     A trimmed down version of Python's HMAC implementation
     """
+    if type(key) not in [bytes, bytearray]:
+        key = bytes(key, 'utf8')
     dig1, dig2 = digest(), digest()
-    if len(key) > dig1.block_size:
+
+    blocksize = getattr(dig1, 'block_size', 64)
+    if len(key) > blocksize:
         key = digest(key).digest()
-    key += '\x00' * (dig1.block_size - len(key))
+    key += b'\x00' * (dig1.block_size - len(key))
+    
+    key.translate(_trans_36)
     dig1.update(key.translate(_trans_36))
     dig1.update(msg)
     dig2.update(key.translate(_trans_5c))
@@ -512,7 +536,11 @@ def pad_pkcs5(data, block_size):
     :return: :class:`str` -- PKCS5 padded string.
     """
     pad = block_size - len(data) % block_size
-    return data + pad * chr(pad)
+    
+    # Assuming data is a bytes object: Required in test_encrypt and decrypt
+    if type(data) is str:
+        data = bytes(data, 'utf8')
+    return data + bytes(pad * chr(pad), 'utf8')
 
 
 def unpad_pkcs5(padded, block_size):
@@ -525,10 +553,10 @@ def unpad_pkcs5(padded, block_size):
     :return: :class:`str` -- Original, unpadded string.
     """
     assert padded and len(padded) % block_size == 0
-    pad_size = ord(padded[-1])
+    pad_size = padded[-1]
     assert 1 <= pad_size <= block_size
     pad = padded[-pad_size:]
-    assert pad == pad[-1] * pad_size
+    assert pad == bytes(pad.decode('utf8')[-1] * pad_size, 'utf8')
     return padded[:-pad_size]
 
 

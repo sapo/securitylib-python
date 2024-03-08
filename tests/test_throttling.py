@@ -1,8 +1,7 @@
 from securitylib import throttling
-from securitylib.random import get_random_token
+from securitylib.random_utils import get_random_token
 from securitylib.crypto import generate_authenticator_key
 from test_utils import setup_fake_datetime, teardown_fake_datetime, fake_sleep
-from nose.tools import eq_, ok_
 import mockcache
 import unittest
 import json
@@ -32,11 +31,11 @@ class TestThrottling(unittest.TestCase):
 
     def _test_response(self, response, ip, user=None, pwd=None, ctx=None, session_id=None,
             expected_state='ok', expected_throttling_session=False):
-        eq_(response['state'], expected_state)
+        assert response['state'] == expected_state
         if expected_state == 'block':
-            ok_('unblock_timestamp' in response)
+            assert 'unblock_timestamp' in response
         throttling_session = self.session_storage.get(session_id)
-        eq_(throttling_session is not None, expected_throttling_session)
+        assert (throttling_session is not None) == expected_throttling_session
 
     def _test_login_attempt(self, ip=None, user=None, pwd=None, ctx=None, expected_state_before='ok', expected_state_after='ok', success=False, use_session=True):
         # test login attempt with ip, user and pwd
@@ -69,19 +68,19 @@ class TestThrottling(unittest.TestCase):
         captcha_limit = self.state_updater.DEFAULT_CONFIG['limits']['captcha'][key]
         block_limit = self.state_updater.DEFAULT_CONFIG['limits']['block'][key]
 
-        for i in xrange(captcha_limit - 1):
+        for i in range(captcha_limit - 1):
             self._test_login_attempt(ip=ip, user=user, pwd=pwd)
 
         self._test_login_attempt(ip=ip, user=user, pwd=pwd, expected_state_after='captcha')
 
         if not block_limit:
-            for i in xrange(200):
+            for i in range(200):
                 self._test_login_attempt(ip=ip, user=user, pwd=pwd, expected_state_before='captcha', expected_state_after='captcha')
         else:
-            for i in xrange(block_limit - captcha_limit - 1):
+            for i in range(block_limit - captcha_limit - 1):
                 self._test_login_attempt(ip=ip, user=user, pwd=pwd, expected_state_before='captcha', expected_state_after='captcha')
             self._test_login_attempt(ip=ip, user=user, pwd=pwd, expected_state_before='captcha', expected_state_after='block')
-            for i in xrange(10):
+            for i in range(10):
                 self._test_login_attempt(ip=ip, user=user, pwd=pwd, expected_state_before='block', expected_state_after='block')
 
     def _test_expiration_time_counter_generic(self, key, fixed_ip=False, fixed_user=False, fixed_pwd=False):
@@ -91,7 +90,7 @@ class TestThrottling(unittest.TestCase):
         captcha_limit = self.state_updater.DEFAULT_CONFIG['limits']['captcha'][key]
         expiration_time = self.counters_storage.DEFAULT_CONFIG['expiration_times'][key]
 
-        for i in xrange(captcha_limit - 1):
+        for i in range(captcha_limit - 1):
             self._test_login_attempt(ip=ip, user=user, pwd=pwd)
 
         self._test_login_attempt(ip=ip, user=user, pwd=pwd, expected_state_after='captcha')
@@ -122,7 +121,7 @@ class TestThrottling(unittest.TestCase):
         # set session_id as soon as possible
         session_id = 'ef0c812b00128a8255613efdb1cde34052d450d1'
 
-        for i in xrange(19):
+        for i in range(19):
             user = get_random_token()
             pwd = get_random_token()
             # assume user attempts to login
@@ -145,7 +144,7 @@ class TestThrottling(unittest.TestCase):
         self._test_response(response, ip, user, pwd, expected_state='captcha')
         # show login page with captcha
 
-        for i in xrange(79):
+        for i in range(79):
             user = get_random_token()
             pwd = get_random_token()
             # assume user attempts to login
@@ -198,62 +197,62 @@ class TestThrottling(unittest.TestCase):
         user = get_random_token()
         captcha_limit = self.state_updater.DEFAULT_CONFIG['limits']['captcha']['ip_user']
 
-        for i in xrange(captcha_limit - 1):
+        for i in range(captcha_limit - 1):
             self._test_login_attempt(ip=ip, user=user, use_session=False)
 
         self._test_login_attempt(ip=ip, user=user, use_session=False, expected_state_after='captcha')
 
         counters = self.counters_storage.get(ip, user)
-        eq_(counters['ip_user'].value, 3)
-        eq_(counters['ip'].value, 3)
-        eq_(counters['user'].value, 1)
+        assert counters['ip_user'].value == 3
+        assert counters['ip'].value == 3
+        assert counters['user'].value == 1
 
         self._test_login_attempt(ip=ip, user=user, success=True, use_session=False, expected_state_before='captcha')
 
         counters = self.counters_storage.get(ip, user)
-        eq_(counters['ip_user'].value, 0)
-        eq_(counters['ip'].value, 3)
-        eq_(counters['user'].value, 1)
+        assert counters['ip_user'].value == 0
+        assert counters['ip'].value == 3
+        assert counters['user'].value == 1
 
         self._test_login_attempt(ip=ip, user=user, use_session=False)
 
         counters = self.counters_storage.get(ip, user)
-        eq_(counters['ip_user'].value, 1)
-        eq_(counters['ip'].value, 4)
+        assert counters['ip_user'].value == 1
+        assert counters['ip'].value == 4
         # Weird behaviour. User is counted twice due to counter ip_user having been cleared.
         # Still, wouldn't happen if the session was being used since the user
         # would have a free pass and wouldn't update the counters.
-        eq_(counters['user'].value, 2)
+        assert counters['user'].value == 2
 
     def test_free_pass(self):
         user = get_random_token()
         captcha_limit = self.state_updater.DEFAULT_CONFIG['limits']['captcha']['user']
         free_pass_limit = self.state_updater.FREE_PASS_LIMIT
 
-        for i in xrange(captcha_limit - 1):
+        for i in range(captcha_limit - 1):
             self._test_login_attempt(user=user)
 
         self._test_login_attempt(user=user, expected_state_after='captcha')
 
         self._test_login_attempt(user=user, success=True, expected_state_before='captcha')
 
-        for i in xrange(100):
+        for i in range(100):
             self._test_login_attempt(user=user, success=True)
 
-        for i in xrange(free_pass_limit - 1):
+        for i in range(free_pass_limit - 1):
             self._test_login_attempt(user=user, success=False)
 
         self._test_login_attempt(user=user, success=False, expected_state_after='captcha')
 
         self._test_login_attempt(user=user, success=True, expected_state_before='captcha')
 
-        for i in xrange(100):
+        for i in range(100):
             self._test_login_attempt(user=user, success=True)
 
-        for i in xrange(100):
+        for i in range(100):
             self._test_login_attempt(user=user, success=True, use_session=False, expected_state_before='captcha', expected_state_after='captcha')
 
-        for i in xrange(100):
+        for i in range(100):
             self._test_login_attempt(user=user, success=True)
 
     def test_exponential_block_times(self):
@@ -262,7 +261,7 @@ class TestThrottling(unittest.TestCase):
         initial_blocking_time = self.state_updater.DEFAULT_CONFIG['initial_blocking_time']
 
         # tests start here
-        for i in xrange(100):
+        for i in range(100):
             user = get_random_token()
             pwd = get_random_token()
             # assume user attempts to login
@@ -330,36 +329,36 @@ class TestThrottling(unittest.TestCase):
         self._test_login_attempt(user=user, success=True)
 
         throttling_session = self.session_storage.get(session_id)
-        ok_(throttling_session.has_valid_login(user))
+        assert throttling_session.has_valid_login(user)
 
         fake_sleep(expiration_time)
 
         throttling_session = self.session_storage.get(session_id)
-        ok_(throttling_session.has_valid_login(user))
+        assert throttling_session.has_valid_login(user)
 
         fake_sleep(0.01)
 
         throttling_session = self.session_storage.get(session_id)
-        ok_(throttling_session is None)
+        assert throttling_session is None
 
     def test_updating_counters_if_using_only_ip(self):
         ip = get_random_token()
         captcha_limit = self.state_updater.DEFAULT_CONFIG['limits']['captcha']['ip']
         block_limit = self.state_updater.DEFAULT_CONFIG['limits']['block']['ip']
 
-        for i in xrange(captcha_limit - 1):
+        for i in range(captcha_limit - 1):
             self._test_request_attempt(ip=ip)
 
         self._test_request_attempt(ip=ip, expected_state_after='captcha')
 
         if not block_limit:
-            for i in xrange(200):
+            for i in range(200):
                 self._test_request_attempt(ip=ip, expected_state_before='captcha', expected_state_after='captcha')
         else:
-            for i in xrange(block_limit - captcha_limit - 1):
+            for i in range(block_limit - captcha_limit - 1):
                 self._test_request_attempt(ip=ip, expected_state_before='captcha', expected_state_after='captcha')
             self._test_request_attempt(ip=ip, expected_state_before='captcha', expected_state_after='block')
-            for i in xrange(10):
+            for i in range(10):
                 self._test_request_attempt(ip=ip, expected_state_before='block', expected_state_after='block')
 
     def test_multiple_contexts(self):
@@ -368,29 +367,29 @@ class TestThrottling(unittest.TestCase):
         block_limit = self.state_updater.DEFAULT_CONFIG['limits']['block']['ip']
 
         # Context 1
-        for i in xrange(captcha_limit - 1):
+        for i in range(captcha_limit - 1):
             self._test_login_attempt(ip=ip, ctx='1')
 
         self._test_login_attempt(ip=ip, ctx='1', expected_state_after='captcha')
 
         # Context 2
-        for i in xrange(captcha_limit - 1):
+        for i in range(captcha_limit - 1):
             self._test_login_attempt(ip=ip, ctx='2')
 
         self._test_login_attempt(ip=ip, ctx='2', expected_state_after='captcha')
 
         # Context 1
-        for i in xrange(block_limit - captcha_limit - 1):
+        for i in range(block_limit - captcha_limit - 1):
             self._test_login_attempt(ip=ip, ctx='1', expected_state_before='captcha', expected_state_after='captcha')
         self._test_login_attempt(ip=ip, ctx='1', expected_state_before='captcha', expected_state_after='block')
-        for i in xrange(10):
+        for i in range(10):
             self._test_login_attempt(ip=ip, ctx='1', expected_state_before='block', expected_state_after='block')
 
         # Context 2
-        for i in xrange(block_limit - captcha_limit - 1):
+        for i in range(block_limit - captcha_limit - 1):
             self._test_login_attempt(ip=ip, ctx='2', expected_state_before='captcha', expected_state_after='captcha')
         self._test_login_attempt(ip=ip, ctx='2', expected_state_before='captcha', expected_state_after='block')
-        for i in xrange(10):
+        for i in range(10):
             self._test_login_attempt(ip=ip, ctx='2', expected_state_before='block', expected_state_after='block')
 
     def test_no_captcha(self):
@@ -402,10 +401,10 @@ class TestThrottling(unittest.TestCase):
         ip = get_random_token()
         block_limit = self.state_updater.limits['block']['ip']
 
-        for i in xrange(block_limit - 1):
+        for i in range(block_limit - 1):
             self._test_login_attempt(ip=ip)
         self._test_login_attempt(ip=ip, expected_state_after='block')
-        for i in xrange(10):
+        for i in range(10):
             self._test_login_attempt(ip=ip, expected_state_before='block', expected_state_after='block')
 
     def test_no_block(self):
@@ -417,10 +416,10 @@ class TestThrottling(unittest.TestCase):
         ip = get_random_token()
         captcha_limit = self.state_updater.limits['captcha']['ip']
 
-        for i in xrange(captcha_limit - 1):
+        for i in range(captcha_limit - 1):
             self._test_login_attempt(ip=ip)
         self._test_login_attempt(ip=ip, expected_state_after='captcha')
-        for i in xrange(100):
+        for i in range(100):
             self._test_login_attempt(ip=ip, expected_state_before='captcha', expected_state_after='captcha')
 
 
@@ -428,4 +427,4 @@ def test_counter_repr():
     counter_dict = {'value': 3, 'state': 'block', 'attributes': {'unblock_timestamp': 9999}}
     counter = throttling.common.Counter(counter_dict['value'], counter_dict['state'], counter_dict['attributes'])
     new_counter_dict = json.loads(repr(counter))
-    eq_(counter_dict, new_counter_dict)
+    assert counter_dict == new_counter_dict

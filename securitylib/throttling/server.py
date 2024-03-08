@@ -161,7 +161,7 @@ class StateUpdater(object):
                     counters['pwd'].value += 1
 
     def _update_counters_status(self, counters):
-        for counter_name, counter in counters.iteritems():
+        for counter_name, counter in list(counters.items()):
             try:
                 block_limit = self.limits['block'][counter_name]
             except KeyError:

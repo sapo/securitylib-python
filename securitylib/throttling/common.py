@@ -122,7 +122,7 @@ class CountersStorage(object):
         storage_keys = self.get_storage_keys(ip, user, pwd, ctx)
 
         counters = Counters()
-        for counter_name, storage_key in storage_keys.iteritems():
+        for counter_name, storage_key in list(storage_keys.items()):
             counter_serialized = self.storage_client.get(storage_key)
             if counter_serialized is not None:
                 counters[counter_name] = Counter.deserialize(counter_serialized)
@@ -133,7 +133,7 @@ class CountersStorage(object):
     def set(self, ip, user, pwd, counters, ctx=None):
         storage_keys = self.get_storage_keys(ip, user, pwd, ctx)
 
-        for counter_name, storage_key in storage_keys.iteritems():
+        for counter_name, storage_key in list(storage_keys.items()):
             counter_serialized = Counter.serialize(counters[counter_name])
             self.storage_client.set(storage_key, counter_serialized, self.expiration_times[counter_name])
 
@@ -152,7 +152,7 @@ class Counters(dict):
         blocked = False
         # Maximum of all block times
         max_unblock_timestamp = 0
-        for counter in self.itervalues():
+        for counter in list(self.values()):
             if counter.state == 'block':
                 unblock_timestamp = counter.attributes['unblock_timestamp']
                 if unblock_timestamp > now_timestamp:
@@ -163,7 +163,7 @@ class Counters(dict):
         return None
 
     def _get_captcha_info(self):
-        for counter in self.itervalues():
+        for counter in list(self.values()):
             if counter.state == 'captcha':
                 return {'state': 'captcha'}
         return None

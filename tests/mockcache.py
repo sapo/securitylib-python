@@ -130,7 +130,18 @@ This module and other memcached client libraries have the same behavior.
 """
 
 import datetime
+import collections
+try:
+    import collections.abc
+except ImportError:
+    # Python 3.10+ replaces attribute 'abc' by a module. This is to work with Python < 3.9
+    pass
 
+try:
+    collections.Callable = collections.abc.Callable
+except AttributeError:
+    # Python 2.x supports collections.Callable directly
+    pass
 
 __author__ = "Hong MinHee <http://dahlia.kr/>"
 __maintainer__ = __author__

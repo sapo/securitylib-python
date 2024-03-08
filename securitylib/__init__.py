@@ -1,7 +1,7 @@
-__all__ = ['crypto', 'advanced_crypto', 'random', 'passwords', 'throttling']
+__all__ = ['crypto', 'advanced_crypto', 'random_utils', 'passwords', 'throttling']
 
-import crypto
-import advanced_crypto
-import random
-import passwords
-import throttling
+from . import crypto 
+from . import advanced_crypto
+from . import random_utils
+from . import passwords
+from . import throttling

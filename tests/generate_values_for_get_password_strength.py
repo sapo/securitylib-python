@@ -1,5 +1,5 @@
 from securitylib.passwords import *
-from securitylib.random import *
+from securitylib.random_utils import *
 import operator
 
 
@@ -15,7 +15,7 @@ def get_random_values_for_strength(n=100):
         d[password] = strength
     sorted_d = sorted(d.iteritems(), key=operator.itemgetter(1))
     for password, strength in reversed(sorted_d):
-        print "eq_(get_password_strength('{}'), {})".format(password, strength)
+        print("eq_(get_password_strength('{}'), {})".format(password, strength))
 
 
 def get_password_strength_values():
@@ -146,7 +146,7 @@ def get_password_strength_values():
     '1p']
 
     for password in first_passwords_to_test:
-        print "    eq_(get_password_strength('{}'), {})".format(password, get_password_strength(password))
+        print("    eq_(get_password_strength('{}'), {})".format(password, get_password_strength(password)))
 
     print
     d = {}
@@ -155,7 +155,7 @@ def get_password_strength_values():
         d[password] = strength
     sorted_d = sorted(d.iteritems(), key=operator.itemgetter(1))
     for password, strength in reversed(sorted_d):
-        print "    eq_(get_password_strength('{}'), {})".format(password, strength)
+        print("    eq_(get_password_strength('{}'), {})".format(password, strength))
 
 
 def main():
