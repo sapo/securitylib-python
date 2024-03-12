@@ -13,7 +13,7 @@ setup(
     version='1.0.5',
     packages=find_packages(),
     install_requires=[
-        'pycryptodome==3.16.0',
+        'pycryptodome==3.19.1',
     ],
     package_data={
         '': ['*.txt', '*.md'],
