@@ -10,7 +10,7 @@ def get_readme():
 
 setup(
     name='securitylib',
-    version='1.0.5',
+    version='1.0.7',
     packages=find_packages(),
     install_requires=[
         'pycryptodome==3.19.1',
@@ -19,8 +19,8 @@ setup(
         '': ['*.txt', '*.md'],
     },
 
-    author='Hugo Peres Castilho',
-    author_email='hugo.p.castilho@telecom.pt',
+    author='Jose Nuno Pires',
+    author_email='jose-n-pires@telecom.pt',
     url='http://oss.sapo.pt/securitylib-python/',
     description=('The SAPO Security Lib is a library whose purpose is to '
         'provide functions/classes that solve common security related problems,'

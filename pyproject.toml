@@ -1,6 +1,6 @@
 [project]
 name = "securitylib"
-version = "1.0.5"
+version = "1.0.7"
 license = { text = "MIT License" }
 keywords = ['security', 'crypto', 'securitylib']
 

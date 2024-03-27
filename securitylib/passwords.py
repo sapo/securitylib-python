@@ -228,8 +228,7 @@ def validate_password(password, min_length=12, min_lower=1, min_upper=1, min_dig
     :returns: :class:`list` -- A list with the name of the parameters whose validations have failed.
                                This means a password is valid only if this function returns an empty list.
     """
-def validate_password(password, min_length=12, min_lower=1, min_upper=1, min_digits=1, min_special=1, min_strength=50):
-    
+
     s_lower = set('abcdefghijklmnopqrstuvwxyz')
     s_upper = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
     s_digits = set('0123456789')
