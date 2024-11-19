@@ -10,7 +10,7 @@ def get_readme():
 
 setup(
     name='securitylib',
-    version='1.0.7',
+    version='1.0.8',
     packages=find_packages(),
     install_requires=[
         'pycryptodome==3.19.1',

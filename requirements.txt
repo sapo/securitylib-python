@@ -9,7 +9,7 @@ crypto==1.4.1
 decorator==5.1.1
 docutils==0.19
 executing==1.2.0
-idna==3.4
+idna==3.10
 imagesize==1.4.1
 IPython>=8.10
 ipython-genutils==0.2.0
@@ -30,7 +30,8 @@ pycryptodome>=3.19.1
 Pygments>=2.15.0
 pyparsing==3.0.9
 pytz==2022.7.1
-PyYAML==6.0
+PyYAML==6.0.2
+pytest==8.3.3
 requests>=2.31.0
 shellescape==3.8.1
 six==1.16.0
