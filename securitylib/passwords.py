@@ -160,7 +160,7 @@ def generate_password(length=12, lower=True, upper=True, digits=True, special=Tr
     :param digits: Whether the password should contain digits.
     :type digits: :class:`bool`
 
-    :param special: Whether the password should contain special characters (!\@#$%^&*).
+    :param special: Whether the password should contain special characters (!\\@#$%^&*).
     :type special: :class:`bool`
 
     :param ambig: Whether the password should contain ambiguous characters (iloILO10).
@@ -219,7 +219,7 @@ def validate_password(password, min_length=12, min_lower=1, min_upper=1, min_dig
     :param min_digits: Minimum number of digits that the password must contain.
     :type min_digits: :class:`int`
 
-    :param min_special: Minimum number of special characters (!\@#$%^&*) that the password must contain.
+    :param min_special: Minimum number of special characters (!\\@#$%^&*) that the password must contain.
     :type min_special: :class:`int`
 
     :param min_strength: Minimum strength that the password must have according to function :func:`~securitylib.passwords.get_password_strength`.
