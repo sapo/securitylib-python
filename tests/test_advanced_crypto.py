@@ -3,7 +3,7 @@ from securitylib.advanced_crypto import pad_pkcs5, unpad_pkcs5
 from securitylib.random_utils import get_random_string
 from timeit import timeit
 from hashlib import sha1
-from test_utils import setup_seeded_random, teardown_seeded_random, assert_raises_with_message, with_setup
+from test_utils import setup_seeded_random, teardown_seeded_random, assert_raises_with_message, assert_raises_with_message_bytes, with_setup
 
 
 def test_hash():
@@ -356,9 +356,9 @@ def test_unpad_pkcs5():
     assert unpad_pkcs5(b'xxxxxxxxxxxxxxxx\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10', 16) == b'x' * 16
     assert unpad_pkcs5(b'xxxxxxxxxxxxxxxxxx\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e', 16) == b'x' * 18
     assert unpad_pkcs5(b'\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10', 16) == b'\x10' * 16
-    assert_raises_with_message(AssertionError, b'', unpad_pkcs5, b'', 16)
-    assert_raises_with_message(AssertionError, b'', unpad_pkcs5, b'\x0f' * 15, 16)
-    assert_raises_with_message(AssertionError, b'', unpad_pkcs5, b'x' * 16 + b'\x01', 16)
-    assert_raises_with_message(AssertionError, b'', unpad_pkcs5, b'x' * 16, 16)
-    assert_raises_with_message(AssertionError, b'', unpad_pkcs5, b'test_passwords.test_compare_stored_passwordxxxxxxxxxxxx\x02\x03\x03', 16)
-    assert_raises_with_message(AssertionError, b'',   unpad_pkcs5, b'xxxxxxxxxxxxxxxxx\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10', 16)
+    assert_raises_with_message_bytes(AssertionError, '', unpad_pkcs5, b'', 16)
+    assert_raises_with_message_bytes(AssertionError, '', unpad_pkcs5, b'\x0f' * 15, 16)
+    assert_raises_with_message_bytes(AssertionError, '', unpad_pkcs5, b'x' * 16 + b'\x01', 16)
+    assert_raises_with_message_bytes(AssertionError, '', unpad_pkcs5, b'x' * 16, 16)
+    assert_raises_with_message_bytes(AssertionError, '', unpad_pkcs5, b'test_passwords.test_compare_stored_passwordxxxxxxxxxxxx\x02\x03\x03', 16)
+    assert_raises_with_message_bytes(AssertionError, '', unpad_pkcs5, b'xxxxxxxxxxxxxxxxx\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10', 16)

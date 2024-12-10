@@ -3,6 +3,7 @@ from securitylib import random_utils
 import functools
 import os
 import datetime
+import re
 import pytest
 
 old_urandom = os.urandom
@@ -55,11 +56,21 @@ def teardown_seeded_random():
 def assert_raises_with_message(exception, message, callable, *args, **kwargs):
     with pytest.raises(exception, match=message) as cm:
         callable(*args, **kwargs)
-    if len(cm.exception.args) > 0:
-        arg = cm.exception.args[0]
+    if len(cm.value.args) > 0:
+        arg = cm.value.args[0]
     else:
         arg = b''
     assert arg == message
+
+def assert_raises_with_message_bytes(exception, message, callable, *args, **kwargs):
+    with pytest.raises(exception) as cm:
+        callable(*args, **kwargs)
+    if len(cm.value.args) > 0:
+        arg = cm.value.args[0]
+    else:
+        arg = b''
+
+    assert re.search(message, str(arg))
 
 
 def with_setup(setup_method, teardown_method):
