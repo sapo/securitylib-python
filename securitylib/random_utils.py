@@ -61,7 +61,7 @@ def get_random_token(length=20):
     >>> random.get_random_token() # doctest: +SKIP
     '0f280bd84a4c6ae15c2deddec28c8e2e94b00dba'
     """
-    return get_random_bytes(length).encode('hex')
+    return get_random_bytes(length).hex()
 
 
 def get_random_boolean():
@@ -139,6 +139,6 @@ def get_random_GUID():
     >>> random.get_random_GUID() # doctest: +SKIP
     'A7093430-468C-BBB6-ED70-DFF7B609B7A7'
     """
-    guid_hex = get_random_bytes(16).encode('hex').upper()
+    guid_hex = get_random_bytes(16).hex().upper()
     return bytes('{0}-{1}-{2}-{3}-{4}'.format(guid_hex[0:8], guid_hex[8:12],
                                         guid_hex[12:16], guid_hex[16:20], guid_hex[20:32]).encode('utf8'))
